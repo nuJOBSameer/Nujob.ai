@@ -9,31 +9,34 @@ import Footer from '../Components/Footer'
 const Home = () => {
   return (
     <>
-    <Navbar/>
-    <div className="flex flex-col md:flex-row items-center justify-between bg-white ">
-      {/* Left Content */}
-      <div className="max-w-lg space-y-4 ml-24">
-        <h1 className="text-5xl font-bold">
+    <div className="relative w-full h-screen flex items-center justify-center text-white">
+      {/* Background Video */}
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="/Main.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Dark Overlay for Better Readability */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+
+      {/* Text Content */}
+      <div className="relative z-10 text-center px-6">
+        <h1 className="text-5xl font-bold leading-tight">
           <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">
-            NuJOB.AI
-          </span>
+            nuJOB.AI
+          </span>{" "}
+          Brings You To The New Age Of Hiring
         </h1>
-        <p className="text-gray-700 text-2xl">Brings You To The New</p>
-        <p className="text-3xl font-extrabold">Age Of Hiring</p>
 
-        {/* Call to Action */}
-        <button className="bg-black text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-gray-800">
-          Start Free Trial
+        {/* CTA Button */}
+        <button className="mt-6 px-6 py-3 bg-white text-black rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition flex items-center">
+          Start Free Trial <span className="ml-2"><img src="/images/ArrowB.png" alt="" /></span>
         </button>
-      </div>
-
-      {/* Right Image */}
-      <div className="">
-        <img
-          src="/images/Container.png"
-          alt="AI and Human Handshake"
-          className="rounded-lg shadow-lg h-[500px] w-[900px]"
-        />
       </div>
     </div>
     <Services/>
