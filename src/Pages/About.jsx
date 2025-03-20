@@ -2,6 +2,8 @@ import React from 'react'
 import AboutSection from '../About/AboutSection'
 import Benefits from '../About/Benefits'
 import ServicesSection from '../About/ServicesSection'
+import Bottom from '../About/Bottom'
+import Footer from '../Components/Footer'
 
 const About = () => {
   return (
@@ -44,6 +46,8 @@ const About = () => {
   <AboutSection/>
   <Benefits/>
   <ServicesSection/>
+  <Bottom/>
+  <Footer/>
   </>
   )
 }
