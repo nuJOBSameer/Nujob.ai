@@ -102,7 +102,7 @@ export default function Navbar() {
 
                     {/* About Us Dropdown */}
                     <Popover className="relative">
-                        <PopoverButton className="flex items-center text-gray-900 font-medium">
+                        <PopoverButton className="flex items-center text-gray-900 font-medium focus:outline-none focus:ring-0">
                             About Us <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </PopoverButton>
                         <PopoverPanel className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
@@ -137,7 +137,7 @@ export default function Navbar() {
 
                     {/* Candidates Dropdown */}
                     <Popover className="relative">
-                        <PopoverButton className="flex items-center text-gray-900 font-medium">
+                        <PopoverButton className="flex items-center text-gray-900 font-medium focus:outline-none focus:ring-0">
                             Candidates <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </PopoverButton>
                         <PopoverPanel className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
@@ -171,7 +171,7 @@ export default function Navbar() {
                     </Popover>
 
                     <Popover className="relative">
-                        <PopoverButton className="flex items-center text-gray-900 font-medium">
+                        <PopoverButton className="flex items-center text-gray-900 font-medium focus:outline-none focus:ring-0">
                             Recruiters <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </PopoverButton>
                         <PopoverPanel className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
@@ -206,7 +206,7 @@ export default function Navbar() {
 
                     <a href="#" className="text-gray-900 font-medium">Pricing</a>
                     <Popover className="relative">
-                        <PopoverButton className="flex items-center text-gray-900 font-medium">
+                        <PopoverButton className="flex items-center text-gray-900 font-medium focus:outline-none focus:ring-0">
                             Support <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </PopoverButton>
                         <PopoverPanel className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
