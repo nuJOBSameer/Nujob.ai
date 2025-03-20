@@ -32,7 +32,7 @@ export default function Business() {
                             key={index}
                             className="flex items-start space-x-3 py-3 border-b border-gray-300 "
                         >
-                            <span className="text-indigo-600">✔</span>
+                            <span className="text-indigo-600"><img src="/images/down.png" alt="arrow" className="h-5" /></span>
                             <p className="text-gray-700">{item}</p>
                         </li>
                     ))}
