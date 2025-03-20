@@ -102,7 +102,7 @@ export default function Navbar() {
                     <a href="#" className="text-gray-900 font-medium">Home</a>
 
                     {/* About Us Dropdown */}
-                    <Popover className="relative">
+                    <Popover className="relative z-30">
                         <PopoverButton className="flex items-center text-gray-900 font-medium focus:outline-none focus:ring-0">
                             About Us <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </PopoverButton>
@@ -137,7 +137,7 @@ export default function Navbar() {
                     </Popover>
 
                     {/* Candidates Dropdown */}
-                    <Popover className="relative">
+                    <Popover className="relative z-30">
                         <PopoverButton className="flex items-center text-gray-900 font-medium focus:outline-none focus:ring-0">
                             Candidates <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </PopoverButton>
@@ -171,7 +171,7 @@ export default function Navbar() {
                         </PopoverPanel>
                     </Popover>
 
-                    <Popover className="relative">
+                    <Popover className="relative z-30">
                         <PopoverButton className="flex items-center text-gray-900 font-medium focus:outline-none focus:ring-0">
                             Recruiters <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </PopoverButton>
@@ -206,7 +206,7 @@ export default function Navbar() {
                     </Popover>
 
                     <a href="#" className="text-gray-900 font-medium">Pricing</a>
-                    <Popover className="relative">
+                    <Popover className="relative z-30">
                         <PopoverButton className="flex items-center text-gray-900 font-medium focus:outline-none focus:ring-0">
                             Support <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </PopoverButton>

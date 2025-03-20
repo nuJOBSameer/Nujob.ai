@@ -9,7 +9,7 @@ import Footer from '../Components/Footer'
 const Home = () => {
   return (
     <>
-    <div className="relative w-full h-screen flex items-center justify-center text-white">
+    <div className="relative w-full h-screen flex items-center justify-center text-white ">
       {/* Background Video */}
       <video 
         autoPlay 
