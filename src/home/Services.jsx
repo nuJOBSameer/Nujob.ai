@@ -1,59 +1,53 @@
-import {
-    BriefcaseIcon,
-    UserGroupIcon,
-    ChartBarIcon,
-    ClipboardDocumentCheckIcon,
-    DocumentTextIcon,
-    UsersIcon,
-    HandRaisedIcon,
-    SparklesIcon,
-    ClockIcon,
-  } from "@heroicons/react/24/outline";
+import { CheckCircleIcon, UsersIcon, ClockIcon, AdjustmentsHorizontalIcon, ScaleIcon, ShieldCheckIcon, LightBulbIcon, AcademicCapIcon } from "@heroicons/react/24/outline";
   
   export default function ServicesSection() {
     const services = [
       {
-        title: "Career Development And Guidance",
-        description: "Receive expert advice and resources to grow your career with guidance.",
-        icon: <BriefcaseIcon className="w-8 h-8 text-indigo-500 mb-3" />,
+        title: "AI-Driven Skill Validation",
+        description: "Assesses real-world skills, not just certifications.",
+        icon: <CheckCircleIcon className="w-8 h-8 text-indigo-500 mb-3" />,
       },
       {
-        title: "Talent Management",
-        description: "Maximize employee potential through effective talent management strategies and tools.",
-        icon: <UserGroupIcon className="w-8 h-8 text-indigo-500 mb-3" />,
-      },
-      {
-        title: "Executive Career Path",
-        description: "We help professionals chart their executive career trajectory for lasting success.",
-        icon: <ChartBarIcon className="w-8 h-8 text-indigo-500 mb-3" />,
-      },
-      {
-        title: "Interview And Assessments",
-        description: "Prepare for interviews with tailored guidance and mock assessments to boost your chances.",
-        icon: <ClipboardDocumentCheckIcon className="w-8 h-8 text-indigo-500 mb-3" />,
-      },
-      {
-        title: "Resume And Skill Enhancements",
-        description: "Receive expert advice and resources to grow your career with guidance.",
-        icon: <DocumentTextIcon className="w-8 h-8 text-indigo-500 mb-3" />,
-      },
-      {
-        title: "Candidate Pool",
-        description: "Maximize employee potential through effective talent management strategies and tools.",
+        title: "Simulation Interviews",
+        description: "Structured, stress-free assessments for Autism & ADHD support.",
         icon: <UsersIcon className="w-8 h-8 text-indigo-500 mb-3" />,
       },
       {
-        title: "Autism Support",
-        description: "Connect autistic professionals with structured jobs that fit their strengths.",
-        icon: <HandRaisedIcon className="w-8 h-8 text-indigo-500 mb-3" />,
+        title: "Automated Hiring",
+        description: "Reduces time-to-hire with AI-driven screening.",
+        icon: <ClockIcon className="w-8 h-8 text-indigo-500 mb-3" />,
       },
       {
-        title: "ADHD-Friendly Careers",
-        description: "Help ADHD professionals find flexible, engaging jobs where they thrive.",
-        icon: <SparklesIcon className="w-8 h-8 text-indigo-500 mb-3" />,
+        title: "Intelligent Job Matching",
+        description: "AI matches candidates based on actual skills, eliminating bias.",
+        icon: <AdjustmentsHorizontalIcon className="w-8 h-8 text-indigo-500 mb-3" />,
       },
-    ];
-  
+      {
+        title: "Flexible Assessments",
+        description: "Adjustable pacing and alternative formats for diverse needs.",
+        icon: <ScaleIcon className="w-8 h-8 text-indigo-500 mb-3" />,
+      },
+      {
+        title: "Market-Linked Scoring",
+        description: "Ensures skills remain industry-relevant for long-term hiring success.",
+        icon: <ShieldCheckIcon className="w-8 h-8 text-indigo-500 mb-3" />,
+      },
+      {
+        title: "Integrity & Honesty Detection",
+        description: "Evaluates communication & behavior without penalizing neurodivergent traits.",
+        icon: <LightBulbIcon className="w-8 h-8 text-indigo-500 mb-3" />,
+      },
+      {
+        title: "Personalized Career Guidance",
+        description: "Custom coaching for resume, interview, and skill improvement.",
+        icon: <AcademicCapIcon className="w-8 h-8 text-indigo-500 mb-3" />,
+      },
+      {
+        title: "Seamless Enterprise Integration",
+        description: "Secure authentication & AI-driven insights for smarter hiring.",
+        icon: <ShieldCheckIcon className="w-8 h-8 text-indigo-500 mb-3" />,
+      },
+]
     return (
       <div className="bg-blue-50 py-16 px-8 text-center">
         {/* Title */}
@@ -69,7 +63,7 @@ import {
         </h2>
   
         {/* Services Grid */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
@@ -77,7 +71,7 @@ import {
             >
               {service.icon}
               <h4 className="text-lg font-semibold">{service.title}</h4>
-              <p className="text-gray-600 text-sm mt-1">{service.description}</p>
+              <p className="text-gray-600 text-sm mt-1 text-left">{service.description}</p>
             </div>
           ))}
         </div>
