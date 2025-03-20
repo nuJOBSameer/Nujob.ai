@@ -4,23 +4,26 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import  { NewspaperIcon, QuestionMarkCircleIcon, PhoneIcon, MagnifyingGlassIcon, UserPlusIcon, DocumentTextIcon, BriefcaseIcon, ChartBarIcon, LightBulbIcon, UsersIcon, ClipboardDocumentIcon } from '@heroicons/react/24/outline';
+import { NewspaperIcon, QuestionMarkCircleIcon, PhoneIcon, MagnifyingGlassIcon, UserPlusIcon, DocumentTextIcon, BriefcaseIcon, ChartBarIcon, LightBulbIcon, UsersIcon, ClipboardDocumentIcon } from '@heroicons/react/24/outline';
 
 const aboutFeatures = [
     {
         name: 'The Company',
         description: 'Discover how we empower organizations to find top leadership talent and help candidates brand themselves',
         icon: BriefcaseIcon,
+        link: '/about'
     },
     {
         name: 'Competitive Analysis',
         description: 'AI technology with a deep understanding of career needs, making the job search process smarter, faster, and more efficient.',
         icon: ChartBarIcon,
+        link: '/about'
     },
     {
         name: 'Business Model',
         description: 'At nuJOB AI, we employ a comprehensive and data-driven approach to revolutionize the executive search process.',
         icon: LightBulbIcon,
+        link: '/about'
     },
 ];
 
@@ -71,21 +74,21 @@ const RecruitersFeatures = [
 
 const supportFeatures = [
     {
-      name: "Connect with Us",
-      description: "For any issues with nuJOB.AI, we’re here to provide technical assistance, troubleshooting, and guidance.",
-      icon: PhoneIcon,
+        name: "Connect with Us",
+        description: "For any issues with nuJOB.AI, we’re here to provide technical assistance, troubleshooting, and guidance.",
+        icon: PhoneIcon,
     },
     {
-      name: "Frequently Asked Questions",
-      description: "Find answers to the most common questions about using nuJOB.AI, career guidance, job search tools, and more.",
-      icon: QuestionMarkCircleIcon,
+        name: "Frequently Asked Questions",
+        description: "Find answers to the most common questions about using nuJOB.AI, career guidance, job search tools, and more.",
+        icon: QuestionMarkCircleIcon,
     },
     {
-      name: "Blog",
-      description: "Stay updated with career tips, job search strategies, and personal growth on our blog.",
-      icon: NewspaperIcon,
+        name: "Blog",
+        description: "Stay updated with career tips, job search strategies, and personal growth on our blog.",
+        icon: NewspaperIcon,
     },
-  ];
+];
 
 
 export default function Navbar() {
@@ -99,13 +102,14 @@ export default function Navbar() {
 
                 {/* Navigation Links */}
                 <div className="hidden lg:flex space-x-10">
-                    <a href="#" className="text-gray-900 font-medium">Home</a>
+                    <Link to="/" className="text-gray-900 font-medium">Home</Link>
 
                     {/* About Us Dropdown */}
                     <Popover className="relative z-30">
                         <PopoverButton className="flex items-center text-gray-900 font-medium focus:outline-none focus:ring-0">
                             About Us <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </PopoverButton>
+
                         <PopoverPanel className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
                             <h3 className="text-gray-400 text-xs font-semibold uppercase">Features</h3>
 
@@ -114,14 +118,14 @@ export default function Navbar() {
 
                                 {/* Left Side - Features (Spanning 2 Columns) */}
                                 <div className="grid grid-cols-2 gap-6 col-span-2">
-                                    {aboutFeatures.map((item) => (
-                                        <a key={item.name} href="#" className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md">
+                                    {aboutFeatures.map((item, index) => (
+                                        <Link to={item.link} key={index} className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md">
                                             <item.icon className="h-24 w-24 text-indigo-600" />
                                             <div>
                                                 <p className="text-indigo-600 font-medium">{item.name}</p>
                                                 <p className="text-gray-500 text-sm">{item.description}</p>
                                             </div>
-                                        </a>
+                                        </Link>
                                     ))}
                                 </div>
 
@@ -129,7 +133,7 @@ export default function Navbar() {
                                 <div className="flex flex-col items-center">
                                     <img src="/images/platform-overview.png" alt="Platform Overview" className="rounded-lg w-full h-auto" />
                                     <p className="text-gray-600 text-sm mt-2">Take a free tour of our platform features</p>
-                                    <a href="#" className="text-indigo-600 font-medium mt-1">Book a Demo →</a>
+                                    <Link to="/demo" className="text-indigo-600 font-medium mt-1">Book a Demo →</Link>
                                 </div>
 
                             </div>
