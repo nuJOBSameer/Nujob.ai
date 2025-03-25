@@ -43,7 +43,6 @@ const Home = () => {
     <Business/>
     <Career/>
     <ResumeBuilder/>
-    <Footer/>
     </>
   )
 }

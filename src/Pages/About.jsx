@@ -47,7 +47,6 @@ const About = () => {
   <Benefits/>
   <ServicesSection/>
   <Bottom/>
-  <Footer/>
   </>
   )
 }
