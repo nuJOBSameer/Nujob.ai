@@ -112,6 +112,7 @@ const supportFeatures = [
         description:
             "Stay updated with career tips, job search strategies, and personal growth on our blog.",
         icon: NewspaperIcon,
+        link: "/Blogs"
     },
 ];
 
