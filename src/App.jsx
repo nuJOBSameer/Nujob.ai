@@ -9,7 +9,7 @@ import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
 import CareerPath from "./Pages/CareerPath";
 import JobSearch from "./Pages/JobSearch";
-import ResumeSkills from "./Pages/Resumeskills";
+import ResumeSkills from "./Pages/ResumeSkills";
 import CareerDev from "./Pages/CareerDev";
 
 function App() {
