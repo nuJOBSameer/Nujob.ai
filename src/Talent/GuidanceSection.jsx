@@ -20,7 +20,7 @@ const GuidanceSection = () => {
             title: "Personalized Guidance",
             description:
               "Receive advice tailored specifically to your career goals, helping you make informed and confident decisions.",
-            color: "border-pink-500 text-pink-600",
+            color: "border-pink-500 text-blue-600",
           },
           {
             title: "Real-Time Insights",
@@ -32,7 +32,7 @@ const GuidanceSection = () => {
             title: "Simplified Job Search",
             description:
               "Save time and effort as the AI curates the best job options based on your unique skills, preferences, and career path.",
-            color: "border-purple-500 text-purple-600",
+            color: "border-purple-500 text-blue-600",
           },
         ].map((item, index) => (
           <div
