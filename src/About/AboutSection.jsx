@@ -15,7 +15,7 @@ export default function AboutSection() {
           {/* Right Side - Text Content */}
           <div className="max-w-2xl">
             <h2 className="text-4xl font-extrabold text-gray-900">
-              <span className="text-pink-600">About</span> Us
+              <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">About</span> Us
             </h2>
             <p className="text-gray-700 mt-4 text-lg leading-relaxed">
               With over 35 years of pioneering experience in the IT sector, AI is built on a profound understanding of the ever-evolving technology landscape. Our journey began at the dawn of the computer age, through the rise of networking and the internet, and has now expanded to embrace the transformative potential of artificial intelligence.

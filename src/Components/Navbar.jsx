@@ -47,24 +47,28 @@ const candidateFeatures = [
         description:
             "Our AI-driven platform helps you craft a standout professional profile.",
         icon: UsersIcon,
+        link: "/Career-path"
     },
     {
         name: "Job Search & Recommendations",
         description:
             "AI-powered tools help you build, develop, and empower your career journey.",
         icon: BriefcaseIcon,
+        link: '/JobSearch'
     },
     {
         name: "Career Development & Guidance",
         description:
             "Simplifies career navigation with tools to support success in a competitive job market.",
         icon: LightBulbIcon,
+        link: '/Career-Dev'
     },
     {
         name: "Resume & Skills Enhancement",
         description:
             "Craft a dynamic profile that boosts your chances in today’s job market.",
         icon: ClipboardDocumentIcon,
+        link: '/Resume-skills-enhancement'
     },
 ];
 const RecruitersFeatures = [
@@ -100,12 +104,14 @@ const supportFeatures = [
         description:
             "For any issues with nuJOB.AI, we’re here to provide technical assistance, troubleshooting, and guidance.",
         icon: PhoneIcon,
+        link: '/Contact'
     },
     {
         name: "Frequently Asked Questions",
         description:
             "Find answers to the most common questions about using nuJOB.AI, career guidance, job search tools, and more.",
         icon: QuestionMarkCircleIcon,
+        link:"/FAQ"
     },
     {
         name: "Blog",
@@ -137,7 +143,7 @@ export default function Navbar() {
                         onMouseEnter={() => setAboutOpen(true)}
                         onMouseLeave={() => setTimeout(() => {
                             setAboutOpen(false)
-                        }, 1000)}
+                        }, 50)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                            <Link Link to="/About">About Us</Link> 
@@ -182,7 +188,7 @@ export default function Navbar() {
                         onMouseEnter={() => setCandidatesOpen(true)}
                         onMouseLeave={() => setTimeout(() => {
                             setCandidatesOpen(false)
-                        }, 1000)}
+                        }, 50)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             Candidates{" "}
@@ -227,7 +233,7 @@ export default function Navbar() {
                         onMouseEnter={() => setRecruitersOpen(true)}
                         onMouseLeave={() => setTimeout(() => {
                             setRecruitersOpen(false)
-                        }, 1000)}
+                        }, 50)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             Recruiters{" "}
@@ -272,7 +278,7 @@ export default function Navbar() {
                         onMouseEnter={() => setSupportOpen(true)}
                         onMouseLeave={() => setTimeout(() => {
                             setSupportOpen(false)
-                        }, 1000)}
+                        }, 50)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             Support <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -312,9 +318,9 @@ export default function Navbar() {
                         )}
                     </div>
 
-                    <a href="#" className="text-gray-900 font-medium">
+                    <Link to="/pricing" className="text-gray-900 font-medium">
                         Pricing
-                    </a>
+                    </Link>
                 </div>
                 <div>
                     <a
