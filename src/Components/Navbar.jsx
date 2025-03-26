@@ -83,6 +83,7 @@ const RecruitersFeatures = [
         description:
             "At nuJOB.Al, we transform interviews and assessments with Al, offering live interviews and realistic simulations...",
         icon: DocumentTextIcon,
+        link: '/Interview'
     },
     {
         name: "Onboarding Development",
@@ -95,6 +96,7 @@ const RecruitersFeatures = [
         description:
             "At nuJOB Al, we recruit, develop, and retain top talent through advanced competency detection...",
         icon: MagnifyingGlassIcon,
+        link: "/Talent"
     },
 ];
 

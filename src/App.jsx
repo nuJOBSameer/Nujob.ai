@@ -11,6 +11,8 @@ import CareerPath from "./Pages/CareerPath";
 import JobSearch from "./Pages/JobSearch";
 import ResumeSkills from "./Pages/ResumeSkills";
 import CareerDev from "./Pages/CareerDev";
+import Interview from "./Pages/Interview";
+import Talent from "./Pages/Talent";
 
 function App() {
 
@@ -29,6 +31,8 @@ function App() {
         <Route path='/JobSearch' element={<JobSearch/>}/>
         <Route path='/Resume-skills-enhancement' element={<ResumeSkills/>}/>
         <Route path='/Career-Dev' element={<CareerDev/>}/>
+        <Route path='/Interview' element={<Interview/>}/>
+        <Route path='/Talent' element={<Talent/>}/>
       </Routes>
       <Footer/>
     </Router>

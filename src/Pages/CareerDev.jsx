@@ -1,7 +1,4 @@
 import React from "react";
-import ResumeBuilder from "../ResumeSkills/ResumeBuilder.jsx";
-import ResumeVersion from "../ResumeSkills/ResumeVersion.jsx";
-import SkillsSection from "../ResumeSkills/SkillsSection.jsx";
 import TrackInterviews from "../CareerDev/TrackInterviews.jsx";
 import Monitor from "../CareerDev/Monitor.jsx";
 import Guidance from "../CareerDev/Guidance.jsx";
