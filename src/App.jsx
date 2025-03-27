@@ -13,7 +13,7 @@ import ResumeSkills from "./Pages/ResumeSkills";
 import CareerDev from "./Pages/CareerDev";
 import Interview from "./Pages/Interview";
 import Talent from "./Pages/Talent";
-import OnboardingSection from "./Pages/OnBoardingSection";
+import OnboardingSection from "./Pages/OnboardingSection";
 import CandidatePool from "./Pages/CandidatePool";
 
 function App() {
