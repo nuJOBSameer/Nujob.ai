@@ -77,6 +77,7 @@ const RecruitersFeatures = [
         description:
             "nuJOB.Al helps hiring managers efficiently build and manage a strong candidate pool with...",
         icon: UsersIcon,
+        link: '/Candidate-Pool'
     },
     {
         name: "Interview Assessment",
@@ -90,6 +91,7 @@ const RecruitersFeatures = [
         description:
             "nuJOB.Al accelerates success with Al-powered tools for seamless onboarding, skill validation, and...",
         icon: UserPlusIcon,
+        link: '/Onboarding'
     },
     {
         name: "Talent Management",
