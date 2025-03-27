@@ -6,7 +6,7 @@ import Features from "../Onboarding/Features";
 import KeyFeatures from "../Onboarding/KeyFeatures";
 import Labs from "../Onboarding/Labs";
 
-const OnboardingSection = () => {
+const OnBoardingSection = () => {
   return (
     <>    
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 py-10">
@@ -52,4 +52,4 @@ const OnboardingSection = () => {
   );
 };
 
-export default OnboardingSection;
+export default OnBoardingSection;
