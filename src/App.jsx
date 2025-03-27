@@ -16,6 +16,7 @@ import Talent from "./Pages/Talent";
 import OnBoard from "./Pages/OnBoard";
 import CandidatePool from "./Pages/CandidatePool";
 import Method from "./Pages/Model";
+import Analysis from "./Pages/Analysis";
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
         <Route path='/Onboarding' element={<OnBoard/>}/>
         <Route path='/Candidate-Pool' element={<CandidatePool/>}/>
         <Route path='/Method' element={<Method/>}/>
+        <Route path='/Analysis' element={<Analysis/>}/>
       </Routes>
       <Footer/>
     </Router>

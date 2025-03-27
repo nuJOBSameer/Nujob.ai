@@ -30,7 +30,7 @@ const aboutFeatures = [
         description:
             "AI technology with a deep understanding of career needs, making the job search process smarter, faster, and more efficient.",
         icon: ChartBarIcon,
-        link: "/about",
+        link: "/Analysis",
     },
     {
         name: "Business Model",
