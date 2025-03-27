@@ -13,6 +13,8 @@ import ResumeSkills from "./Pages/ResumeSkills";
 import CareerDev from "./Pages/CareerDev";
 import Interview from "./Pages/Interview";
 import Talent from "./Pages/Talent";
+import OnboardingSection from "./Pages/OnBoardingSection";
+import CandidatePool from "./Pages/CandidatePool";
 
 function App() {
 
@@ -33,6 +35,8 @@ function App() {
         <Route path='/Career-Dev' element={<CareerDev/>}/>
         <Route path='/Interview' element={<Interview/>}/>
         <Route path='/Talent' element={<Talent/>}/>
+        <Route path='/Onboarding' element={<OnboardingSection/>}/>
+        <Route path='/Candidate-Pool' element={<CandidatePool/>}/>
       </Routes>
       <Footer/>
     </Router>
