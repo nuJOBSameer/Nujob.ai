@@ -37,7 +37,7 @@ const aboutFeatures = [
         description:
             "At nuJOB AI, we employ a comprehensive and data-driven approach to revolutionize the executive search process.",
         icon: LightBulbIcon,
-        link: "/about",
+        link: "/Method",
     },
 ];
 
