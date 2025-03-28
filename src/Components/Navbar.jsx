@@ -147,7 +147,7 @@ export default function Navbar() {
                         onMouseEnter={() => setAboutOpen(true)}
                         onMouseLeave={() => setTimeout(() => {
                             setAboutOpen(false)
-                        }, 50)}
+                        }, 500)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                            <Link Link to="/About">About Us</Link> 
@@ -192,7 +192,7 @@ export default function Navbar() {
                         onMouseEnter={() => setCandidatesOpen(true)}
                         onMouseLeave={() => setTimeout(() => {
                             setCandidatesOpen(false)
-                        }, 50)}
+                        }, 500)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             Candidates{" "}
@@ -237,7 +237,7 @@ export default function Navbar() {
                         onMouseEnter={() => setRecruitersOpen(true)}
                         onMouseLeave={() => setTimeout(() => {
                             setRecruitersOpen(false)
-                        }, 50)}
+                        }, 500)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             Recruiters{" "}
@@ -282,7 +282,7 @@ export default function Navbar() {
                         onMouseEnter={() => setSupportOpen(true)}
                         onMouseLeave={() => setTimeout(() => {
                             setSupportOpen(false)
-                        }, 50)}
+                        }, 500)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             Support <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
