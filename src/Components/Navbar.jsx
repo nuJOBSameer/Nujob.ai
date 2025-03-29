@@ -115,7 +115,7 @@ const supportFeatures = [
         description:
             "Find answers to the most common questions about using nuJOB.AI, career guidance, job search tools, and more.",
         icon: QuestionMarkCircleIcon,
-        link:"/FAQ"
+        link: "/FAQ"
     },
     {
         name: "Blog",
@@ -144,13 +144,16 @@ export default function Navbar() {
                     </Link>
                     <div
                         className="relative z-30"
-                        onMouseEnter={() => setAboutOpen(true)}
-                        onMouseLeave={() => setTimeout(() => {
-                            setAboutOpen(false)
-                        }, 1000)}
+                        onMouseEnter={() => {
+                            setAboutOpen(true);
+                            setCandidatesOpen(false);
+                            setRecruitersOpen(false);
+                            setSupportOpen(false);
+                        }}
+                        onMouseLeave={() => setTimeout(() => setAboutOpen(false), 5000)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-                           <Link Link to="/About">About Us</Link> 
+                            <Link Link to="/About">About Us</Link>
                             <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {aboutOpen && (
@@ -179,146 +182,158 @@ export default function Navbar() {
                                         ))}
                                     </div>
                                     <div className="flex flex-col items-center">
-                                    <img src="/images/platform-overview.png" alt="Platform Overview" className="rounded-lg w-full h-auto" />
-                                    <p className="text-gray-600 text-sm mt-2">Take a free tour of our platform features</p>
-                                    <Link to="/demo" className="text-indigo-600 font-medium mt-1">Book a Demo →</Link>
-                                </div>
+                                        <img src="/images/platform-overview.png" alt="Platform Overview" className="rounded-lg w-full h-auto" />
+                                        <p className="text-gray-600 text-sm mt-2">Take a free tour of our platform features</p>
+                                        <Link to="/demo" className="text-indigo-600 font-medium mt-1">Book a Demo →</Link>
+                                    </div>
                                 </div>
                             </div>
                         )}
                     </div>
                     <div
                         className="relative z-30"
-                        onMouseEnter={() => setCandidatesOpen(true)}
-                        onMouseLeave={() => setTimeout(() => {
-                            setCandidatesOpen(false)
-                        }, 1000)}
+                        onMouseEnter={() => {
+                            setCandidatesOpen(true);
+                            setAboutOpen(false);
+                            setRecruitersOpen(false);
+                            setSupportOpen(false);
+                        }}
+                        onMouseLeave={() => setTimeout(() => setCandidatesOpen(false), 5000)}
                     >
+
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             Candidates{" "}
                             <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {candidatesOpen && (
                             <div className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
-                            <h3 className="text-gray-400 text-xs font-semibold uppercase">
-                                Features
-                            </h3>
-                            <div className="mt-3 grid grid-cols-3 gap-6 items-center">
-                                <div className="grid grid-cols-2 gap-6 col-span-2">
-                                    {candidateFeatures.map((item, index) => (
-                                        <Link
-                                            to={item.link}
-                                            key={index}
-                                            className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
-                                        >
-                                            <item.icon className="h-24 w-24 text-indigo-600" />
-                                            <div>
-                                                <p className="text-indigo-600 font-medium">
-                                                    {item.name}
-                                                </p>
-                                                <p className="text-gray-500 text-sm">
-                                                    {item.description}
-                                                </p>
-                                            </div>
-                                        </Link>
-                                    ))}
+                                <h3 className="text-gray-400 text-xs font-semibold uppercase">
+                                    Features
+                                </h3>
+                                <div className="mt-3 grid grid-cols-3 gap-6 items-center">
+                                    <div className="grid grid-cols-2 gap-6 col-span-2">
+                                        {candidateFeatures.map((item, index) => (
+                                            <Link
+                                                to={item.link}
+                                                key={index}
+                                                className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
+                                            >
+                                                <item.icon className="h-24 w-24 text-indigo-600" />
+                                                <div>
+                                                    <p className="text-indigo-600 font-medium">
+                                                        {item.name}
+                                                    </p>
+                                                    <p className="text-gray-500 text-sm">
+                                                        {item.description}
+                                                    </p>
+                                                </div>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                    <div className="flex flex-col items-center">
+                                        <img src="/images/platform-overview.png" alt="Platform Overview" className="rounded-lg w-full h-auto" />
+                                        <p className="text-gray-600 text-sm mt-2">Take a free tour of our platform features</p>
+                                        <Link to="/demo" className="text-indigo-600 font-medium mt-1">Book a Demo →</Link>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col items-center">
-                                <img src="/images/platform-overview.png" alt="Platform Overview" className="rounded-lg w-full h-auto" />
-                                <p className="text-gray-600 text-sm mt-2">Take a free tour of our platform features</p>
-                                <Link to="/demo" className="text-indigo-600 font-medium mt-1">Book a Demo →</Link>
                             </div>
-                            </div>
-                        </div>
                         )}
                     </div>
                     <div
                         className="relative z-30"
-                        onMouseEnter={() => setRecruitersOpen(true)}
-                        onMouseLeave={() => setTimeout(() => {
-                            setRecruitersOpen(false)
-                        }, 1000)}
+                        onMouseEnter={() => {
+                            setRecruitersOpen(true);
+                            setAboutOpen(false);
+                            setCandidatesOpen(false);
+                            setSupportOpen(false);
+                        }}
+                        onMouseLeave={() => setTimeout(() => setRecruitersOpen(false), 5000)}
                     >
+
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             Recruiters{" "}
                             <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {recruitersOpen && (
                             <div className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
-                            <h3 className="text-gray-400 text-xs font-semibold uppercase">
-                                Features
-                            </h3>
-                            <div className="mt-3 grid grid-cols-3 gap-6 items-center">
-                                <div className="grid grid-cols-2 gap-6 col-span-2">
-                                    {RecruitersFeatures.map((item, index) => (
-                                        <Link
-                                            to={item.link}
-                                            key={index}
-                                            className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
-                                        >
-                                            <item.icon className="h-24 w-24 text-indigo-600" />
-                                            <div>
-                                                <p className="text-indigo-600 font-medium">
-                                                    {item.name}
-                                                </p>
-                                                <p className="text-gray-500 text-sm">
-                                                    {item.description}
-                                                </p>
-                                            </div>
-                                        </Link>
-                                    ))}
+                                <h3 className="text-gray-400 text-xs font-semibold uppercase">
+                                    Features
+                                </h3>
+                                <div className="mt-3 grid grid-cols-3 gap-6 items-center">
+                                    <div className="grid grid-cols-2 gap-6 col-span-2">
+                                        {RecruitersFeatures.map((item, index) => (
+                                            <Link
+                                                to={item.link}
+                                                key={index}
+                                                className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
+                                            >
+                                                <item.icon className="h-24 w-24 text-indigo-600" />
+                                                <div>
+                                                    <p className="text-indigo-600 font-medium">
+                                                        {item.name}
+                                                    </p>
+                                                    <p className="text-gray-500 text-sm">
+                                                        {item.description}
+                                                    </p>
+                                                </div>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                    <div className="flex flex-col items-center">
+                                        <img src="/images/platform-overview.png" alt="Platform Overview" className="rounded-lg w-full h-auto" />
+                                        <p className="text-gray-600 text-sm mt-2">Take a free tour of our platform features</p>
+                                        <Link to="/demo" className="text-indigo-600 font-medium mt-1">Book a Demo →</Link>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col items-center">
-                                <img src="/images/platform-overview.png" alt="Platform Overview" className="rounded-lg w-full h-auto" />
-                                <p className="text-gray-600 text-sm mt-2">Take a free tour of our platform features</p>
-                                <Link to="/demo" className="text-indigo-600 font-medium mt-1">Book a Demo →</Link>
                             </div>
-                            </div>
-                        </div>
                         )}
                     </div>
                     <div
                         className="relative z-30"
-                        onMouseEnter={() => setSupportOpen(true)}
-                        onMouseLeave={() => setTimeout(() => {
-                            setSupportOpen(false)
-                        }, 1000)}
+                        onMouseEnter={() => {
+                            setSupportOpen(true);
+                            setAboutOpen(false);
+                            setCandidatesOpen(false);
+                            setRecruitersOpen(false);
+                        }}
+                        onMouseLeave={() => setTimeout(() => setSupportOpen(false), 5000)}
                     >
+
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             Support <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {supportOpen && (
                             <div className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
-                            <h3 className="text-gray-400 text-xs font-semibold uppercase">
-                                Features
-                            </h3>
-                            <div className="mt-3 grid grid-cols-3 gap-6 items-center">
-                                <div className="grid grid-cols-2 gap-6 col-span-2">
-                                    {supportFeatures.map((item, index) => (
-                                        <Link
-                                            to={item.link}
-                                            key={index}
-                                            className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
-                                        >
-                                            <item.icon className="h-24 w-24 text-indigo-600" />
-                                            <div>
-                                                <p className="text-indigo-600 font-medium">
-                                                    {item.name}
-                                                </p>
-                                                <p className="text-gray-500 text-sm">
-                                                    {item.description}
-                                                </p>
-                                            </div>
-                                        </Link>
-                                    ))}
+                                <h3 className="text-gray-400 text-xs font-semibold uppercase">
+                                    Features
+                                </h3>
+                                <div className="mt-3 grid grid-cols-3 gap-6 items-center">
+                                    <div className="grid grid-cols-2 gap-6 col-span-2">
+                                        {supportFeatures.map((item, index) => (
+                                            <Link
+                                                to={item.link}
+                                                key={index}
+                                                className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
+                                            >
+                                                <item.icon className="h-24 w-24 text-indigo-600" />
+                                                <div>
+                                                    <p className="text-indigo-600 font-medium">
+                                                        {item.name}
+                                                    </p>
+                                                    <p className="text-gray-500 text-sm">
+                                                        {item.description}
+                                                    </p>
+                                                </div>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                    <div className="flex flex-col items-center">
+                                        <img src="/images/platform-overview.png" alt="Platform Overview" className="rounded-lg w-full h-auto" />
+                                        <p className="text-gray-600 text-sm mt-2">Take a free tour of our platform features</p>
+                                        <Link to="/demo" className="text-indigo-600 font-medium mt-1">Book a Demo →</Link>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col items-center">
-                                <img src="/images/platform-overview.png" alt="Platform Overview" className="rounded-lg w-full h-auto" />
-                                <p className="text-gray-600 text-sm mt-2">Take a free tour of our platform features</p>
-                                <Link to="/demo" className="text-indigo-600 font-medium mt-1">Book a Demo →</Link>
                             </div>
-                            </div>
-                        </div>
                         )}
                     </div>
 
