@@ -3,14 +3,14 @@ const ServicesSection = () => {
       <div className="bg-gray-50 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-3xl font-bold text-gray-900">Our Services</h2>
+          <h2 className="text-3xl font-bold text-gray-900">How We Help</h2>
   
           {/* Description */}
           <p className="text-gray-600 mt-4 text-lg leading-relaxed">
-            nuJOB.AI offers a comprehensive range of services to enhance every stage of the recruitment 
-            and career-building process. At nuJOB.AI, we help you connect with job opportunities that 
-            align with your unique skills. Our AI-powered platform optimizes your resume to match 
-            employer expectations, making your job search more targeted, efficient, and impactful.
+          nuJOB.AI isn’t just another job platform—it’s a career transformation hub. We provide the training, validation, and tools to help professionals turn their knowledge into practical, market-standard skills that employers seek.
+          companies, we eliminate guesswork—delivering pre-validated, high-quality candidates ready to make an impact. AI does the heavy lifting, so you get faster, fairer, and smarter hiring.
+          Let’s build careers and businesses that thrive.
+
           </p>
         </div>
   

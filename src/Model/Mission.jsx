@@ -19,22 +19,8 @@ const Mission = () => {
             Mission
           </span>
         </h2>
-        <p className="text-gray-600 text-sm mt-2">
-          At nuJOB.AI, our mission is to transform the executive search process 
-          through the power of AI, fostering a fair, efficient, and insightful 
-          recruiting experience. We aim to empower job seekers and organizations 
-          alike with unbiased assessments, advanced analytics, and personalized 
-          branding tools. By aligning talent with opportunity, we envision a 
-          future where individuals and companies can achieve their full potential 
-          in an ever-evolving job market.
-        </p>
-        <p className="text-gray-600 text-sm mt-2">
-          nuJOB.AI is more than just a recruitment platform; it's a revolution in 
-          how candidates and organizations connect. We provide tools that enable 
-          job seekers to brand themselves effectively, helping them not just secure 
-          employment but also excel in their careers. Together, we're shaping a 
-          fairer, more efficient future for the recruitment industry. Join us in 
-          redefining the way talent meets opportunity.
+        <p className="text-gray-600 italic text-sm mt-2">
+        “To make hiring fair, efficient, and deeply personalized. We connect the right talent with the right roles using AI.” - Dmitry Bokotey, CEO
         </p>
       </div>
     </div>

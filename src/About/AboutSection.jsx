@@ -1,35 +1,34 @@
 export default function AboutSection() {
-    return (
-      <section className="bg-gray-100 py-16">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
-          
-          {/* Left Side - Image */}
-          <div className="relative">
-            <img 
-              src="/images/AboutUs.png" 
-              alt="Consultant" 
-              className="rounded-lg shadow-lg w-full max-w-sm"
-            />
-          </div>
-  
-          {/* Right Side - Text Content */}
-          <div className="max-w-2xl">
-            <h2 className="text-4xl font-extrabold text-gray-900">
-              <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">About</span> Us
-            </h2>
-            <p className="text-gray-700 mt-4 text-lg leading-relaxed">
-              With over 35 years of pioneering experience in the IT sector, AI is built on a profound understanding of the ever-evolving technology landscape. Our journey began at the dawn of the computer age, through the rise of networking and the internet, and has now expanded to embrace the transformative potential of artificial intelligence.
-            </p>
-            <p className="text-gray-700 mt-4 text-lg leading-relaxed">
-              Having navigated the complexities of the job market ourselves, we understand the challenges of not just securing a job, but thriving in a career. At nuJOB.AI, we do more than help you find employment – we empower you to build your personal brand and carve out a rewarding path to long-term success.
-            </p>
-            <p className="text-gray-700 mt-4 text-lg leading-relaxed">
-              At nuJOB.AI, we are transforming the executive search process through the power of AI, delivering a fair, efficient, and insightful recruiting experience. Our mission is to empower both job seekers and organizations with unbiased evaluations, advanced analytics, and tailored branding tools.
-            </p>
-          </div>
-  
+  return (
+    <section className="bg-gray-100 py-16">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+
+        {/* Left Side - Image */}
+        <div className="relative">
+          <img
+            src="/images/AboutUs.png"
+            alt="Consultant"
+            className="rounded-lg shadow-lg w-full max-w-sm"
+          />
         </div>
-      </section>
-    );
-  }
-  
+
+        {/* Right Side - Text Content */}
+        <div className="max-w-2xl">
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">What</span> We Do
+          </h2>
+          <p className="text-gray-700 mt-4 text-lg leading-relaxed">
+            With 35+ years in IT, we’ve seen industries shift—from the first computers to AI-driven hiring. We know getting a job isn’t the goal—building a career is. nuJOB.AI isn’t just a hiring tool; it’s a game-changer. We help professionals brand themselves and companies find top-tier leaders with precision and speed.
+          </p>
+          <p className="text-gray-700 mt-4 text-lg leading-relaxed">
+            But we go beyond hiring. We believe in true skill validation, not just resume screening. Our platform creates environments where your skills are put to the test through simulated experiences, practical assessments, and hands-on labs. We don’t just help you find a job; we equip you with the market-ready skills to thrive in it.
+          </p>
+          <p className="text-gray-700 mt-4 text-lg leading-relaxed">
+            We’re here to give you skillsets that make a difference—because a piece of paper shouldn’t define your future. Our platform becomes your living resume, a direct path to success that showcases your skills in action.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  );
+}

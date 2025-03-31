@@ -6,7 +6,7 @@ const Competetive = () => {
       <img src="/images/FAQ.png" alt="Track Interviews" className="w-28 h-20 mb-4" />
       <h2 className="text-2xl font-bold text-gray-900">Competitive Analysis</h2>
       <p className="text-gray-600 max-w-5xl mt-2">
-      After conducting a thorough comparison between traditional recruiting methods and nuJOB.AI, we have developed a competitive analysis that highlights the strengths of nuJOB.AI’s AI-driven recruiting and job portal platform in comparison to key competitors in the industry.
+      Knowledge is power, and we make sure you have it. Compare your skills, experience, and market value with industry benchmarks. See how you stack up against the competition, identify areas for growth, and gain a strategic advantage in your job search or hiring process. Our AI-driven insights keep you informed, relevant, and ahead of the curve.
       </p>
       <img src="/images/Analysis.png" alt="An" className="w-[550px]" />
     </div>

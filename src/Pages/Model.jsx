@@ -11,13 +11,7 @@ const Method = () => {
       <div className="w-full md:w-2/3 space-y-4 mt-9">
         <h2 className="text-4xl font-bold text-gray-900">Our Method</h2>
         <p className="text-gray-600 text-sm">
-          At nuJOB.AI, we employ a comprehensive and data-driven approach to 
-          revolutionize the executive search process. Our methods are crafted 
-          to ensure efficiency, fairness, and the highest quality in talent 
-          acquisition. By leveraging cutting-edge AI technology, advanced 
-          analytics, and deep industry expertise, we streamline recruitment, 
-          identify top talent with precision, and provide a transparent, 
-          unbiased hiring process for our clients.
+        Real skill validation and opportunity creation through AI-powered simulations and assessments. We don’t just fill positions—we create opportunities. nuJOB.AI merges AI-powered insights with real-world skill validation, ensuring that talent is more than just a keyword match. By integrating simulations, data-driven assessments, and unbiased evaluations, we take recruitment beyond resumes. Here, skills are tested, potential is unlocked, and careers take off.
         </p>
       </div>
 

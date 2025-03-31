@@ -10,10 +10,10 @@ const JobSearch = () => {
     <section className="flex flex-col md:flex-row items-center justify-between px-5 md:px-16 py-7 md:py-12 bg-white">
       <div className="md:w-1/2">
         <h2 className="text-3xl font-bold text-indigo-700 mb-4">
-          Empower Talent with AI Precision
+        Build a Standout Profile with AI-Powered Precision
         </h2>
         <p className="text-gray-700 mb-4">
-          Transform Growth and Performance with Tailored AI. In today’s fast-evolving landscape, building a capable and adaptable workforce is key to staying ahead. Our AI-powered tools are designed to revolutionize how you develop and empower talent.
+        Your profile isn’t just a resume—it’s your personal brand. At nuJOB.AI, we help you craft a profile that actually gets noticed. Our AI-driven platform sharpens your skills, amplifies your experience, and puts you in front of the right people. No fluff, just results.
         </p>
         <p className="text-gray-700 mb-6">
           Through advanced skill gap analysis, we identify specific areas where individuals or teams can improve, providing unparalleled clarity into development needs. Personalized training recommendations ensure that each individual follows a learning path tailored to their strengths and career goals, maximizing engagement and retention.

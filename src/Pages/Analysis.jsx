@@ -8,9 +8,9 @@ const Analysis = () => {
     <div className="flex flex-col md:flex-row items-start justify-between bg-white max-w-6xl mx-auto p-6">
       {/* Left Content */}
       <div className="w-full md:w-2/3 space-y-4 mt-9">
-        <h2 className="text-4xl font-bold text-gray-900">Why to choose nuJOB.AI?</h2>
+        <h2 className="text-4xl font-bold text-gray-900">Why nuJOB.AI?</h2>
         <p className="text-gray-600 text-sm">
-        At nuJOB.AI, we’re redefining the way people connect with opportunities. Our platform combines cutting-edge AI technology with a deep understanding of career needs, making the job search process smarter, faster, and more personalized. Whether you’re looking to grow your team or find your next big role, nuJOB.AI offers:
+        At nuJOB.AI, we’re flipping the script on job hunting. No more endless applications or outdated hiring tactics. Our AI-driven platform connects talent with the right opportunities—fast, smart, and bias-free. Whether you're hiring or job-seeking, we make the process seamless and efficient.
         </p>
       </div>
 

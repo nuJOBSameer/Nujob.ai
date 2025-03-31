@@ -33,8 +33,8 @@ const AdvertiseSkills = () => {
                 <h3 className="mt-6 text-lg font-semibold">For Job Seekers</h3>
                 <ul className="mt-2 space-y-3 text-gray-700">
                     {[
-                        { text: "Showcase Your Expertise: Highlight your unique skills, experience, and personal brand with AI-driven recommendations." },
-                        { text: "Attract the Right Opportunities: Stand out to employers by creating a profile that gets noticed and aligns with your career goals." },
+                        { text: "Showcase Your Expertise – Build a standout profile with AI-driven insights that highlight your strengths." },
+                        { text: "Attract the Right Roles – Get matched with opportunities that align with your skills and career goals." },
                     ].map((item, index) => (
                         <li key={index} className="flex items-start">
                             <img src={Star} alt="Star" className="w-4 h-4 mr-2 mt-1" />
@@ -47,8 +47,8 @@ const AdvertiseSkills = () => {
                 <h3 className="mt-6 text-lg font-semibold">For Job Recruiters</h3>
                 <ul className="mt-2 space-y-3 text-gray-700">
                     {[
-                        { text: "Find the Best Talent: Use advanced search tools to discover candidates who match your needs." },
-                        { text: "Streamline Recruitment: Save time and effort with AI-driven insights and tailored candidate recommendations." },
+                        { text: "Find Top Talent Faster – Use advanced AI search to connect with the right candidates effortlessly." },
+                        { text: "Streamline Your Process – AI-driven recommendations help you make smart hiring decisions with zero guesswork." },
                     ].map((item, index) => (
                         <li key={index} className="flex items-start">
                             <img src={Star} alt="Star" className="w-4 h-4 mr-2 mt-1" />

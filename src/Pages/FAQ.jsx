@@ -7,49 +7,49 @@ const FAQ = () => {
   const faqs = {
     Clients: [
       {
-        question: "How long does it take for my job listing to be approved and go live?",
+        question: "How long does it take for my job listing to go live?",
         answer:
-          "Job listings typically go through a review process to ensure they meet the site's guidelines. The approval time can vary but is usually within 24-48 hours. Once approved, your job listing will go live on the site. Our expertise allows us to advise you on the hiring process and the nuances of your industry. We don't just fill jobs - we nurture partnerships. We are here for you for as long as you need us.",
+          "Job listings typically go through a quick review process to ensure they meet platform guidelines. Approval usually takes 24-48 hours. Once approved, your listing is live and visible to the right candidates. Beyond job postings, we offer expert hiring insights and industry-specific guidance, ensuring you find the best talent—not just fill positions.",
       },
       {
         question: "What are the payment options available for job listings?",
-        answer: "",
+        answer: "We offer multiple payment options, including credit/debit cards, bank transfers, and invoicing for bulk listings. Flexible plans are available to fit your hiring needs.",
       },
     ],
     Candidates: [
       {
         question: "Can I post multiple job listings under one account?",
-        answer: "",
+        answer: "Yes. You can manage multiple job postings from a single account, making it easier to streamline your hiring process.",
       },
       {
         question: "Is there a limit to the number of applicants I can receive for a job posting?",
-        answer: "",
+        answer: "No. There’s no cap on applicants—your job posting remains open to all qualified candidates until you close the listing or set specific application limits",
       },
     ],
     Others: [
       {
         question: "What type of roles do you recruit for?",
-        answer: "",
+        answer: "We recruit across entry-level to executive roles in various industries, focusing on both technical and non-technical positions.",
       },
       {
         question: "Where are you located?",
-        answer: "",
-      },
-      {
-        question: "What are your values?",
-        answer: "",
-      },
-      {
-        question: "Which industries do you recruit for?",
-        answer: "",
+        answer: "We operate remotely with a global reach, connecting employers and candidates across multiple locations.",
       },
       {
         question: "Why do I need a recruiter?",
-        answer: "",
+        answer: "A recruiter helps you: 1: Cut through unqualified applications with AI-backed screening. 2:Connect with top talent faster through targeted outreach.3:Save time by streamlining the hiring process.",
+      },
+      {
+        question: "Which industries do you recruit for?",
+        answer: "We specialize in tech, finance, healthcare, marketing, sales, engineering, and more.",
+      },
+      {
+        question: "What are your values?",
+        answer: "We prioritize transparency, efficiency, and innovation in recruitment—ensuring the right fit for both employers and job seekers.",
       },
       {
         question: "How can I search for specific job categories or locations on the site?",
-        answer: "",
+        answer: "Use our smart search filters to refine results by industry, role, experience level, and location—helping you find the right job or candidate faster.",
       },
     ],
   };

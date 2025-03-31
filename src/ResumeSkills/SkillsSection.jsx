@@ -37,28 +37,23 @@ const SkillsSection = () => {
         {/** Content Section **/}
         <div className="mt-6 text-left">
           <div className="border-b pb-4 text-center">
-            <h3 className="text-blue-600 font-semibold">1. AI-Based Gap Analysis</h3>
+            <h3 className="text-blue-600 font-semibold">AI-Based Gap Analysis</h3>
             <p className="text-gray-600 mt-2">
-              Identify the skills you need to succeed in your desired role. Our AI-powered tools analyze your
-              existing abilities, compare them with job requirements, and pinpoint areas for improvement. Gain a 
-              clear roadmap to close the gaps and achieve your career goals.
+            Understand where you stand. Our AI evaluates your skills against market demands, identifying areas for improvement and helping you focus on what matters.
             </p>
           </div>
 
           <div className="border-b py-4 text-center">
-            <h3 className="text-blue-600 font-semibold">2. Curated Learning Materials</h3>
+            <h3 className="text-blue-600 font-semibold">Curated Learning Resources</h3>
             <p className="text-gray-600 mt-2">
-              Access personalized learning resources tailored to your skill gaps. From industry-relevant articles 
-              and tutorials to online courses and certifications, our platform connects you to the most effective 
-              tools for continuous professional development.
+            Access handpicked courses, industry insights, and certifications that align with evolving job trends—because staying relevant is a strategy, not a challenge.
             </p>
           </div>
 
           <div className="pt-4 text-center">
-            <h3 className="text-blue-600 font-semibold">3. Progress Tracking</h3>
+            <h3 className="text-blue-600 font-semibold">Progress Tracking</h3>
             <p className="text-gray-600 mt-2">
-              Stay motivated and monitor your growth with real-time progress tracking. Our tools help you visualize 
-              milestones, measure improvements, and celebrate achievements as you work toward mastering new skills.
+            Measure your growth with real-time insights. Identify milestones, refine your approach, and ensure every step moves you forward.
             </p>
           </div>
         </div>

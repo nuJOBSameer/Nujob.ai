@@ -4,27 +4,27 @@ const Boxes = () => {
   const skillsData = [
     {
       imgSrc: "/images/Allign1.png",
-      title: "AI Interview Observation",
+      title: "AI Interview Analysis",
       description:
-        "The AI analyzes responses, body language, and tone during interviews to detect inconsistencies or unusual patterns that could indicate dishonesty."
+        "Evaluates responses, tone, and engagement."
     },
     {
       imgSrc: "/images/Allign2.png",
-      title: "Resume Consistency Analysis",
+      title: "Resume Consistency Check",
       description:
-        "The AI scans resumes to identify inconsistent use of technology, job titles, or experience, cross-referencing with a database of flagged companies."
+        "Flags experience mismatches."
     },
     {
       imgSrc: "/images/Allign3.png",
-      title: "Trust Score & Confidence Score",
+      title: "Trust & Confidence Scores",
       description:
-        "Candidates receive a Trust Score and a Confidence Score based on perceived honesty, confidence, and overall interview performance."
+        "Instant credibility assessment."
     },
     {
       imgSrc: "/images/Allign4.png",
-      title: "Detailed Recruiter Reports",
+      title: "Detailed Hiring Reports",
       description:
-        "Recruiters receive a textual summary of observations, including specific behaviors, language patterns, and discrepancies, helping them make informed hiring decisions."
+        "Clear insights, smarter decisions."
     }
   ];
 

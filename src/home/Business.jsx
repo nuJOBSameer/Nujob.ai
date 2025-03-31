@@ -22,11 +22,11 @@ export default function Business() {
 
                 <ul className="mt-6">
                     {[
-                        "Attract and Source: 1 day with nuJOB.AI (vs. 3 days Traditionally)",
-                        "Capture Candidate: 15 mins with nuJOB.AI (vs. 4 hours Traditionally)",
-                        "Assess Candidate Skills: 5 hours with nuJOB.AI (vs. 50 hours Traditionally)",
-                        "Validate Resume: 1 hour with nuJOB.AI (vs. 10 hours Traditionally)",
-                        "Make New Hire: 7 days with nuJOB.AI (vs. 27 days Traditionally)"
+                        "Capture candidates in 15 minutes – seamless, swift, and efficient.",
+                        "Assess candidate skills in 5 hours – precise evaluations without the waiting game.",
+                        "Validate resumes in 1 hour – AI-driven verification that separates facts from fluff.",
+                        "Make a new hire in 7 days – speed meets accuracy for a hiring process that works.",
+                        "Fill open roles in 4 days – because the right fit shouldn’t be left waiting."
                     ].map((item, index, array) => (
                         <li
                             key={index}

@@ -15,13 +15,15 @@ const JobOffersSection = () => {
           We Offer <span className="ml-2 border-b-2 border-purple-600 w-12"></span>
         </h3>
         <h2 className="text-xl font-bold text-purple-600 mt-2">
-          1 <span className="text-purple-600">Job Offers Centralization</span>
+          <span className="text-purple-600">Job Offers Centralization</span>
         </h2>
         <p className="text-gray-700 mt-2">
-          Explore AI-Matched Job Offers and Strategize for Success
+          Get roles that actually fit. Job Offers Central curates opportunities based on your skills and career goals.
         </p>
         <p className="text-gray-600 mt-2">
-          nuJOB.AI’s Job Offers Central provides candidates with a centralized hub for AI-matched job opportunities, enabling them to discover roles tailored to their skills and career aspirations.
+        •Smart Matching – AI filters out irrelevant listings.
+          <br />•Strategic Insights – Compare offers with real market data.
+          <br />•One Dashboard – Track and manage applications effortlessly.
         </p>
         <button className="mt-4 px-4 py-2 bg-black text-white rounded-full flex items-center gap-2 w-fit">
           Explore More <span>&rarr;</span>

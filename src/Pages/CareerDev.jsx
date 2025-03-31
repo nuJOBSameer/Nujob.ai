@@ -12,13 +12,13 @@ const CareerDev = () => {
       {/** Left Text Section **/}
       <div className="max-w-2xl">
         <h2 className="text-3xl font-bold text-blue-700">
-        Unlock Your Full Career Potential
+        Maximize Your Career Growth
         </h2>
         <h3 className="text-lg font-semibold text-gray-800 mt-1">
-          Optimize Your Career Trajectory with nuJOB.AI
+        Take Control of Your Career with nuJOB.AI
         </h3>
         <p className="text-gray-600 mt-4">
-        In today’s fast-paced and competitive job market, navigating your career path can feel overwhelming. That’s where we come in. With a suite of tools designed to support every stage of your professional development, we help you identify strengths, overcome challenges, and stand out from the crowd. Whether you’re preparing for interviews, seeking recognition for your achievements, or looking to build trust with employers, our platform empowers you with the insights and resources you need to succeed.
+        The job market moves fast—stay ahead with nuJOB.AI. We equip you with the tools to refine your skills, track progress, and stand out. Whether it's interview prep, career growth, or building employer trust, we help you take charge of your future.
         </p>
         <button className="mt-6 px-6 py-3 bg-black text-white rounded-full flex items-center gap-2">
           More Features <span>↗</span>
