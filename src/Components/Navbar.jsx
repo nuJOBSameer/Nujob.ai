@@ -150,14 +150,15 @@ export default function Navbar() {
                             setRecruitersOpen(false);
                             setSupportOpen(false);
                         }}
-                        onMouseLeave={() => setTimeout(() => setAboutOpen(false), 5000)}
+                        onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2000)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
                             <Link Link to="/About">About Us</Link>
                             <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {aboutOpen && (
-                            <div className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
+                            <div className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6"
+                            >
                                 <h3 className="text-gray-400 text-xs font-semibold uppercase">
                                     Features
                                 </h3>
@@ -168,6 +169,7 @@ export default function Navbar() {
                                                 to={item.link}
                                                 key={index}
                                                 className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
+                                                onClick={() => setAboutOpen(false)}
                                             >
                                                 <item.icon className="h-24 w-24 text-indigo-600" />
                                                 <div>
@@ -198,7 +200,7 @@ export default function Navbar() {
                             setRecruitersOpen(false);
                             setSupportOpen(false);
                         }}
-                        onMouseLeave={() => setTimeout(() => setCandidatesOpen(false), 5000)}
+                        onMouseLeave={() => setTimeout(() => setCandidatesOpen(false), 2000)}
                     >
 
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
@@ -217,6 +219,7 @@ export default function Navbar() {
                                                 to={item.link}
                                                 key={index}
                                                 className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
+                                                onClick={() => setCandidatesOpen(false)}
                                             >
                                                 <item.icon className="h-24 w-24 text-indigo-600" />
                                                 <div>
@@ -247,7 +250,7 @@ export default function Navbar() {
                             setCandidatesOpen(false);
                             setSupportOpen(false);
                         }}
-                        onMouseLeave={() => setTimeout(() => setRecruitersOpen(false), 5000)}
+                        onMouseLeave={() => setTimeout(() => setRecruitersOpen(false), 2000)}
                     >
 
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
@@ -266,6 +269,7 @@ export default function Navbar() {
                                                 to={item.link}
                                                 key={index}
                                                 className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
+                                                onClick={() => setRecruitersOpen(false)}
                                             >
                                                 <item.icon className="h-24 w-24 text-indigo-600" />
                                                 <div>
@@ -296,7 +300,7 @@ export default function Navbar() {
                             setCandidatesOpen(false);
                             setRecruitersOpen(false);
                         }}
-                        onMouseLeave={() => setTimeout(() => setSupportOpen(false), 5000)}
+                        onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2000)}
                     >
 
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
@@ -314,6 +318,7 @@ export default function Navbar() {
                                                 to={item.link}
                                                 key={index}
                                                 className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
+                                                onClick={() => setSupportOpen(false)}
                                             >
                                                 <item.icon className="h-24 w-24 text-indigo-600" />
                                                 <div>
