@@ -1,20 +1,20 @@
 export default function BenefitsSection() {
     const jobSeekers = [
-        { title: "Personal Branding", icon: "/Logo/Logo1.png" },
-        { title: "Fair Evaluation", icon: "/Logo/Logo2.png" },
-        { title: "Tailored Job Matching", icon: "/Logo/Logo3.png" },
-        { title: "Career Guidance", icon: "/Logo/Logo4.png" },
-        { title: "Reduced Stress", icon: "/Logo/Logo5.png" },
-        { title: "Personal Branding", icon: "/Logo/Logo6.png" }
+        { title: "Brand Yourself", desc: "AI-powered resumes, cover letters, and interview prep that help you stand out instantly.", icon: "/Logo/Logo1.png" },
+        { title: "Fair & Unbiased", desc: "We focus on your skills, not your background, ensuring equal opportunities for everyone.", icon: "/Logo/Logo2.png" },
+        { title: "Smart Job Matching", desc: "Get roles that actually fit your expertise and goals, not just random listings.", icon: "/Logo/Logo3.png" },
+        { title: "Career Growth", desc: "Gain insights, trends, and strategies that keep you ahead in the job market.", icon: "/Logo/Logo4.png" },
+        { title: "True Skill Validation", desc: "No fluff—put your skills to the test with hands-on simulations and industry-standard assessments.", icon: "/Logo/Logo5.png" },
+        { title: "Less Stress, More Wins", desc: "Let AI handle the search so you can focus on what matters—your future.", icon: "/Logo/Logo6.png" }
     ];
 
     const jobRecruiters = [
-        { title: "Streamline Recruitment", icon: "/Logo/Logo7.png" },
-        { title: "Unbiased Assessment", icon: "/Logo/Logo8.png" },
-        { title: "Market Trend Analysis", icon: "/Logo/Logo9.png" },
-        { title: "Improved Candidate Matching", icon: "/Logo/Logo10.png" },
-        { title: "Time & Cost Savings", icon: "/Logo/Logo11.png" },
-        { title: "Enhanced Decision-Making", icon: "/Logo/Logo12.png" }
+        { title: "Faster Hiring", desc:"AI automates screening, filters top candidates, and shortens time-to-hire.", icon: "/Logo/Logo7.png" },
+        { title: "Bias-Free Selection", desc:"Data-driven assessments ensure hiring based on skills and potential.", icon: "/Logo/Logo8.png" },
+        { title: "Industry Insights", desc:"Stay ahead with AI-powered analytics on salary trends and hiring patterns.", icon: "/Logo/Logo9.png" },
+        { title: "Better Matches, Less Turnover", desc:"Hire candidates who fit your culture and needs from day one.", icon: "/Logo/Logo10.png" },
+        { title: "Proven Talent, Not Just Resumes", desc:"Our platform ensures candidates have validated, job-ready skills before they even apply.", icon: "/Logo/Logo11.png" },
+        { title: "Save Time & Costs", desc:"Reduce manual screening and focus on strategic growth.", icon: "/Logo/Logo12.png" }
     ];
 
     return (
@@ -61,7 +61,7 @@ export default function BenefitsSection() {
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-900">{benefit.title}</h4>
                                 <p className="text-gray-600 mt-2 text-sm leading-relaxed">
-                                    nuJOB.AI helps job seekers create a powerful personal brand, with tools for resume building and interview preparation to present their best selves.
+                                    {benefit.desc}
                                 </p>
                             </div>
 
@@ -77,7 +77,7 @@ export default function BenefitsSection() {
             {/* For Job Recruiters */}
             <div className=" mt-10 border-t border-gray-300 md:px-10">
                 {/* Section Heading */}
-                <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-6">For Job Recruiters</h3>
+                <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-6">For Employers</h3>
 
                 {/* Grid Layout */}
                 <div className="grid md:grid-cols-3 gap-6 pt-6">
@@ -92,7 +92,7 @@ export default function BenefitsSection() {
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-900">{benefit.title}</h4>
                                 <p className="text-gray-600 mt-2 text-sm leading-relaxed">
-                                    nuJOB.AI helps job seekers create a powerful personal brand, with tools for resume building and interview preparation to present their best selves.
+                                    {benefit.desc}
                                 </p>
                             </div>
 

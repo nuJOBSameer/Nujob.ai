@@ -9,7 +9,7 @@ const Market = () => {
             Stay Market-Ready with <span className="text-black">nuJOB.AI</span>
         </h2>
         <p className="text-gray-600 text-sm">
-            nuJOB.AI’s Market Linked Scoring helps job-seekers stay relevant by evaluating skills, experience, and certifications against current market demands. This AI-driven tool provides a real-time readiness score and personalized recommendations to boost your competitiveness.
+        Your skills are your currency—make sure they’re valued. nuJOB.AI’s Market Linked Scoring evaluates your skills, experience, and certifications against real-time industry demands, giving you a competitive edge with:
         </p>
         <button className="bg-black text-white px-5 py-2 rounded-lg flex items-center md:mx-0 mx-auto space-x-2">
             Explore More <span>→</span>

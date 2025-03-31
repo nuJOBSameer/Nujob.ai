@@ -10,38 +10,33 @@ const CareerPath = () => {
       {/* Left Text Section */}
       <div className="md:w-1/2">
         <h2 className="text-3xl font-bold text-black mb-4">
-          Build a Standout Profile with <br />
+        Executive Services That Deliver Results<br />
           <span className="text-[#1d1d1f]">AI-Powered Precision</span>
         </h2>
         <p className="text-gray-700 mb-6">
-          Your professional profile is the gateway to new career opportunities, and at nuJOB.AI,
-          we empower you to craft one that truly stands out. Our advanced AI-driven platform
-          guides you through every step of building a profile that not only highlights your
-          unique strengths but also showcases your personal brand in a way that resonates with
-          employers. From optimizing your skills and experience to boosting your visibility,
-          nuJOB.AI ensures your profile is designed to capture attention.
+        nuJOB.AI specializes in securing top-tier executives, board members, and industry leaders. Our AI-driven approach ensures businesses land game-changing talent.
         </p>
         {/* Benefits List */}
         <div className="space-y-4">
           <div className="flex items-start space-x-2">
             <img src="/images/ArrowD.png" alt="Arrow" className="w-5 h-5 mt-1" />
             <p>
-              <span className="font-semibold text-[#0073e6]">Professional Presentation</span> <br />
-              Ensure your profile is polished and presents you in the best light.
+              <span className="font-semibold text-[#0073e6]">High-Impact Leadership</span> <br />
+              Find executives who drive real growth.
             </p>
           </div>
           <div className="flex items-start space-x-2">
             <img src="/images/ArrowD.png" alt="Arrow" className="w-5 h-5 mt-1" />
             <p>
-              <span className="font-semibold text-[#0073e6]">Increased Visibility</span> <br />
-              A well-optimized profile gets noticed by recruiters and hiring managers.
+              <span className="font-semibold text-[#0073e6]">Data-Driven Hiring</span> <br />
+              Make smarter choices with AI-powered insights.
             </p>
           </div>
           <div className="flex items-start space-x-2">
             <img src="/images/ArrowD.png" alt="Arrow" className="w-5 h-5 mt-1" />
             <p>
-              <span className="font-semibold text-[#0073e6]">Skills Highlighting</span> <br />
-              Focus on the skills and achievements that are most relevant to your career goals.
+              <span className="font-semibold text-[#0073e6]">Faster, Smarter Recruitment</span> <br />
+              Cut hiring time and secure the best.
             </p>
           </div>
         </div>

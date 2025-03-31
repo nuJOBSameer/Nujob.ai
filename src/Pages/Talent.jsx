@@ -12,10 +12,10 @@ const Talent = () => {
       {/** Left Text Section **/}
       <div className="max-w-2xl">
         <h2 className="text-3xl font-bold text-blue-700">
-        Talent Management
+        Talent Management That Works
         </h2> 
         <p className="text-gray-600 mt-4">
-        At nuJOB.AI we specialize in recruiting, developing, and retaining top talent through advanced competency detection, ethical assessments, and streamlined hiring processes. Empower your workforce with excellence and integrity.
+        Find, assess, and hire top talent with AI-driven insights and real-world evaluations. Faster decisions, better hires.
         </p>
         <button className="mt-6 px-6 py-3 bg-black text-white rounded-full flex items-center gap-2">
           Explore More <span>↗</span>

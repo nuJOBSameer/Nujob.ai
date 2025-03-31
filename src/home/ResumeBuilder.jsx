@@ -37,6 +37,11 @@ export default function ResumeBuilder() {
             Resume Creation & Customization
             <span>{openSection === "creation" ? "−" : "+"}</span>
           </button>
+          {openSection === "creation" && (
+            <p className="text-gray-600 px-4 pb-4">
+              Your resume isn’t just a document—it’s your first impression. Craft a standout CV with ease, tailor it to your industry, and ensure it speaks your professional language. No more generic templates; build a resume that feels as unique as your career ambitions.
+            </p>
+          )}
         </div>
         <div className="border-t border-gray-300">
           <button
@@ -48,10 +53,7 @@ export default function ResumeBuilder() {
           </button>
           {openSection === "editing" && (
             <p className="text-gray-600 px-4 pb-4">
-              Modify your resume anytime and get AI-driven recommendations to
-              improve content, formatting, and relevance. The system recalculates
-              your match rate against job descriptions, helping you refine your
-              resume for specific applications.
+              Your resume should evolve as you do. Get AI-powered suggestions to fine-tune content, formatting, and relevance. Our smart system recalibrates your match rate against job descriptions, helping you stay a step ahead in the job hunt. Because a well-optimized resume isn’t just seen—it gets shortlisted.
             </p>
           )}
         </div>
@@ -63,6 +65,11 @@ export default function ResumeBuilder() {
             Multiple Resume Versions
             <span>{openSection === "versions" ? "−" : "+"}</span>
           </button>
+          {openSection === "versions" && (
+            <p className="text-gray-600 px-4 pb-4">
+              One size doesn’t fit all, and neither should your resume. Create different versions tailored to specific roles, industries, or career paths. Whether you’re applying to a startup, a corporate giant, or a creative firm, you’ll always have the perfect resume ready to go.
+            </p>
+          )}
         </div>
       </div>
     </div>

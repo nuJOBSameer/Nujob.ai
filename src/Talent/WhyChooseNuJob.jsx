@@ -15,12 +15,11 @@ const WhyChooseNuJob = () => {
           <h3 className="text-xl text-blue-600 font-semibold">Benefits</h3>
           <ul className="mt-4 space-y-4 text-gray-700">
             {[
-              "Comprehensive evaluation of interpersonal skills.",
-              "AI-driven comparisons for better decisions.",
-              "Enhance career growth through smart planning.",
-              "Better job alignment through accurate matching.",
-              "Learn how to communicate strengths effectively.",
-              "Streamlined job offer management.",
+              "Skills over buzzwords – AI evaluates ability, not just keywords.",
+              "Precision matching – Opportunities tailored to your expertise.",
+              "Real-time insights – Stay updated with industry demand.",
+              "Profile positioning – Show what sets you apart.",
+              "Streamlined tracking – No more scattered applications..",
             ].map((benefit, index) => (
               <li key={index} className="flex flex-col">
                 <div className="flex items-center">

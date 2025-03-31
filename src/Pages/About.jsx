@@ -14,12 +14,10 @@ const About = () => {
       {/* Left Text Content */}
       <div className="max-w-xl text-left px-5 md:px-10">
         <h1 className="text-4xl font-extrabold text-gray-900 leading-tight">
-          Revolutionize Your <br /> Executive Search
+        Find the Right Leaders, Faster
         </h1>
         <p className="text-gray-600 mt-4 text-lg">
-          Leverage AI to streamline talent matching, eliminate bias, and support 
-          data-driven decisions. Discover how we empower organizations to find 
-          top leadership talent and help candidates brand themselves.
+        AI-driven hiring that removes bias, saves time, and connects companies with the right leadership. Whether you’re leveling up your career or hiring top talent, nuJOB.AI makes the process seamless and smart.
         </p>
         
         {/* Button */}
