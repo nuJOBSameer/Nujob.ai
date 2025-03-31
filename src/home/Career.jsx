@@ -1,6 +1,6 @@
 export default function Career() {
     return (
-      <div className="relative w-full h-[80vh] flex justify-center items-center bg-white overflow-hidden">
+      <div className="relative w-full h-[80vh] md:flex justify-center items-center bg-white overflow-hidden hidden ">
         {/* Cloud Background */}
         <img
           src="/images/Careerbg.png"
