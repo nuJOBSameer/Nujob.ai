@@ -2,10 +2,10 @@ import React from "react";
 
 const CustomerSupport = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen  p-6">
-      <div className="bg-gray-100 p-6 rounded-xl shadow-lg flex max-w-5xl w-full">
+    <div className="flex justify-center items-center py-10 p-6">
+      <div className="bg-gray-100 p-6 rounded-xl shadow-lg md:flex-row flex-col items-center flex max-w-5xl w-full">
         {/* Left Side - Text Content */}
-        <div className="w-2/3 pr-8">
+        <div className="md:w-2/3 md:pr-8">
           <h2 className="text-2xl font-bold text-gray-900">Customer Support at nuJOB.AI</h2>
           <p className="text-gray-600 mt-2">
             Our Customer Support team is dedicated to ensuring a smooth experience on nuJOB.AI.
@@ -49,7 +49,7 @@ const CustomerSupport = () => {
         </div>
 
         {/* Right Side - Image with Blue Box (should be part of the image) */}
-        <div className="w-1/3">
+        <div className="w-1/3 hidden md:flex">
           <img src="/images/customersupport-image.png" alt="Customer Support" className="w-full h-auto rounded-lg" />
         </div>
       </div>

@@ -14,7 +14,7 @@ const ExecutiveSearch = () => {
       
       {/* Right Content */}
       <div className="w-full md:w-1/2 md:pl-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-indigo-700">
+        <h2 className="text-2xl md:text-3xl mt-5 md:mt-0 font-bold text-indigo-700">
           Unlock Top Talent with AI-Driven Executive Search Services
         </h2>
         <p className="mt-4 text-gray-600 text-base md:text-lg">

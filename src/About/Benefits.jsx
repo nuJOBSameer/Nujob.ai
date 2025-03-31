@@ -44,7 +44,7 @@ export default function BenefitsSection() {
 
 
             {/* For Job Seekers */}
-            <div className=" border-t border-gray-300 px-10">
+            <div className=" border-t border-gray-300 md:px-10">
                 {/* Section Heading */}
                 <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-6">For Job Seekers</h3>
 
@@ -54,7 +54,7 @@ export default function BenefitsSection() {
                         <div
                             key={index}
                             className={`flex justify-between items-start pr-6 ${
-                                index !== jobSeekers.length - 1 && index !== 2 ? "border-r border-blue-700" : ""
+                                index !== jobSeekers.length - 1 && index !== 2 ? "md:border-r md:border-blue-700" : ""
                             }`}
                         >
                             {/* Left Side: Title & Description */}
@@ -75,9 +75,9 @@ export default function BenefitsSection() {
 
 
             {/* For Job Recruiters */}
-            <div className=" mt-10 border-t border-gray-300 px-10">
+            <div className=" mt-10 border-t border-gray-300 md:px-10">
                 {/* Section Heading */}
-                <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-6">For Job Seekers</h3>
+                <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-6">For Job Recruiters</h3>
 
                 {/* Grid Layout */}
                 <div className="grid md:grid-cols-3 gap-6 pt-6">
@@ -85,7 +85,7 @@ export default function BenefitsSection() {
                         <div
                         key={index}
                         className={`flex justify-between items-start pr-6 ${
-                            index !== jobRecruiters.length - 1 && index !== 2 ? "border-r border-blue-700" : ""
+                            index !== jobRecruiters.length - 1 && index !== 2 ? "md:border-r md:border-blue-700" : ""
                         }`}
                     >
                             {/* Left Side: Title & Description */}

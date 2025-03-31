@@ -3,10 +3,10 @@ import Talent1 from "/images/Talent1.png"; // Make sure this path is correct
 
 const JobOffersSection = () => {
   return (
-    <div className="max-w-4xl mx-auto flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden mb-11">
+    <div className="md:max-w-4xl max-w-80 mx-auto flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden mb-11">
       {/* Left Image */}
       <div className="md:w-1/2">
-        <img src={Talent1} alt="Talent" className="w-full max-h-[300px] object-cover" />
+        <img src={Talent1} alt="Talent" className="w-full max-h-[350px] object-cover" />
       </div>
 
       {/* Right Content */}

@@ -3,7 +3,7 @@ import React from "react";
 const Guidance = () => {
 
   return (
-    <div className="flex justify-center py-12 px-6 bg-[#F8F9FB]">
+    <div className="flex justify-center py-12 md:px-6 bg-[#F8F9FB]">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-[80%] text-center">
         <img src="/images/Guidance.png" alt="Guidance" className="mx-auto h-36 w-36"/>
         <h2 className="text-2xl font-bold text-gray-900">

@@ -13,7 +13,7 @@ const ExecutiveServices = () => {
         right leadership to drive growth and success.
       </p>
       
-      <div className="flex flex-col md:flex-row items-center mt-5 ml-28 gap-8">
+      <div className="flex flex-col md:flex-row items-center mt-5 md:ml-28 gap-8">
         {/* Left Side: Features */}
         <div className="flex-1 space-y-4">
           <FeatureBox
@@ -35,14 +35,14 @@ const ExecutiveServices = () => {
           <img
             src="/images/executive-services.png"
             alt="Executive Services"
-            className="rounded-lg shadow-lg h-96 w-96"
+            className="h-96 w-96"
           />
           
         </div>
       </div>
       
       {/* Value Proposition */}
-      <div className="ml-28">
+      <div className="md:ml-28 mt-5 md:mt-0">
         <h3 className="text-lg font-semibold">Value Proposition</h3>
         <div className="flex">
           <ValueBox

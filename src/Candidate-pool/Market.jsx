@@ -4,14 +4,14 @@ const Market = () => {
   return (
     <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-xl p-6 mx-auto max-w-5xl mt-12 mb-12">
     {/* Left Content Section */}
-    <div className="md:w-1/2 space-y-4">
+    <div className="md:w-1/2 space-y-4 text-center md:text-left">
         <h2 className="text-2xl font-bold text-gray-900">
             Stay Market-Ready with <span className="text-black">nuJOB.AI</span>
         </h2>
         <p className="text-gray-600 text-sm">
             nuJOB.AI’s Market Linked Scoring helps job-seekers stay relevant by evaluating skills, experience, and certifications against current market demands. This AI-driven tool provides a real-time readiness score and personalized recommendations to boost your competitiveness.
         </p>
-        <button className="bg-black text-white px-5 py-2 rounded-lg flex items-center space-x-2">
+        <button className="bg-black text-white px-5 py-2 rounded-lg flex items-center md:mx-0 mx-auto space-x-2">
             Explore More <span>→</span>
         </button>
     </div>

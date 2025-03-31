@@ -4,7 +4,7 @@ const KeyFeatures = () => {
   return (
     <div className="text-center py-12 relative">
       <h2 className="text-2xl font-bold">Key Features</h2>
-      <div className="flex justify-center gap-6 mt-6">
+      <div className="flex md:flex-row flex-col items-center justify-center gap-6 mt-6">
         {/** Card 1 **/}
         <div className="w-80 p-4 rounded-lg border text-left border-blue-300 bg-gradient-to-br from-white to-pink-100 shadow-md">
           <img src="/images/Star.png" alt="star" className="w-6 h-6 mb-2" />
@@ -31,7 +31,7 @@ const KeyFeatures = () => {
         </div>
       </div>
       {/** Line after the boxes **/}
-      <div className="w-[1030px] border-t border-gray-300 mt-8 ml-40"></div>
+      <div className="w-[1030px] hidden md:flex border-t border-gray-300 mt-8 ml-40"></div>
     </div>
   );
 };

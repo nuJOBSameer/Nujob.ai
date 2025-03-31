@@ -9,10 +9,10 @@ const About = () => {
   return (
     <>
     <section className="bg-white py-16">
-    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-6">
+    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between md:px-6">
       
       {/* Left Text Content */}
-      <div className="max-w-xl text-left ml-11">
+      <div className="max-w-xl text-left px-5 md:px-10">
         <h1 className="text-4xl font-extrabold text-gray-900 leading-tight">
           Revolutionize Your <br /> Executive Search
         </h1>

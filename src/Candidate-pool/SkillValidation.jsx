@@ -3,10 +3,10 @@ import { FaUserCheck, FaClock, FaBriefcase } from "react-icons/fa";
 
 const SkillValidation = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start justify-between bg-white max-w-6xl mx-auto py-14 p-6">
+    <div className="flex flex-col-reverse md:flex-row items-start justify-between bg-white max-w-6xl mx-auto py-14 p-6">
       {/* Left Side */}
       <div className="w-full md:w-1/3 space-y-6 pr-6">
-        <div className="flex items-start space-x-4">
+        <div className="flex items-start space-x-4 md:mt-0 mt-6">
           <FaUserCheck className="text-xl mt-1 text-blue-600" />
           <div>
             <h3 className="text-lg font-semibold text-gray-900">

@@ -11,7 +11,7 @@ const PricingSection = () => {
       
       {/* Content Section */}
       <div className="relative z-10 text-center mt-10">
-        <img src="/images/Price.png" alt="" className="h-28 w-28 ml-64 -mt-11" />
+        <img src="/images/Price.png" alt="" className="h-28 w-28 mx-auto -mt-11" />
         <h2 className="text-3xl font-bold">Plans & billing</h2>
         <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
           nuJOB.AI offers a variety of membership options and services to support your career growth.

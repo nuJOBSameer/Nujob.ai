@@ -2,9 +2,9 @@ import React from "react";
 
 const InterviewSection = () => {
   return (
-    <div className="py-12 px-28">
+    <div className="py-12 px-5 md:px-28">
       {/** First Row **/}
-      <div className="grid grid-cols-2 gap-6 items-center">
+      <div className="md:flex-row flex-col-reverse items-center flex justify-center">
         <img src="/images/Interview1.png" alt="Live Interview" className="w-96 h-96" />
 
         <div>
@@ -27,7 +27,7 @@ const InterviewSection = () => {
       </div>
 
       {/** Second Row **/}
-      <div className="grid grid-cols-2 gap-12 items-center mt-12">
+      <div className="md:flex-row flex-col items-center flex justify-center mt-12">
         <div>
           <h2 className="text-blue-600 font-bold text-lg">AI Interview Simulation</h2>
           <p className="font-semibold text-gray-800 mt-1">

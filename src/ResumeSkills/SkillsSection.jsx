@@ -4,7 +4,7 @@ const SkillsSection = () => {
   const [activeTab, setActiveTab] = useState("upleveling");
 
   return (
-    <div className="flex justify-center py-12 px-6 bg-[#F8F9FB]">
+    <div className="flex justify-center py-12 md:px-6 bg-[#F8F9FB]">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-[80%] text-center">
         <h2 className="text-2xl font-bold text-gray-900">
           Skills Upleveling & Validation Section

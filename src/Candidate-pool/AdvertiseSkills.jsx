@@ -9,7 +9,7 @@ const AdvertiseSkills = () => {
     return (
         <div className="max-w-full mx-auto flex flex-col md:flex-row items-center gap-10 py-10 px-4 bg-[#F7F5F5]">
             {/* Left Section - Stacked Images */}
-            <div className="relative flex flex-row items-center justify-center w-full md:w-1/2">
+            <div className="relative md:flex flex-row items-center justify-center w-full md:w-1/2 hidden">
 
                 {/* Foreground Image (Pool1) - Positioned Above */}
                 <img
