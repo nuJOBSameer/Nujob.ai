@@ -17,7 +17,7 @@ const Home = () => {
         muted 
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/Main.mov" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dblaulr6d/video/upload/v1743445200/nuJob/qgs2fn4u5mqzhjpghn5e.mov" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
