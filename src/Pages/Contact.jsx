@@ -5,14 +5,14 @@ import CustomerSupport from "../Contact/CustomerSupport";
 const Contact = () => {
   return (
     <>
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center py-10">
       {/* Background Section */}
       <div
         className="relative w-[80%] max-w-5xl h-[420px] rounded-lg "
         style={{ background: "url('/images/contact.png') center/cover no-repeat" }}
       >
         {/* Form Container */}
-        <div className="absolute top-60 right-10 transform -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg w-[350px]">
+        <div className="absolute top-60 -right-3 md:right-10 transform -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg w-[350px]">
           <form className="space-y-4">
             <div className="flex space-x-2">
               <input

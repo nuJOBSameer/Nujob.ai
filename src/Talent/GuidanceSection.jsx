@@ -3,7 +3,7 @@ import GuidanceImage from "/images/Talent2.png"; // Ensure this image exists in 
 
 const GuidanceSection = () => {
   return (
-    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 py-10">
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 py-10 px-5">
       {/* Left Side - Full Image */}
       <div className="md:w-1/2">
         <img

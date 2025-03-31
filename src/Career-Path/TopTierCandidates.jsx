@@ -4,11 +4,11 @@ const TopTierCandidates = () => {
   return (
     <div className="text-center py-12">
       <h2 className="text-2xl font-bold">Top Tier Candidates Service</h2>
-      <p className="text-gray-600 mt-2">
+      <p className="text-gray-600 mt-2 px-6">
         Connecting elite professionals with high-level opportunities, our service ensures access to premium
         roles that match your expertise.
       </p>
-      <div className="flex justify-center gap-6 mt-6">
+      <div className="flex md:flex-row flex-col items-center justify-center gap-6 mt-6">
         {/** Card 1 **/}
         <div className="w-64 p-4 rounded-lg border text-left border-blue-300 bg-gradient-to-br from-white to-pink-100 shadow-md">
           <img src="/images/Star.png" alt="star" className="w-6 h-6 mb-2" />

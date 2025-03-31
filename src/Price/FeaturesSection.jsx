@@ -54,7 +54,7 @@ const FeaturesSection = () => {
     <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 mb-32 mt-10">
       {features.map((feature, index) => (
         <div key={index} className="flex flex-col gap-4">
-          <img src={feature.image} alt={feature.title} className="w-20 h-20" />
+          <img src={feature.image} alt={feature.title} className="w-20  h-20" />
           <h3 className="text-lg font-bold text-blue-700">{feature.title}</h3>
           <p className="text-gray-700">{feature.description}</p>
           <ul className="space-y-2">

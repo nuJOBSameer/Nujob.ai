@@ -4,10 +4,10 @@ const ResumeVersion = () => {
   return (
     <div className="text-center py-6">
       <h2 className="text-3xl text-blue-600 font-bold">Multiple Resume Versions</h2>
-      <p className="text-gray-600 text-wrap px-56 mt-2">
+      <p className="text-gray-600 text-wrap px-5 md:px-56 mt-2">
       One size doesn’t fit all. Customize your resumes for different industries, roles, or career goals. Our tools let you create multiple versions effortlessly, keeping you prepared for every opportunity.
       </p>
-      <div className="flex justify-center gap-6 mt-6">
+      <div className="flex md:flex-row flex-col items-center justify-center gap-6 mt-6">
         {/** Card 1 **/}
         <div className="w-80 p-4 rounded-lg border text-left border-blue-300  shadow-md">
           <img src="/images/Version1.png" alt="star" className="w-6 h-6 mb-2" />

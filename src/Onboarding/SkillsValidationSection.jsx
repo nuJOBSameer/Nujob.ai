@@ -4,7 +4,7 @@ import StarIcon from "/images/Star.png"; // Ensure this image exists in your pro
 
 const SkillsValidationSection = () => {
   return (
-    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 py-10">
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-5 py-10">
       {/* Left Image */}
       <div className="md:w-1/2">
         <img

@@ -205,7 +205,7 @@ export default function Navbar() {
                     >
 
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-                            Candidates{" "}
+                            <Link Link to="/Career-path">Candiates</Link>
                             <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {candidatesOpen && (
@@ -255,7 +255,7 @@ export default function Navbar() {
                     >
 
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-                            Recruiters{" "}
+                            <Link Link to="/Candidate-Pool">Recruiters</Link>
                             <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {recruitersOpen && (
@@ -305,7 +305,7 @@ export default function Navbar() {
                     >
 
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-                            Support <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
+                            <Link Link to="/Contact">Support</Link> <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {supportOpen && (
                             <div className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
@@ -350,7 +350,7 @@ export default function Navbar() {
                 <div>
                     <a
                         href="#"
-                        className="bg-black text-white px-4 py-2 rounded-full font-medium"
+                        className="bg-black text-white px-4 py-2 rounded-full lg:flex hidden font-medium"
                     >
                         Get Started
                     </a>
@@ -363,15 +363,95 @@ export default function Navbar() {
             </nav>
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div className="lg:hidden bg-white shadow-md p-4">
+                <div className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 z-50">
                     <Link to="/" className="block py-2 text-gray-900 font-medium">Home</Link>
-                    <Link to="/About" className="block py-2 text-gray-900 font-medium">About Us</Link>
-                    <Link to="/JobSearch" className="block py-2 text-gray-900 font-medium">Candidates</Link>
-                    <Link to="/Recruiters" className="block py-2 text-gray-900 font-medium">Recruiters</Link>
-                    <Link to="/Support" className="block py-2 text-gray-900 font-medium">Support</Link>
+
+                    {/* About Dropdown */}
+                    <div>
+                        <button
+                            className="flex justify-between w-full py-2 text-gray-900 font-medium"
+                            onClick={() => setAboutOpen(!aboutOpen)}
+                        >
+                            About Us <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+                        </button>
+                        {aboutOpen && (
+                            <div className="ml-4 space-y-2">
+                                {aboutFeatures.map((item, index) => (
+                                    <Link key={index} to={item.link} className="block text-gray-600">
+                                        {item.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Candidates Dropdown */}
+                    <div>
+                        <button
+                            className="flex justify-between w-full py-2 text-gray-900 font-medium"
+                            onClick={() => setCandidatesOpen(!candidatesOpen)}
+                        >
+                            Candidates <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+                        </button>
+                        {candidatesOpen && (
+                            <div className="ml-4 space-y-2">
+                                {candidateFeatures.map((item, index) => (
+                                    <Link key={index} to={item.link} className="block text-gray-600">
+                                        {item.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Recruiters Dropdown */}
+                    <div>
+                        <button
+                            className="flex justify-between w-full py-2 text-gray-900 font-medium"
+                            onClick={() => setRecruitersOpen(!recruitersOpen)}
+                        >
+                            Recruiters <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+                        </button>
+                        {recruitersOpen && (
+                            <div className="ml-4 space-y-2">
+                                {RecruitersFeatures.map((item, index) => (
+                                    <Link key={index} to={item.link} className="block text-gray-600">
+                                        {item.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Support Dropdown */}
+                    <div>
+                        <button
+                            className="flex justify-between w-full py-2 text-gray-900 font-medium"
+                            onClick={() => setSupportOpen(!supportOpen)}
+                        >
+                            Support <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+                        </button>
+                        {supportOpen && (
+                            <div className="ml-4 space-y-2">
+                                {supportFeatures.map((item, index) => (
+                                    <Link key={index} to={item.link} className="block text-gray-600">
+                                        {item.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
                     <Link to="/pricing" className="block py-2 text-gray-900 font-medium">Pricing</Link>
+
+                    <div className="mt-4">
+                        <a href="#" className="bg-black text-white px-4 py-2 rounded-full font-medium w-full block text-center">
+                            Get Started
+                        </a>
+                    </div>
                 </div>
             )}
+
         </header>
     );
 }

@@ -6,7 +6,7 @@ const Features = () => {
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 py-10">
 
       {/* Right Side - Features List */}
-      <div className="md:w-1/2 space-y-6 ml-14">
+      <div className="md:w-1/2 space-y-6 md:ml-14">
       <h className='text-3xl font-bold'>Features</h>
         {[
           {
@@ -43,7 +43,7 @@ const Features = () => {
           </div>
         ))}
       </div>
-      <div className="ml-20 md:w-1/2">
+      <div className="md:ml-20 w-80 md:w-1/2">
         <img
           src={GuidanceImage}
           alt="Guidance"

@@ -9,7 +9,7 @@ const WhyChooseNuJob = () => {
         Why Choose <span className="text-black">nuJOB.AI</span>
       </h2>
 
-      <div className="flex flex-col md:flex-row items-center gap-8 w-full">
+      <div className="flex flex-col md:flex-row items-center gap-8 w-80 md:w-full">
         {/* Left Section - Benefits List */}
         <div className="md:w-1/2">
           <h3 className="text-xl text-blue-600 font-semibold">Benefits</h3>

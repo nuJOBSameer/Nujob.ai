@@ -2,17 +2,17 @@ import React from "react";
 
 const MeritBadges = () => {
   const badges = [
-    { src: "/images/badge1.png", alt: "Badge 1", title: "Comp TIA A+" },
-    { src: "/images/badge2.png", alt: "Badge 2", title: "Cisco Certified Specialist" },
-    { src: "/images/badge3.png", alt: "Badge 3", title: "AWS Certified Associate" },
-    { src: "/images/badge4.png", alt: "Badge 4", title: "CPA - Certified" },
-    { src: "/images/badge5.png", alt: "Badge 5", title: "Cisco Certified CCNP" },
+    { src: "/images/badge1.png", alt: "Badge 1"},
+    { src: "/images/badge2.png", alt: "Badge 2" },
+    { src: "/images/badge3.png", alt: "Badge 3"},
+    { src: "/images/badge4.png", alt: "Badge 4" },
+    { src: "/images/badge5.png", alt: "Badge 5"},
   ];
 
   return (
-    <div className="bg-[#F1ECEC] py-12 px-6 text-center">
+    <div className="bg-[#F1ECEC36] py-12 px-5 md:px-32 text-center">
       <h2 className="text-2xl font-bold text-blue-700">Merit Badges</h2>
-      <p className="text-gray-900 font-medium mt-2">
+      <p className="text-gray-900 font-medium mt-2 md:px-44">
         Recognize Your Unique Journey. Every milestone you achieve brings you closer to success.
         Our badges celebrate the dedication, skills, and growth you've shown along the way.
       </p>
@@ -26,8 +26,7 @@ const MeritBadges = () => {
       <div className="flex justify-center gap-6 mt-8">
         {badges.map((badge, index) => (
           <div key={index} className="w-24">
-            <img src={badge.src} alt={badge.alt} className="w-full h-auto shadow-md rounded-lg" />
-            <p className="text-sm text-gray-700 mt-2">{badge.title}</p>
+            <img src={badge.src} alt={badge.alt} className="w-full h-auto" />
           </div>
         ))}
       </div>

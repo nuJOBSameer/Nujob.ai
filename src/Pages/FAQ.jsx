@@ -67,7 +67,7 @@ const FAQ = () => {
       {/* FAQs Heading with Underline */}
       <div className="text-center mb-4">
                     <div className="relative inline-block">
-                        <h2 className="text-4xl font-bold text-gray-900">FAQ</h2>
+                        <h2 className="text-6xl font-bold text-gray-900">FAQ</h2>
                         <img src="/images/FAQBg.png" alt="Underline" className="absolute left-0 bottom-[-3px] w-full -z-40" />
                     </div>
                 </div>

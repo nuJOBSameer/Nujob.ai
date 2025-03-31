@@ -3,15 +3,15 @@ import React from "react";
 const ResumeBuilder = () => {
   return (
     <div className="flex justify-center py-12 px-6">
-      <div className="bg-pink-50 py-12 px-6 text-center w-[80%] rounded-lg">
+      <div className="bg-pink-50 py-12 px-6 text-center  md:w-[80%] rounded-lg">
         <h2 className="text-3xl font-bold text-gray-900">Resume Builder & Editing Section</h2>
 
-        <div className="flex justify-center gap-8 mt-8">
+        <div className="flex md:flex-row flex-col items-center justify-center gap-8 mt-8">
           {/** Card 1 **/}
-          <div className="w-96 p-6 rounded-lg bg-white shadow-lg text-left">
-            <img src="/images/Resume1.png" alt="Resume Builder" className="w-12 h-16 mx-auto" />
+          <div className="md:w-96 md:h-80 p-6 rounded-lg bg-white shadow-lg text-left">
+            <img src="/images/Resume1.png" alt="Resume Builder" className="w-12 mx-auto" />
             <h3 className="text-lg font-semibold text-gray-900">Resume Builder</h3>
-            <p className="text-gray-600 mt-2">
+            <p className="text-gray-600">
               Craft an ATS-friendly resume in minutes. With customizable templates and 
               step-by-step guidance, creating a professional resume has never been easier.
             </p>
@@ -32,7 +32,7 @@ const ResumeBuilder = () => {
           </div>
 
           {/** Card 2 **/}
-          <div className="w-96 p-6 rounded-lg bg-white shadow-lg text-left">
+          <div className="md:w-96 md:h-80 p-6 rounded-lg bg-white shadow-lg text-left">
             <img src="/images/Resume2.png" alt="Resume Editor" className="w-12 h-12 mb-3 mx-auto" />
             <h3 className="text-lg font-semibold text-gray-900">Resume Builder</h3>
             <p className="text-gray-600 mt-2">
