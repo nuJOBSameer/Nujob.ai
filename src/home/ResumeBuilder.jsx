@@ -8,7 +8,7 @@ export default function ResumeBuilder() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 md:px-16 bg-white">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen mb-10 md:mb-0 px-6 md:px-16 bg-white">
       {/* Left Side: Illustration */}
       <div className="w-full md:w-1/2 flex justify-center">
         <img
@@ -17,7 +17,7 @@ export default function ResumeBuilder() {
           className="w-[80%] md:w-[70%]"
         />
       </div>
-      <div className="absolute left-20 mt-52">
+      <div className="absolute left-20 mt-52 hidden md:flex">
         <img src="/images/Tablet.png" alt="book" className="w-32" />
       </div>
 

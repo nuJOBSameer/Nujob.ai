@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white py-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row justify-between gap-12 ml-28">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-12 md:ml-28">
           {/* Left Section */}
           <div className="max-w-sm">
             {/* nuJob Logo */}
-            <img src="/images/Logos.png" alt="nuJob Logo" className="mb-4" />
+            <img src="/images/Logos.png" alt="nuJob Logo" className="mb-4 " />
             <p className="text-sm text-gray-400 leading-relaxed">
               nuJOB is your trusted partner in career advancement, leveraging cutting-edge AI
               technology to help you hunt, refine, and showcase your skills with unmatched precision,
@@ -62,9 +62,9 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-          <img src="/images/Logos.png" alt="nuJob Logo" className="h-10 w-12 ml-32" />
+          <img src="/images/Logos.png" alt="nuJob Logo" className="h-10 w-12 md:ml-32 md:mx-0 mx-auto" />
           <p>nuJOB © 2025. All Rights Reserved.</p>
-          <div className="flex space-x-5">
+          <div className="flex space-x-5 md:mt-0 mt-4">
             <FaDiscord className="text-white w-5 h-5 cursor-pointer hover:text-gray-300" />
             <FaFacebookF className="text-white w-5 h-5 cursor-pointer hover:text-gray-300" />
             <FaLinkedinIn className="text-white w-5 h-5 cursor-pointer hover:text-gray-300" />

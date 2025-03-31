@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import {
     NewspaperIcon,
     QuestionMarkCircleIcon,
@@ -131,6 +131,7 @@ export default function Navbar() {
     const [candidatesOpen, setCandidatesOpen] = useState(false);
     const [recruitersOpen, setRecruitersOpen] = useState(false);
     const [supportOpen, setSupportOpen] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
         <header className="bg-white shadow-sm">
@@ -354,7 +355,23 @@ export default function Navbar() {
                         Get Started
                     </a>
                 </div>
+                <div className="lg:hidden">
+                    <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-gray-900">
+                        {mobileMenuOpen ? <XMarkIcon className="h-8 w-8" /> : <Bars3Icon className="h-8 w-8" />}
+                    </button>
+                </div>
             </nav>
+            {/* Mobile Menu */}
+            {mobileMenuOpen && (
+                <div className="lg:hidden bg-white shadow-md p-4">
+                    <Link to="/" className="block py-2 text-gray-900 font-medium">Home</Link>
+                    <Link to="/About" className="block py-2 text-gray-900 font-medium">About Us</Link>
+                    <Link to="/JobSearch" className="block py-2 text-gray-900 font-medium">Candidates</Link>
+                    <Link to="/Recruiters" className="block py-2 text-gray-900 font-medium">Recruiters</Link>
+                    <Link to="/Support" className="block py-2 text-gray-900 font-medium">Support</Link>
+                    <Link to="/pricing" className="block py-2 text-gray-900 font-medium">Pricing</Link>
+                </div>
+            )}
         </header>
     );
 }

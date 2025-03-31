@@ -34,7 +34,7 @@ const Home = () => {
         </h1>
 
         {/* CTA Button */}
-        <button className="mt-6 px-6 py-3 bg-white text-black rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition flex items-center">
+        <button className="mt-6 px-6 py-3 bg-white text-black rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition flex items-center mx-auto">
           Start Free Trial <span className="ml-2"><img src="/images/ArrowB.png" alt="" /></span>
         </button>
       </div>
