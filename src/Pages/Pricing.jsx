@@ -4,9 +4,9 @@ import FeaturesSection from "../Price/FeaturesSection";
 const PricingSection = () => {
   return (
     <>
-    <div className="relative flex flex-col items-center p-10">
+    <div className="relative flex flex-col items-center pt-32 px-10">
       {/* Background Image */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[90%] h-96 bg-cover bg-no-repeat rounded-xl" 
+      <div className="absolute top-28 left-1/2 transform -translate-x-1/2 w-[90%] h-96 bg-cover bg-no-repeat rounded-xl" 
            style={{ backgroundImage: "url('/images/BG.png')" }}></div>
       
       {/* Content Section */}
@@ -34,7 +34,7 @@ const PricingSection = () => {
               <span className="text-3xl font-bold">{plan.price}</span>
               <span className="text-gray-500">/{plan.period}</span>
             </div>
-            <ul className="text-sm text-gray-600 space-y-2 w-full">
+            <ul className={`text-sm text-gray-600 ${plan.text} space-y-2 w-full`}>
               {plan.features.map((feature, i) => (
                 <li key={i} className="flex items-center">
                   <span className="text-purple-500 mr-2">✔</span> {feature}

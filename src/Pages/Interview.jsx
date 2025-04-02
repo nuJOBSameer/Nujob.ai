@@ -5,7 +5,7 @@ import InterviewSection from "../Interview/InterviewSection";
 const Interview = () => {
   return (
     <>
-    <div className="flex md:flex-row flex-col items-center justify-between py-12 px-5 md:px-16 bg-white">
+    <div className="flex md:flex-row flex-col items-center justify-between pt-24 md:py-12 px-5 md:px-16 bg-white">
       {/** Left Text Section **/}
       <div className="max-w-2xl">
         <h2 className="text-3xl font-bold text-blue-700">

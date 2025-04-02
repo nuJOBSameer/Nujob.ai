@@ -5,7 +5,7 @@ import CustomerSupport from "../Contact/CustomerSupport";
 const Contact = () => {
   return (
     <>
-    <div className="flex justify-center items-center py-10">
+    <div className="flex justify-center items-center py-32">
       {/* Background Section */}
       <div
         className="relative w-[80%] max-w-5xl h-[420px] rounded-lg "

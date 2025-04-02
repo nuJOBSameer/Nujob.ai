@@ -23,21 +23,21 @@ const aboutFeatures = [
         description:
             "Discover how we empower organizations to find top leadership talent and help candidates brand themselves",
         icon: BriefcaseIcon,
-        link: "/wip/about",
+        link: "/about",
     },
     {
         name: "Competitive Analysis",
         description:
             "AI technology with a deep understanding of career needs, making the job search process smarter, faster, and more efficient.",
         icon: ChartBarIcon,
-        link: "/wip/Analysis",
+        link: "/Analysis",
     },
     {
         name: "Business Model",
         description:
             "At nuJOB AI, we employ a comprehensive and data-driven approach to revolutionize the executive search process.",
         icon: LightBulbIcon,
-        link: "/wip/Method",
+        link: "/Method",
     },
 ];
 
@@ -47,28 +47,28 @@ const candidateFeatures = [
         description:
             "Our AI-driven platform helps you craft a standout professional profile.",
         icon: UsersIcon,
-        link: "/wip/Career-path"
+        link: "/Career-path"
     },
     {
         name: "Job Search & Recommendations",
         description:
             "AI-powered tools help you build, develop, and empower your career journey.",
         icon: BriefcaseIcon,
-        link: '/wip/JobSearch'
+        link: '/JobSearch'
     },
     {
         name: "Career Development & Guidance",
         description:
             "Simplifies career navigation with tools to support success in a competitive job market.",
         icon: LightBulbIcon,
-        link: '/wip/Career-Dev'
+        link: '/Career-Dev'
     },
     {
         name: "Resume & Skills Enhancement",
         description:
             "Craft a dynamic profile that boosts your chances in today’s job market.",
         icon: ClipboardDocumentIcon,
-        link: '/wip/Resume-skills-enhancement'
+        link: '/Resume-skills-enhancement'
     },
 ];
 const RecruitersFeatures = [
@@ -77,28 +77,28 @@ const RecruitersFeatures = [
         description:
             "nuJOB.Al helps hiring managers efficiently build and manage a strong candidate pool with...",
         icon: UsersIcon,
-        link: '/wip/Candidate-Pool'
+        link: '/Candidate-Pool'
     },
     {
         name: "Interview Assessment",
         description:
             "At nuJOB.Al, we transform interviews and assessments with Al, offering live interviews and realistic simulations...",
         icon: DocumentTextIcon,
-        link: '/wip/Interview'
+        link: '/Interview'
     },
     {
         name: "Onboarding Development",
         description:
             "nuJOB.Al accelerates success with Al-powered tools for seamless onboarding, skill validation, and...",
         icon: UserPlusIcon,
-        link: '/wip/Onboarding'
+        link: '/Onboarding'
     },
     {
         name: "Talent Management",
         description:
             "At nuJOB Al, we recruit, develop, and retain top talent through advanced competency detection...",
         icon: MagnifyingGlassIcon,
-        link: "/wip/Talent"
+        link: "/Talent"
     },
 ];
 
@@ -108,21 +108,21 @@ const supportFeatures = [
         description:
             "For any issues with nuJOB.AI, we’re here to provide technical assistance, troubleshooting, and guidance.",
         icon: PhoneIcon,
-        link: '/wip/Contact'
+        link: '/Contact'
     },
     {
         name: "Frequently Asked Questions",
         description:
             "Find answers to the most common questions about using nuJOB.AI, career guidance, job search tools, and more.",
         icon: QuestionMarkCircleIcon,
-        link: "/wip/FAQ"
+        link: "/FAQ"
     },
     {
         name: "Blog",
         description:
             "Stay updated with career tips, job search strategies, and personal growth on our blog.",
         icon: NewspaperIcon,
-        link: "/wip/Blogs"
+        link: "/Blogs"
     },
 ];
 
@@ -134,13 +134,13 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white shadow-sm">
+        <header className="bg-white shadow-sm fixed top-0 w-full z-50">
             <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
                 <div className="flex items-center">
                     <img src="/images/Logo.png" alt="logo" className="h-10 w-32" />
                 </div>
                 <div className="hidden lg:flex space-x-10">
-                    <Link to="/wip/" className="text-gray-900 font-medium">
+                    <Link to="/" className="text-gray-900 font-medium">
                         Home
                     </Link>
                     <div
@@ -154,7 +154,7 @@ export default function Navbar() {
                         onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2000)}
                     >
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-                            <Link Link to="/wip/About">About Us</Link>
+                            <Link Link to="/About">About Us</Link>
                             <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {aboutOpen && (
@@ -205,7 +205,7 @@ export default function Navbar() {
                     >
 
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-                            <Link Link to="/wip/Career-path">Candiates</Link>
+                            <Link Link to="/Career-path">Candiates</Link>
                             <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {candidatesOpen && (
@@ -255,7 +255,7 @@ export default function Navbar() {
                     >
 
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-                            <Link Link to="/wip/Candidate-Pool">Recruiters</Link>
+                            <Link Link to="/Candidate-Pool">Recruiters</Link>
                             <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {recruitersOpen && (
@@ -305,7 +305,7 @@ export default function Navbar() {
                     >
 
                         <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-                            <Link Link to="/wip/Contact">Support</Link> <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
+                            <Link Link to="/Contact">Support</Link> <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
                         </div>
                         {supportOpen && (
                             <div className="absolute left-1/2 top-10 z-10 w-[700px] -translate-x-1/2 bg-white shadow-lg rounded-xl p-6">
@@ -343,7 +343,7 @@ export default function Navbar() {
                         )}
                     </div>
 
-                    <Link to="/wip/pricing" className="text-gray-900 font-medium">
+                    <Link to="/pricing" className="text-gray-900 font-medium">
                         Pricing
                     </Link>
                 </div>
@@ -364,7 +364,7 @@ export default function Navbar() {
             {/* Mobile Menu */}
             {mobileMenuOpen && (
                 <div className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 z-50">
-                    <Link to="/wip/" className="block py-2 text-gray-900 font-medium">Home</Link>
+                    <Link to="/" className="block py-2 text-gray-900 font-medium">Home</Link>
 
                     {/* About Dropdown */}
                     <div>
@@ -442,7 +442,7 @@ export default function Navbar() {
                         )}
                     </div>
 
-                    <Link to="/wip/pricing" className="block py-2 text-gray-900 font-medium">Pricing</Link>
+                    <Link to="/pricing" className="block py-2 text-gray-900 font-medium">Pricing</Link>
 
                     <div className="mt-4">
                         <a href="#" className="bg-black text-white px-4 py-2 rounded-full font-medium w-full block text-center">

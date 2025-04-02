@@ -6,7 +6,7 @@ import SkillsSection from "../ResumeSkills/SkillsSection.jsx";
 const ResumeSkills = () => {
   return (
     <>
-    <div className="flex md:flex-row flex-col items-center justify-between px-5 py-12 md:px-16 bg-white">
+    <div className="flex md:flex-row flex-col items-center justify-between px-5 py-24 md:py-14 md:px-16 bg-white">
       {/** Left Text Section **/}
       <div className="max-w-2xl">
         <h2 className="text-3xl font-bold text-purple-700">

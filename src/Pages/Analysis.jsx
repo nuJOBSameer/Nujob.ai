@@ -5,7 +5,7 @@ import Comparison from "../Analysis/Comparison";
 const Analysis = () => {
   return (
     <>
-    <div className="flex flex-col md:flex-row items-start justify-between bg-white max-w-6xl mx-auto p-6">
+    <div className="flex flex-col md:flex-row items-start justify-between bg-white max-w-6xl mx-auto px-6 py-24">
       {/* Left Content */}
       <div className="w-full md:w-2/3 space-y-4 mt-9">
         <h2 className="text-4xl font-bold text-gray-900">Why nuJOB.AI?</h2>

@@ -60,14 +60,14 @@ const FAQ = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 text-center">
+    <div className="max-w-3xl mx-auto px-4 py-24 text-center">
       {/* FAQ Icon */}
       <img src="/images/FAQ.png" alt="FAQ Icon" className="mx-auto w-36 h-24 mb-4" />
 
       {/* FAQs Heading with Underline */}
       <div className="text-center mb-4">
                     <div className="relative inline-block">
-                        <h2 className="text-6xl font-bold text-gray-900">FAQ</h2>
+                        <h2 className="text-6xl font-bold text-gray-900">FAQ's</h2>
                         <img src="/images/FAQBg.png" alt="Underline" className="absolute left-0 bottom-[-3px] w-full -z-40" />
                     </div>
                 </div>

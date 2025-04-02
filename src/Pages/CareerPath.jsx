@@ -6,7 +6,7 @@ import ExecutiveServices from "../Career-Path/ExecutiveServices";
 const CareerPath = () => {
   return (
     <>
-    <section className="bg-[#f8f9fc] py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
+    <section className="bg-[#f8f9fc] py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
       {/* Left Text Section */}
       <div className="md:w-1/2">
         <h2 className="text-3xl font-bold text-black mb-4">

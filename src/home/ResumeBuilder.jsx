@@ -25,7 +25,7 @@ export default function ResumeBuilder() {
       <div className="w-full md:w-1/2 space-y-4">
         <p className="text-sm text-gray-500">✨ HARNESSING AI FOR SUCCESS</p>
         <h1 className="text-4xl font-bold">
-          <span className="text-indigo-600">Resume</span> Builder & Editor
+          <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">Resume</span> Builder & Editor
         </h1>
 
         {/* Accordion */}

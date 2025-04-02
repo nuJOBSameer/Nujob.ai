@@ -3,7 +3,7 @@ const ServicesSection = () => {
       <div className="bg-gray-50 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-3xl font-bold text-gray-900">How We Help</h2>
+          <h2 className="text-3xl font-bold text-gray-900">How We Help?</h2>
   
           {/* Description */}
           <p className="text-gray-600 mt-4 text-lg leading-relaxed">

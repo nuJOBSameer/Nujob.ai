@@ -28,13 +28,13 @@ const Blogs = () => {
     const currentBlogs = blogs.slice((currentPage - 1) * blogsPerPage, currentPage * blogsPerPage);
 
     return (
-        <div className="max-w-6xl mx-auto p-6 text-center">
+        <div className="max-w-6xl mx-auto pt-28 px-6 text-center">
             {/* Full-Page Centered Header */}
             <div className="text-center mb-8">
                     <div className="relative inline-block">
                     <img src="/images/Blog.png" alt="FAQ Icon" className="w-36 h-24" />
-                        <h2 className="text-4xl font-bold text-gray-900">Blogs</h2>
-                        <img src="/images/FAQBg.png" alt="Underline" className="absolute left-0 bottom-[-3px] w-full -z-40" />
+                        <h2 className="text-6xl font-bold text-gray-900">Blogs</h2>
+                        <img src="/images/FAQBg.png" alt="Underline" className="absolute left-0 bottom-[-10px] w-full -z-40" />
                     </div>
                     <p className="text-gray-600 mt-2">
                         Connection in the Modern World: Beyond Digital Interactions

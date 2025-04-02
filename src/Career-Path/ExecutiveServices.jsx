@@ -12,7 +12,7 @@ const ExecutiveServices = () => {
         platform connects your organization with elite talent, ensuring the
         right leadership to drive growth and success.
       </p>
-      
+
       <div className="flex flex-col md:flex-row items-center mt-5 md:ml-28 gap-8">
         {/* Left Side: Features */}
         <div className="flex-1 space-y-4">
@@ -37,23 +37,25 @@ const ExecutiveServices = () => {
             alt="Executive Services"
             className="h-96 w-96"
           />
-          
+
         </div>
       </div>
-      
+
       {/* Value Proposition */}
       <div className="md:ml-28 mt-5 md:mt-0">
         <h3 className="text-lg font-semibold">Value Proposition</h3>
         <div className="flex">
           <ValueBox
-            icon="📌"
+            icon="/images/path1.png"
             title="Personalized Guidance"
             description="Tailored advice for your career growth."
+            hasBorder={true} 
           />
           <ValueBox
-            icon="💡"
+            icon="/images/path2.png"
             title="Real-Time Insights"
             description="AI-powered recommendations keep your profile relevant."
+            hasBorder={false} 
           />
         </div>
       </div>
@@ -73,13 +75,15 @@ const FeatureBox = ({ title, description }) => {
   );
 };
 
-const ValueBox = ({ icon, title, description }) => {
+const ValueBox = ({ icon, title, description, hasBorder }) => {
   return (
-    <div className="flex items-start gap-3">
-      <span className="text-2xl">{icon}</span>
+    <div className={`flex items-start gap-3 border-gray-400 ${hasBorder ? "border-r" : ""}`}>
+      <span className="text-2xl pl-3">
+        <img src={icon} alt="" />
+      </span>
       <div>
         <h4 className="text-black font-semibold">{title}</h4>
-        <p className="text-gray-600 text-sm">{description}</p>
+        <p className="text-gray-600 text-sm pr-3">{description}</p>
       </div>
     </div>
   );

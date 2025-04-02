@@ -6,7 +6,7 @@ import Bottom from "../About/Bottom";
 const Method = () => {
   return (
     <>
-    <div className="flex flex-col md:flex-row items-start justify-between bg-white max-w-6xl mx-auto p-6">
+    <div className="flex flex-col md:flex-row items-start justify-between bg-white max-w-6xl mx-auto py-20 px-6">
       {/* Left Content */}
       <div className="w-full md:w-2/3 space-y-4 mt-9">
         <h2 className="text-4xl font-bold text-gray-900">Our Method</h2>

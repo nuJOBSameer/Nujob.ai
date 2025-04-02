@@ -10,7 +10,7 @@ import SkillValidation from "../Candidate-pool/SkillValidation";
 const CandidatePool = () => {
   return (
     <>    
-    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center px-5 pt-7 gap-8 ">
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center pt-24 px-5 md:pt-10 gap-8 ">
       {/* Left Content */}
       <div className="md:w-1/2">
         <h2 className="text-4xl font-bold text-blue-800">

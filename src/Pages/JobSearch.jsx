@@ -7,7 +7,7 @@ import Testimonials from "../JobSearch/Testimonials";
 const JobSearch = () => {
   return (
     <>
-    <section className="flex flex-col md:flex-row items-center justify-between px-5 md:px-16 py-7 md:py-12 bg-white">
+    <section className="flex flex-col md:flex-row items-center justify-between px-5 md:px-16 py-24 md:py-14 bg-white">
       <div className="md:w-1/2">
         <h2 className="text-3xl font-bold text-indigo-700 mb-4">
         Build a Standout Profile with AI-Powered Precision
