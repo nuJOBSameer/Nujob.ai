@@ -442,7 +442,7 @@ export default function Navbar() {
                         )}
                     </div>
 
-                    <Link to="/pricing" className="block py-2 text-gray-900 font-medium">Pricing</Link>
+                    <Link to="/wip/pricing" className="block py-2 text-gray-900 font-medium">Pricing</Link>
 
                     <div className="mt-4">
                         <a href="#" className="bg-black text-white px-4 py-2 rounded-full font-medium w-full block text-center">
