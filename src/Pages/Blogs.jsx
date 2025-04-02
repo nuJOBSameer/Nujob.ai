@@ -28,7 +28,7 @@ const Blogs = () => {
     const currentBlogs = blogs.slice((currentPage - 1) * blogsPerPage, currentPage * blogsPerPage);
 
     return (
-        <div className="max-w-6xl mx-auto pt-28 px-6 text-center">
+        <div className="max-w-6xl mx-auto py-28 px-6 text-center">
             {/* Full-Page Centered Header */}
             <div className="text-center mb-8">
                     <div className="relative inline-block">

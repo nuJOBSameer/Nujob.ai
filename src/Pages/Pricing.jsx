@@ -34,10 +34,10 @@ const PricingSection = () => {
               <span className="text-3xl font-bold">{plan.price}</span>
               <span className="text-gray-500">/{plan.period}</span>
             </div>
-            <ul className={`text-sm text-gray-600 ${plan.text} space-y-2 w-full`}>
+            <ul className={`text-sm ${plan.text} border border-gray-300 p-4 rounded-md space-y-2 w-full`}>
               {plan.features.map((feature, i) => (
-                <li key={i} className="flex items-center">
-                  <span className="text-purple-500 mr-2">✔</span> {feature}
+                <li key={i} className="flex items-center border-b border-gray-300 last:border-none">
+                  <span className="text-purple-500  mr-2">✔</span> {feature}
                 </li>
               ))}
             </ul>
@@ -68,6 +68,7 @@ const plans = [
         "Highest Referral Rewards",
       ],
       border: "border-purple-400 bg-white",
+      text: "text-gray-800"
     },
     {
       name: "Gold",
@@ -83,6 +84,7 @@ const plans = [
         "Free Limited Interviews",
       ],
       border: "border-yellow-400 bg-white",
+      text: "text-gray-800"
     },
     {
       name: "Silver",
@@ -98,6 +100,7 @@ const plans = [
         "Standard Referral Rewards",
       ],
       border: "border-gray-500 bg-gray-900 text-white",
+      text: "text-white"
     },
     {
       name: "Platinum",
@@ -113,6 +116,7 @@ const plans = [
         "Basic Referral Rewards",
       ],
       border: "border-blue-400 bg-white",
+      text: "text-gray-800 border border-gray-400"
     },
   ];
   

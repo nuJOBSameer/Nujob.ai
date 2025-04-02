@@ -11,17 +11,16 @@ const Bottom = () => {
         <div className="relative z-10">
           {/* Logo */}
           <div className="flex justify-center">
-          <img src="/images/Logo-grey.png" alt="" className="h-20" />
+          <img src="/images/Bottom.png" alt="" className="h-12" />
           </div>
           {/* Heading */}
-          <h2 className="text-lg font-semibold">At nuJOB.AI</h2>
+          <h1 className="text-4xl font-semibold">Take the first step toward
+          <br />building your dream team.</h1>
   
           {/* Description */}
           <p className="max-w-2xl mx-auto text-sm mt-3 leading-relaxed">
-            We believe in the power of a "can-do" mindset and the endless pursuit of learning. 
-            We're driven by the passion to tackle challenges head-on, crafting innovative 
-            solutions to any problem. If you're ready to grow, learn, and make an impact, 
-            we'd love to have you with us.
+          Start using NuJOB.AI today and connect with top talent
+          faster and more efficiently!
           </p>
   
           {/* Buttons */}
