@@ -25,22 +25,22 @@ function App() {
     <Router>
       <Navbar /> {/* Keep Navbar visible on all pages */}
       <Routes>
-        <Route path="/wip//" element={<Home />} />
-        <Route path="/wip//about" element={<About />} />
-        <Route path= "/wip//FAQ" element={<FAQ/>}/>
-        <Route path= "/wip//Blogs" element={<Blogs/>}/>
-        <Route path= "/wip//Contact" element={<Contact/>}/>
-        <Route path='/wip//Pricing' element={<Pricing/>}/>
-        <Route path='/wip//Career-Path' element={<CareerPath/>}/>
-        <Route path='/wip//JobSearch' element={<JobSearch/>}/>
-        <Route path='/wip//Resume-skills-enhancement' element={<ResumeSkills/>}/>
-        <Route path='/wip//Career-Dev' element={<CareerDev/>}/>
-        <Route path='/wip//Interview' element={<Interview/>}/>
-        <Route path='/wip//Talent' element={<Talent/>}/>
-        <Route path='/wip//Onboarding' element={<OnBoard/>}/>
-        <Route path='/wip//Candidate-Pool' element={<CandidatePool/>}/>
-        <Route path='/wip//Method' element={<Method/>}/>
-        <Route path='/wip//Analysis' element={<Analysis/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path= "/FAQ" element={<FAQ/>}/>
+        <Route path= "/Blogs" element={<Blogs/>}/>
+        <Route path= "/Contact" element={<Contact/>}/>
+        <Route path='/Pricing' element={<Pricing/>}/>
+        <Route path='/Career-Path' element={<CareerPath/>}/>
+        <Route path='/JobSearch' element={<JobSearch/>}/>
+        <Route path='/Resume-skills-enhancement' element={<ResumeSkills/>}/>
+        <Route path='/Career-Dev' element={<CareerDev/>}/>
+        <Route path='/Interview' element={<Interview/>}/>
+        <Route path='/Talent' element={<Talent/>}/>
+        <Route path='/Onboarding' element={<OnBoard/>}/>
+        <Route path='/Candidate-Pool' element={<CandidatePool/>}/>
+        <Route path='/Method' element={<Method/>}/>
+        <Route path='/Analysis' element={<Analysis/>}/>
       </Routes>
       <Footer/>
     </Router>

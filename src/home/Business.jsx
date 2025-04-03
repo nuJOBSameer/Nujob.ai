@@ -27,16 +27,24 @@ export default function Business() {
                         "Validate resumes in 1 hour – AI-driven verification that separates facts from fluff.",
                         "Make a new hire in 7 days – speed meets accuracy for a hiring process that works.",
                         "Fill open roles in 4 days – because the right fit shouldn’t be left waiting."
-                    ].map((item, index, array) => (
-                        <li
-                            key={index}
-                            className="flex items-start space-x-3 py-3 border-b border-gray-300 "
-                        >
-                            <span className="text-indigo-600"><img src="/images/down.png" alt="arrow" className="h-5" /></span>
-                            <p className="text-gray-700">{item}</p>
-                        </li>
-                    ))}
+                    ].map((item, index) => {
+                        const [boldText, normalText] = item.split(" – ");
+                        return (
+                            <li
+                                key={index}
+                                className="flex items-start space-x-3 py-3 border-b border-gray-300"
+                            >
+                                <span className="text-indigo-600">
+                                    <img src="/images/down.png" alt="arrow" className="h-5" />
+                                </span>
+                                <p className="text-gray-700">
+                                    <strong className="font-semibold">{boldText}</strong> – {normalText}
+                                </p>
+                            </li>
+                        );
+                    })}
                 </ul>
+
 
                 <button className="mt-6 px-6 py-3 bg-black text-white font-medium rounded-lg hover:bg-gray-800 transition">
                     Learn More →

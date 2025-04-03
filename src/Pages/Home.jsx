@@ -5,6 +5,7 @@ import Business from '../home/Business'
 import Career from '../home/Career'
 import ResumeBuilder from '../home/ResumeBuilder'
 import Footer from '../Components/Footer'
+import Bottom from '../About/Bottom'
 
 const Home = () => {
   return (
@@ -43,6 +44,7 @@ const Home = () => {
     <Business/>
     <Career/>
     <ResumeBuilder/>
+    <Bottom/>
     </>
   )
 }
