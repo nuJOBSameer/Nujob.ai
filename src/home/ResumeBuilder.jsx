@@ -32,10 +32,6 @@ export default function ResumeBuilder() {
         />
       </motion.div>
 
-      <div className="absolute left-20 mt-52 hidden md:flex">
-        <img src="/images/Tablet.png" alt="book" className="w-32" />
-      </div>
-
       {/* Right Side: Text and Accordion */}
       <motion.div
         initial={{ x: 100, opacity: 0 }}

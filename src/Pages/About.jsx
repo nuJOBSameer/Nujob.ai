@@ -35,7 +35,7 @@ const About = () => {
         <img 
           src="/images/About.png" 
           alt="Illustration" 
-          className="w-full max-w-md"
+          className="w-64 max-w-md"
         />
       </div>
 
