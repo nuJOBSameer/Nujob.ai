@@ -144,7 +144,7 @@ export default function Navbar() {
           <img src="/images/Logo.png" alt="logo" className="h-10 w-32" />
         </div>
         <div className="hidden lg:flex space-x-10">
-          <Link to="/" className="text-gray-900 font-medium">
+          <Link to="/wip/" className="text-gray-900 font-medium">
             Home
           </Link>
           <div
@@ -158,7 +158,7 @@ export default function Navbar() {
             onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2000)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/About">
+              <Link Link to="/wip/About">
                 About Us
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -222,7 +222,7 @@ export default function Navbar() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Career-path">
+              <Link Link to="/wip/Career-path">
                 Candiates
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -286,7 +286,7 @@ export default function Navbar() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Candidate-Pool">
+              <Link Link to="/wip/Candidate-Pool">
                 Recruiters
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -348,7 +348,7 @@ export default function Navbar() {
             onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2000)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Contact">
+              <Link Link to="/wip/Contact">
                 Support
               </Link>{" "}
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -400,7 +400,7 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link to="/pricing" className="text-gray-900 font-medium">
+          <Link to="/wip/pricing" className="text-gray-900 font-medium">
             Pricing
           </Link>
         </div>
