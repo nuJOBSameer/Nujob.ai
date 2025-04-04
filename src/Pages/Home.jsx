@@ -26,13 +26,13 @@ const Home = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
 
       {/* Text Content */}
-      <div className="absolute z-10  left-4 top-44">
+      <div className="absolute z-10  left-4 top-64 md:top-44 ">
         <h1 className="text-6xl font-bold leading-tight">
         Resumes Lie.
         </h1>
       </div>
 
-      <div className="absolute z-10  right-4 top-96">
+      <div className="absolute z-10  right-4 bottom-44 md:bottom-28">
       <h1 className="text-6xl font-bold leading-tight">Labs Don’t</h1>
       </div>
 

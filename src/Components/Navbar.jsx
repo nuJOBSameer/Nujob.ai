@@ -428,7 +428,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 z-50">
-          <Link to="/" className="block py-2 text-gray-900 font-medium">
+          <Link to="/wip/" className="block py-2 text-gray-900 font-medium">
             Home
           </Link>
 
@@ -524,7 +524,7 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link to="/pricing" className="block py-2 text-gray-900 font-medium">
+          <Link to="/wip/pricing" className="block py-2 text-gray-900 font-medium">
             Pricing
           </Link>
 
