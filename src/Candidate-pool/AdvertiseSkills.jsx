@@ -2,7 +2,6 @@ import React from "react";
 
 // Import images (Ensure these files exist in your project)
 import Pool1 from "/images/Pool1.png";
-import Pool2 from "/images/Pool2.png";
 import Star from "/images/Star.png";
 
 const AdvertiseSkills = () => {
@@ -15,7 +14,7 @@ const AdvertiseSkills = () => {
                 <img
                     src={Pool1}
                     alt="Pool 1"
-                    className="absolute w-[600px] h-[550px]"
+                    className="absolute w-[400px] h-[400px]"
                 />
             </div>
 

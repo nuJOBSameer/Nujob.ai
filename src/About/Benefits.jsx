@@ -38,7 +38,7 @@ export default function BenefitsSection() {
 
                 {/* Right Section - Illustration */}
                 <div className="hidden md:block">
-                    <img src="/images/SVG1.png" alt="AI Benefits" className="w-52 h-auto transform scale-x-[-1]" />
+                    <img src="/images/SVG1.png" alt="AI Benefits" className="w-52 h-auto rounded-2xl" />
                 </div>
             </div>
 

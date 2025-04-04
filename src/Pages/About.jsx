@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
     <section className="bg-white py-16">
-    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between md:px-6 py-10">
+    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between md:px-24 py-10">
       
       {/* Left Text Content */}
       <div className="max-w-xl text-left px-5 md:px-10">

@@ -12,7 +12,7 @@ const OnBoard = () => {
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-5 py-24">
       {/* Left Content */}
       <div className="md:w-1/2">
-        <h2 className="text-2xl font-bold text-blue-800">
+        <h2 className="text-2xl font-bold text-[#3E57DA]">
           Empowering Success through <br />
           <span className="text-black">Onboarding & Skills</span>
         </h2>

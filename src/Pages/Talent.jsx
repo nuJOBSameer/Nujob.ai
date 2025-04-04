@@ -11,7 +11,7 @@ const Talent = () => {
     <div className="flex md:flex-row flex-col items-center justify-between py-24 md:py-12 px-5 md:px-16 bg-white">
       {/** Left Text Section **/}
       <div className="max-w-2xl">
-        <h2 className="text-3xl font-bold text-blue-700">
+        <h2 className="text-3xl font-bold text-[#514DE0]">
         Talent Management That Works
         </h2> 
         <p className="text-gray-600 mt-4">

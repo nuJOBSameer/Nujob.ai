@@ -37,7 +37,6 @@ const ExecutiveServices = () => {
             alt="Executive Services"
             className="h-96 w-96"
           />
-
         </div>
       </div>
 
@@ -49,13 +48,13 @@ const ExecutiveServices = () => {
             icon="/images/path1.png"
             title="Personalized Guidance"
             description="Tailored advice for your career growth."
-            hasBorder={true} 
+            hasBorder={true}
           />
           <ValueBox
             icon="/images/path2.png"
             title="Real-Time Insights"
             description="AI-powered recommendations keep your profile relevant."
-            hasBorder={false} 
+            hasBorder={false}
           />
         </div>
       </div>
@@ -65,7 +64,8 @@ const ExecutiveServices = () => {
 
 const FeatureBox = ({ title, description }) => {
   return (
-    <div className="p-4 bg-gradient-to-r from-pink-100 to-white border border-pink-300 rounded-lg flex items-start gap-3">
+    <div className="p-4 bg-gradient-to-r from-pink-100 to-white border border-pink-300 rounded-lg flex items-start gap-3
+                    hover:shadow-xl hover:-translate-y-2 transition-transform duration-300 ease-in-out">
       <img src="/images/Star.png" alt="Star" className="w-5 h-5 mt-1" />
       <div>
         <h4 className="text-indigo-600 font-semibold">{title}</h4>

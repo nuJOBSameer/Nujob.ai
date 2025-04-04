@@ -30,9 +30,6 @@ const FeatureCards = () => {
           {/* Text & Button */}
           <div className="absolute inset-0 flex flex-col items-center justify-end text-white text-center p-4">
             <h3 className="text-base font-semibold">{feature.title}</h3>
-            <button className="mt-3 px-4 py-2 bg-white text-black rounded-full flex items-center gap-2 text-sm">
-              Explore <FaArrowRight className="text-xs" />
-            </button>
           </div>
         </div>
       ))}

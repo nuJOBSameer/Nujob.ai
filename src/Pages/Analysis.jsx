@@ -9,7 +9,7 @@ const Analysis = () => {
       {/* Left Content */}
       <div className="w-full md:w-2/3 space-y-4 mt-9">
         <h2 className="text-4xl font-bold text-gray-900">Why nuJOB.AI?</h2>
-        <p className="text-gray-600 text-sm">
+        <p className="text-gray-600 text-sm pr-24">
         At nuJOB.AI, we’re flipping the script on job hunting. No more endless applications or outdated hiring tactics. Our AI-driven platform connects talent with the right opportunities—fast, smart, and bias-free. Whether you're hiring or job-seeking, we make the process seamless and efficient.
         </p>
       </div>

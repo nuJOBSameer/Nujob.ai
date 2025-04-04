@@ -16,7 +16,7 @@ const SkillsValidationSection = () => {
 
       {/* Right Content */}
       <div className="md:w-1/2">
-        <h2 className="text-2xl font-bold text-blue-800">
+        <h2 className="text-2xl font-bold text-[#007CFF]">
           Validate and Demonstrate Your Skills
         </h2>
         <p className="text-gray-700 mt-4">

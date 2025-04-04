@@ -31,7 +31,7 @@ const KeyFeatures = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-gradient-to-br from-white via-[#F9F5FF] to-[#F5F3FF] shadow-lg rounded-lg p-6 text-left"
+            className="bg-gradient-to-br from-white via-[#F9F5FF] to-[#F5F3FF] shadow-lg rounded-lg p-6 text-left hover:shadow-xl hover:-translate-y-2 transition-transform duration-300 ease-in-out"
           >
             <h3 className="text-lg font-semibold text-gray-900 flex items-center">
               <span className="text-orange-500 font-bold mr-1">*AI</span>

@@ -28,7 +28,7 @@ export default function ResumeBuilder() {
         <img
           src="/images/SVG.png"
           alt="Resume Illustration"
-          className="w-[80%] md:w-[70%]"
+          className="w-[80%] md:w-[70%] rounded-2xl"
         />
       </motion.div>
 

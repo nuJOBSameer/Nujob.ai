@@ -20,7 +20,7 @@ Whether you're leveling up your career or building a powerhouse team, we help yo
         <img 
           src="/images/Business.png" 
           alt="AI Driven Interviews" 
-          className="relative z-10 w-72"
+          className="relative z-10 w-72 rounded-lg"
         />
       </div>
     </div>

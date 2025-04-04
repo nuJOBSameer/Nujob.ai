@@ -26,19 +26,22 @@ const Home = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
 
       {/* Text Content */}
-      <div className="relative z-10 text-center px-6">
-        <h1 className="text-5xl font-bold leading-tight">
-          <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">
-            nuJOB.AI
-          </span>{" "}
-          Brings You To The New Age Of Hiring
+      <div className="absolute z-10  left-4 top-44">
+        <h1 className="text-6xl font-bold leading-tight">
+        Resumes Lie.
         </h1>
-
-        {/* CTA Button */}
-        <button className="mt-6 px-6 py-3 bg-white text-black rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition flex items-center mx-auto">
-          Start Free Trial <span className="ml-2"><img src="/images/ArrowB.png" alt="" /></span>
-        </button>
       </div>
+
+      <div className="absolute z-10  right-4 top-96">
+      <h1 className="text-6xl font-bold leading-tight">Labs Don’t</h1>
+      </div>
+
+      <div className="relative z-10 text-center mt-16 px-6">
+        <h1 className="text-3xl font-semibold leading-tight">
+        Welcome to the Era of Proving it
+        </h1>
+        </div>
+
     </div>
     <Services/>
     <Business/>
