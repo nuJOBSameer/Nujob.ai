@@ -9,8 +9,8 @@ import Bottom from '../About/Bottom'
 
 const Home = () => {
   return (
-    <>
-    <div className="relative w-full h-screen flex items-center justify-center text-white ">
+  <div className='overflow-x-hidden'>
+    <div className="relative min-w-full h-screen flex items-center justify-center text-white  ">
       {/* Background Video */}
       <video 
         autoPlay 
@@ -48,7 +48,7 @@ const Home = () => {
     <Career/>
     <ResumeBuilder/>
     <Bottom/>
-    </>
+  </div>
   )
 }
 

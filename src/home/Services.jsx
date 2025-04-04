@@ -49,7 +49,7 @@ import { CheckCircleIcon, UsersIcon, ClockIcon, AdjustmentsHorizontalIcon, Scale
       },
 ]
     return (
-      <div className="bg-blue-50 py-16 px-8 text-center">
+      <div className="bg-blue-50 py-16 px-8 text-center overflow-x-hidden">
         {/* Title */}
         <h3 className="text-sm text-gray-600 uppercase tracking-wide flex justify-center items-center">
           <ClockIcon className="w-4 h-4 mr-2" />
