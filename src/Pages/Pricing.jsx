@@ -22,24 +22,22 @@ const PricingSection = () => {
         {/* Content Section */}
         <div className="relative z-10 text-center mt-10">
           <img src="/images/Price.png" alt="Price Icon" className="h-28 w-28 mx-auto -mt-11" />
-          <h2 className="text-3xl font-bold">Plans & billing</h2>
+          <h2 className="text-3xl font-bold">Plans & Billing</h2>
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
             nuJOB.AI offers a variety of membership options and services to support your career growth.
           </p>
           <div className="mt-5 flex justify-center">
             <button
               onClick={() => handleTabChange("candidate")}
-              className={`px-5 py-2 rounded-3xl ${
-                activeTab === "candidate" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
-              }`}
+              className={`px-5 py-2 rounded-3xl ${activeTab === "candidate" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
+                }`}
             >
               For Candidates
             </button>
             <button
               onClick={() => handleTabChange("recruiter")}
-              className={`px-5 py-2 rounded-3xl ${
-                activeTab === "recruiter" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
-              }`}
+              className={`px-5 py-2 rounded-3xl ${activeTab === "recruiter" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
+                }`}
             >
               For Recruiters
             </button>
@@ -56,7 +54,7 @@ const PricingSection = () => {
               <h3 className="text-lg font-semibold">{plan.name}</h3>
               <div className="my-4 flex flex-col items-center">
                 <span className="text-3xl font-bold">{plan.price}</span>
-                <span className="text-gray-500">/{plan.period}</span>
+                <span className="text-gray-500">{plan.period}</span>
               </div>
               <ul
                 className={`text-sm ${plan.text} border border-gray-300 p-4 rounded-md space-y-2 w-full`}
@@ -71,7 +69,7 @@ const PricingSection = () => {
                 ))}
               </ul>
               <button className="mt-6 bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600">
-                Purchase
+                {plan.name === "Enterprise" ? "Talk To Us" : "Buy Now"}
               </button>
             </div>
           ))}
@@ -84,62 +82,45 @@ const PricingSection = () => {
 
 const candidatePlans = [
   {
-    name: "Basic",
-    price: "$49",
-    period: "month",
+    name: "Starter",
+    price: "$20",
+    period: "35 Credits",
     features: [
-      "10 Job Applications per month",
-      "Basic Job Posting Access",
-      "Entry-Level Certifications",
-      "Basic AI Tools for Job Matching",
-      "Community-Based Support",
-      "Basic Referral Rewards",
+      "5 Free Interviews",
     ],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
   },
   {
-    name: "Silver",
-    price: "$129",
-    period: "month",
+    name: "Growth",
+    price: "$49",
+    period: "87 Credits",
     features: [
-      "25 Job Applications per month",
-      "Standard Job Posting Access",
-      "Basic AI Tools for Resume Editing",
-      "Standard Email & Chat Support",
-      "Interviews Available for Fee",
-      "Standard Referral Rewards",
+      "Includes everything in Starter",
+      "+52 More Credits",
     ],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
   },
   {
-    name: "Gold",
-    price: "$189",
-    period: "month",
+    name: "Pro",
+    price: "$99",
+    period: "177 Credits",
     features: [
-      "50 Job Applications per month",
-      "Limited Job Posting Access",
-      "Premium Certifications",
-      "AI Tools for Resume & Interview Coaching",
-      "Priority Email & Chat Support",
-      "Free Limited Interviews",
+      "Includes everything in Growth",
+      "+90 More Credits",
     ],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
   },
   {
-    name: "Platinum",
-    price: "$299",
-    period: "month",
+    name: "Enterprise",
+    price: "Custom",
+    period: "357 Credits",
     features: [
-      "Unlimited Job Applications",
-      "Priority Job Posting Access",
-      "Advanced AI Tools for Resume & Interview",
-      "Dedicated Account Manager",
-      "Free Unlimited Interviews",
-      "Premium Certifications & Consultations",
-      "Highest Referral Rewards",
+      "Includes everything in Pro",
+      "+180 More Credits",
+      "Tailored for high volume hiring"
     ],
     border: "border-purple-400 bg-white",
     text: "text-gray-800",
@@ -150,53 +131,46 @@ const candidatePlans = [
 const recruiterPlans = [
   {
     name: "Starter",
-    price: "$49",
-    period: "month",
+    price: "$20",
+    period: "35 Credits",
     features: [
-      "5 Job Postings per month",
-      "Manual Candidate Search",
-      "Community Support",
+      "5 Free Interviews",
     ],
-    border: "border-blue-500 bg-white",
+    border: "border-blue-400 bg-white",
     text: "text-gray-800",
   },
   {
-    name: "Standard",
-    price: "$149",
-    period: "month",
+    name: "Growth",
+    price: "$49",
+    period: "87 Credits",
     features: [
-      "20 Job Postings per month",
-      "Basic AI Matching",
-      "Standard Dashboard Access",
+      "Includes everything in Starter",
+      "+52 More Credits",
     ],
-    border: "border-yellow-500 bg-gray-900 text-white",
+    border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
   },
   {
     name: "Pro",
-    price: "$299",
-    period: "month",
+    price: "$99",
+    period: "177 Credits",
     features: [
-      "50 Job Postings per month",
-      "Candidate Matching Tools",
-      "Applicant Tracking Features",
-      "Team Collaboration Support",
+      "Includes everything in Growth",
+      "+90 More Credits",
     ],
-    border: "border-indigo-500 bg-white",
+    border: "border-yellow-400 bg-white",
     text: "text-gray-800",
   },
   {
     name: "Enterprise",
-    price: "$499",
-    period: "month",
+    price: "Custom",
+    period: "357 Credits",
     features: [
-      "Unlimited Job Postings",
-      "AI-Based Candidate Matching",
-      "Premium Analytics Dashboard",
-      "Dedicated Recruiter Support",
-      "Top Candidate Highlights",
+      "Includes everything in Pro",
+      "+180 More Credits",
+      "Tailored for high volume hiring"
     ],
-    border: "border-green-500 bg-white",
+    border: "border-purple-400 bg-white",
     text: "text-gray-800",
   },
 ];

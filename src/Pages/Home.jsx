@@ -15,7 +15,6 @@ const Home = () => {
         {/* Background Video */}
         <video
           autoPlay
-          loop
           muted
           playsInline
           className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
@@ -27,7 +26,6 @@ const Home = () => {
         {/* Mobile Video */}
         <video
           autoPlay
-          loop
           muted
           playsInline
           className="block md:hidden absolute top-0 left-0 w-full h-full object-cover"

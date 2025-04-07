@@ -1,4 +1,5 @@
 import Home from "./Pages/Home";
+import ScrollToTop from "./Components/ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Navbar from "./Components/Navbar";
@@ -21,6 +22,7 @@ import Analysis from "./Pages/Analysis";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar /> {/* Keep Navbar visible on all pages */}
       <Routes>
         <Route path="/wip" element={<Home />} />

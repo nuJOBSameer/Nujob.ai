@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Bottom = () => {
     return (
       <div className="relative bg-[#1E1ED4] py-20 px-6 text-center text-white overflow-hidden">
@@ -26,10 +27,7 @@ const Bottom = () => {
           {/* Buttons */}
           <div className="mt-6 flex justify-center gap-4">
             <button className="bg-white text-gray-800 px-6 py-2 rounded-full text-sm font-medium flex items-center shadow-md hover:bg-gray-200">
-              Free Consultation <span className="ml-2"><img src="/images/about-svg.png" alt="" /></span>
-            </button>
-            <button className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium flex items-center shadow-md hover:bg-gray-800">
-              Explore our services <span className="ml-2"><img src="/images/about-svg1.png" alt="" /></span>
+              <Link to="/wip/contact">Free Consultation</Link> <span className="ml-2"><img src="/images/about-svg.png" alt="" /></span>
             </button>
           </div>
         </div>
