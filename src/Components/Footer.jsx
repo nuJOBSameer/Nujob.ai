@@ -1,4 +1,10 @@
-import { FaFacebookF, FaLinkedinIn, FaYoutube, FaDiscord } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaYoutube,
+  FaDiscord,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -10,9 +16,10 @@ export default function Footer() {
             {/* nuJob Logo */}
             <img src="/images/Logos.png" alt="nuJob Logo" className="mb-4 " />
             <p className="text-sm text-gray-400 leading-relaxed">
-              nuJOB is your trusted partner in career advancement, leveraging cutting-edge AI
-              technology to help you hunt, refine, and showcase your skills with unmatched precision,
-              efficiency, and personalized support.
+              nuJOB is your trusted partner in career advancement, leveraging
+              cutting-edge AI technology to help you hunt, refine, and showcase
+              your skills with unmatched precision, efficiency, and personalized
+              support.
             </p>
 
             {/* Email Input Field & Yellow Icon */}
@@ -36,19 +43,37 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
               <ul className="space-y-2 text-gray-400">
-                <li className="cursor-pointer hover:text-white">About Us</li>
-                <li className="cursor-pointer hover:text-white">Terms & Conditions</li>
-                <li className="cursor-pointer hover:text-white">Privacy Policy</li>
-                <li className="cursor-pointer hover:text-white">Refund Policy</li>
+                <Link to="/wip/about">
+                  <li className="cursor-pointer hover:text-white">About Us</li>
+                </Link>
+                <li className="cursor-pointer hover:text-white">
+                  Terms & Conditions
+                </li>
+                <li className="cursor-pointer hover:text-white">
+                  Privacy Policy
+                </li>
+                <li className="cursor-pointer hover:text-white">
+                  Refund Policy
+                </li>
               </ul>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg mb-2">Services</h3>
               <ul className="space-y-2 text-gray-400">
-                <li className="cursor-pointer hover:text-white">Recruiters</li>
-                <li className="cursor-pointer hover:text-white">Candidates</li>
-                <li className="cursor-pointer hover:text-white">FAQ</li>
+                <Link to="#">
+                  <li className="cursor-pointer hover:text-white">
+                    Recruiters
+                  </li>
+                </Link>
+                <Link to="/wip/Candidate-Pool">
+                  <li className="cursor-pointer hover:text-white">
+                    Candidates
+                  </li>
+                </Link>
+                <Link to="/wip/FAQ">
+                  <li className="cursor-pointer hover:text-white">FAQ</li>
+                </Link>
                 <li className="cursor-pointer hover:text-white">Support</li>
               </ul>
             </div>
@@ -62,7 +87,11 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-          <img src="/images/Logos.png" alt="nuJob Logo" className="h-10 w-12 md:ml-32 md:mx-0 mx-auto" />
+          <img
+            src="/images/Logos.png"
+            alt="nuJob Logo"
+            className="h-10 w-12 md:ml-32 md:mx-0 mx-auto"
+          />
           <p>nuJOB © 2025. All Rights Reserved.</p>
           <div className="flex space-x-5 md:mt-0 mt-4">
             <FaDiscord className="text-white w-5 h-5 cursor-pointer hover:text-gray-300" />
