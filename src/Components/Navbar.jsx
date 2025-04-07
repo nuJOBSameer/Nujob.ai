@@ -155,12 +155,12 @@ export default function Navbar() {
               setRecruitersOpen(false);
               setSupportOpen(false);
             }}
-            onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2000)}
+            onMouseLeave={() => setTimeout(() => setAboutOpen(false), 1500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/wip/About">
+              <Link Link to="/wip/About" onClick={() => setAboutOpen(false)}>
                 About Us
-              </Link>
+              </Link >
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
             </div>
             {aboutOpen && (
@@ -218,11 +218,11 @@ export default function Navbar() {
               setSupportOpen(false);
             }}
             onMouseLeave={() =>
-              setTimeout(() => setCandidatesOpen(false), 2000)
+              setTimeout(() => setCandidatesOpen(false), 1500)
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/wip/Career-path">
+              <Link Link to="/wip/Career-path" onClick={() => setCandidatesOpen(false)}>
                 Candiates
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -282,7 +282,7 @@ export default function Navbar() {
               setSupportOpen(false);
             }}
             onMouseLeave={() =>
-              setTimeout(() => setRecruitersOpen(false), 2000)
+              setTimeout(() => setRecruitersOpen(false), 1500)
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
@@ -345,7 +345,7 @@ export default function Navbar() {
               setCandidatesOpen(false);
               setRecruitersOpen(false);
             }}
-            onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2000)}
+            onMouseLeave={() => setTimeout(() => setSupportOpen(false), 1500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/wip/Contact">

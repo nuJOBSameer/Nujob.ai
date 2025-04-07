@@ -18,7 +18,7 @@ export default function BenefitsSection() {
     ];
 
     return (
-        <section className="bg-white py-16 px-6 max-w-7xl mx-auto">
+        <section  className="bg-white py-16 px-6 max-w-7xl mx-auto">
             {/* Header */}
             <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto py-10 px-0">
                 {/* Left Section - Heading and Description */}

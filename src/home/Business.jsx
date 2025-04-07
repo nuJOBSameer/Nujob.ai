@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Business() {
     return (
@@ -47,7 +48,7 @@ export default function Business() {
 
 
                 <button className="mt-6 px-6 py-3 bg-black text-white font-medium rounded-lg hover:bg-gray-800 transition">
-                    Learn More →
+                    <Link to="/wip/Contact"> Talk To Us</Link>
                 </button>
             </div>
 

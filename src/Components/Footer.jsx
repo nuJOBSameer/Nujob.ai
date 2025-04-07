@@ -55,7 +55,7 @@ export default function Footer() {
 
             <div>
               <h3 className="font-semibold text-lg mb-2">Contact</h3>
-              <p className="text-gray-400">Email: Support@NuJOB.AI</p>
+              <p className="text-gray-400">Email: support@nujob.ai</p>
             </div>
           </div>
         </div>
