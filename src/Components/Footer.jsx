@@ -43,7 +43,7 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
               <ul className="space-y-2 text-gray-400">
-                <Link to="/wip/about">
+                <Link to="/about">
                   <li className="cursor-pointer hover:text-white">About Us</li>
                 </Link>
                 <li className="cursor-pointer hover:text-white">
@@ -66,12 +66,12 @@ export default function Footer() {
                     Recruiters
                   </li>
                 </Link>
-                <Link to="/wip/Candidate-Pool">
+                <Link to="/Candidate-Pool">
                   <li className="cursor-pointer hover:text-white">
                     Candidates
                   </li>
                 </Link>
-                <Link to="/wip/FAQ">
+                <Link to="/FAQ">
                   <li className="cursor-pointer hover:text-white">FAQ</li>
                 </Link>
                 <li className="cursor-pointer hover:text-white">Support</li>
