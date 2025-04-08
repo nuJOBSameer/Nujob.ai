@@ -155,7 +155,7 @@ export default function Navbar() {
               setRecruitersOpen(false);
               setSupportOpen(false);
             }}
-            onMouseLeave={() => setTimeout(() => setAboutOpen(false), 1500)}
+            onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2000)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/wip/About" onClick={() => setAboutOpen(false)}>
@@ -218,7 +218,7 @@ export default function Navbar() {
               setSupportOpen(false);
             }}
             onMouseLeave={() =>
-              setTimeout(() => setCandidatesOpen(false), 1500)
+              setTimeout(() => setCandidatesOpen(false), 2000)
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
@@ -282,7 +282,7 @@ export default function Navbar() {
               setSupportOpen(false);
             }}
             onMouseLeave={() =>
-              setTimeout(() => setRecruitersOpen(false), 1500)
+              setTimeout(() => setRecruitersOpen(false), 2000)
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
@@ -345,7 +345,7 @@ export default function Navbar() {
               setCandidatesOpen(false);
               setRecruitersOpen(false);
             }}
-            onMouseLeave={() => setTimeout(() => setSupportOpen(false), 1500)}
+            onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2000)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/wip/Contact">
