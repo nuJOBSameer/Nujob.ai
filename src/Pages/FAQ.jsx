@@ -120,7 +120,7 @@ const FAQ = () => {
           Check out our support page or contact us directly for personalized assistance.
         </p>
         <button className="mt-4 px-6 py-2 bg-black text-white font-medium rounded-lg flex items-center mx-auto hover:bg-gray-900">
-          <Link to="/wip/contact">Ask Us</Link>
+          <Link to="/contact">Ask Us</Link>
           <span className="ml-2"><img src="/images/Arrow.png" alt="Arrow" /></span>
         </button>
       </div>

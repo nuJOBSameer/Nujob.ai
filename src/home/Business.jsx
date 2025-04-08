@@ -48,7 +48,7 @@ export default function Business() {
 
 
                 <button className="mt-6 px-6 py-3 bg-black flex text-white font-medium rounded-lg hover:bg-gray-800 transition">
-                    <Link to="/wip/Contact"> Talk To Us </Link><span><img src="/images/Arrow.png" alt="" className="ml-2" /></span>
+                    <Link to="/Contact"> Talk To Us </Link><span><img src="/images/Arrow.png" alt="" className="ml-2" /></span>
                 </button>
             </div>
 
