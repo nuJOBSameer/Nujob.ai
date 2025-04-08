@@ -20,6 +20,7 @@ import {
   UsersIcon,
   ClipboardDocumentIcon,
 } from "@heroicons/react/24/outline";
+import LanguageSelector from "./LanguageSelector";
 
 const aboutFeatures = [
   {
@@ -136,6 +137,7 @@ export default function Navbar() {
   const [recruitersOpen, setRecruitersOpen] = useState(false);
   const [supportOpen, setSupportOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
 
   return (
     <header className="bg-white shadow-sm fixed top-0 w-full z-50">
@@ -404,7 +406,8 @@ export default function Navbar() {
             Pricing
           </Link>
         </div>
-        <div>
+        <div className="flex items-center space-x-4">
+          <LanguageSelector/>
           <Link
             to="https://candidate.nujob.ai/login"
             className="bg-black text-white px-4 py-2 rounded-full lg:flex hidden font-medium"

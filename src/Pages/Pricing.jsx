@@ -26,22 +26,6 @@ const PricingSection = () => {
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
             nuJOB.AI offers a variety of membership options and services to support your career growth.
           </p>
-          <div className="mt-5 flex justify-center">
-            <button
-              onClick={() => handleTabChange("candidate")}
-              className={`px-5 py-2 rounded-3xl ${activeTab === "candidate" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
-                }`}
-            >
-              For Candidates
-            </button>
-            <button
-              onClick={() => handleTabChange("recruiter")}
-              className={`px-5 py-2 rounded-3xl ${activeTab === "recruiter" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
-                }`}
-            >
-              For Recruiters
-            </button>
-          </div>
         </div>
 
         {/* Pricing Cards */}
