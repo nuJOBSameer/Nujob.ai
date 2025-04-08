@@ -405,12 +405,12 @@ export default function Navbar() {
           </Link>
         </div>
         <div>
-          <a
-            href="#"
+          <Link
+            to="https://candidate.nujob.ai/login"
             className="bg-black text-white px-4 py-2 rounded-full lg:flex hidden font-medium"
           >
             Get Started
-          </a>
+          </Link>
         </div>
         <div className="lg:hidden">
           <button
@@ -529,12 +529,12 @@ export default function Navbar() {
           </Link>
 
           <div className="mt-4">
-            <a
-              href="#"
+            <Link
+              to="https://candidate.nujob.ai/login"
               className="bg-black text-white px-4 py-2 rounded-full font-medium w-full block text-center"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       )}
