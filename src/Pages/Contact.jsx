@@ -66,7 +66,7 @@ const Contact = () => {
                   <input type="checkbox" name="privacy" required />
                   <span>
                     By submitting this form I agree that nuJOB.AI is processing my personal data according to their
-                    <a href="#" className="text-blue-600"> Privacy Policy.</a>
+                    <a href="/privacy" className="text-blue-600"> Privacy Policy.</a>
                   </span>
                 </label>
               </div>
