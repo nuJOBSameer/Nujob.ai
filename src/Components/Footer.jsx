@@ -46,15 +46,19 @@ export default function Footer() {
                 <Link to="/about">
                   <li className="cursor-pointer hover:text-white">About Us</li>
                 </Link>
-                <li className="cursor-pointer hover:text-white">
-                  Terms & Conditions
-                </li>
+                <Link to="/terms">
+                <li className="cursor-pointer hover:text-white">Terms & Conditions</li>
+                </Link>
+                <Link to="/Privacy">
                 <li className="cursor-pointer hover:text-white">
                   Privacy Policy
                 </li>
+                </Link>
+                <Link to="/Refund">
                 <li className="cursor-pointer hover:text-white">
                   Refund Policy
                 </li>
+                </Link>
               </ul>
             </div>
 

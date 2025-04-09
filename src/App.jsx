@@ -18,6 +18,9 @@ import OnBoard from "./Pages/OnBoard";
 import CandidatePool from "./Pages/CandidatePool";
 import Method from "./Pages/Model";
 import Analysis from "./Pages/Analysis";
+import Terms from "./Pages/Terms";
+import Privacy from "./Pages/Privacy";
+import Refund from "./Pages/Refund";
 
 function App() {
   return (
@@ -33,10 +36,7 @@ function App() {
         <Route path="/Pricing" element={<Pricing />} />
         <Route path="/Career-Path" element={<CareerPath />} />
         <Route path="/JobSearch" element={<JobSearch />} />
-        <Route
-          path="/Resume-skills-enhancement"
-          element={<ResumeSkills />}
-        />
+        <Route path="/Resume-skills-enhancement" element={<ResumeSkills />}/>
         <Route path="/Career-Dev" element={<CareerDev />} />
         <Route path="/Interview" element={<Interview />} />
         <Route path="/Talent" element={<Talent />} />
@@ -44,6 +44,9 @@ function App() {
         <Route path="/Candidate-Pool" element={<CandidatePool />} />
         <Route path="/Method" element={<Method />} />
         <Route path="/Analysis" element={<Analysis />} />
+        <Route path="/Terms" element={<Terms/>} />
+        <Route path="/Privacy" element={<Privacy/>} />
+        <Route path="/Refund" element={<Refund/>} />
       </Routes>
       <Footer />
     </Router>
