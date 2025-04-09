@@ -21,6 +21,7 @@ import {
   ClipboardDocumentIcon,
 } from "@heroicons/react/24/outline";
 import LanguageSelector from "./LanguageSelector";
+import GetStarted from "./GetStarted";
 
 const aboutFeatures = [
   {
@@ -408,12 +409,7 @@ export default function Navbar() {
         </div>
         <div className="flex items-center space-x-4">
           <LanguageSelector/>
-          <Link
-            to="https://candidate.nujob.ai/login"
-            className="bg-black text-white px-4 py-2 rounded-full lg:flex hidden font-medium"
-          >
-            Get Started
-          </Link>
+          <GetStarted/>
         </div>
         <div className="lg:hidden">
           <button

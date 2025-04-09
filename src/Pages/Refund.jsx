@@ -3,62 +3,138 @@ import React from 'react'
 const Refund = () => {
     const sections = [
         {
-          title: "1. Overview",
-          content:
-            "We strive to provide excellent services to our users. However, if you are not fully satisfied with our services, you may be eligible for a refund under certain conditions. Please review the details below.",
-        },
-        {
-          title: "2. Eligibility for Refunds",
+          title: "1. General Policy",
           content: (
             <>
-              Refunds may be granted if:
-              <ul className="list-disc list-inside mt-2">
-                <li>The service was not delivered as described or experienced technical issues.</li>
-                <li>You submitted a refund request within 07 days of purchase.</li>
-                <li>No significant usage of the service has occurred (as determined by our team).</li>
+              All purchases made on or through the nuJOB.AI platform are non-refundable, except in specific circumstances outlined below or where required by applicable law. By purchasing any service or credit from us, you acknowledge and agree to the terms of this policy.
+            </>
+          ),
+        },
+        {
+          title: "2. Credit System Refunds",
+          content: (
+            <>
+              nuJOB.AI uses a credit-based system for accessing certain services, such as job postings, resume unlocks, AI matching, or other platform features.
+              <br /><br />
+              <strong>a. Credit Purchase Terms</strong>
+              <ul className="list-disc list-inside">
+                <li>Credits purchased through the platform are non-transferable and non-refundable once the transaction is complete.</li>
+                <li>Credits do not expire unless stated otherwise at the time of purchase.</li>
+                <li>Once credits are used (e.g., to post a job or unlock a resume), no refund will be issued for those actions.</li>
+              </ul>
+              <strong>b. Unused Credits</strong>
+              <ul className="list-disc list-inside">
+                <li>Refund requests for unused credits may be considered on a case-by-case basis, provided the request is made within 7 days of purchase and no part of the credit bundle has been utilized.</li>
+                <li>Any promotional or bonus credits provided as part of a bundle or offer are non-refundable.</li>
+              </ul>
+              <strong>c. Credit Bundle Issues</strong><br />
+              If you experience a technical issue or did not receive credits after payment, please contact us at <a href="mailto:billing@nujob.ai" className="text-blue-600 underline">billing@nujob.ai</a>, and we will resolve the matter or issue a refund where applicable.
+            </>
+          ),
+        },
+        {
+          title: "3. Subscription Plans",
+          content: (
+            <>
+              We offer recurring subscription plans for enhanced access, tools, or features.
+              <br /><br />
+              <strong>a. Monthly/Annual Plans</strong>
+              <ul className="list-disc list-inside">
+                <li>Subscriptions are billed at the beginning of each billing cycle and are non-refundable once billed.</li>
+                <li>Cancellation will take effect at the end of the current billing period.</li>
+                <li>No partial refunds will be issued for unused time.</li>
+              </ul>
+              <strong>b. Free Trials</strong>
+              <ul className="list-disc list-inside">
+                <li>If you cancel before a free trial ends, no charges will apply.</li>
+                <li>If not canceled, billing begins automatically, and charges will not be refunded after trial expiration.</li>
               </ul>
             </>
           ),
         },
         {
-          title: "3. Non-Refundable Items",
+          title: "4. Candidate Services",
           content: (
             <>
-              The following are non-refundable:
-              <ul className="list-disc list-inside mt-2">
-                <li>Services that have been fully utilized or completed.</li>
-                <li>Any fees related to setup, consultation, or third-party integrations.</li>
-                <li>Discounted or promotional services, unless stated otherwise.</li>
-              </ul>
+              Premium services purchased by job seekers (e.g., AI resume reviews, priority matching, profile highlights) are non-refundable once delivered or accessed.
+              <br />
+              Refunds may be considered only for unredeemed services, if requested within 3 days of purchase.
             </>
           ),
         },
         {
-          title: "4. Requesting a Refund",
+          title: "5. Job Posting & Employer Services",
           content: (
             <>
-              To request a refund, please contact our support team at{" "}
-              <a href="mailto:support@nujob.ai" className="text-blue-600 underline">support@nujob.ai</a>. Provide details of your purchase, including:
-              <ul className="list-disc list-inside mt-2">
-                <li>Order ID or reference number</li>
+              Recruiters or employers purchasing services such as job listings, candidate database access, or employer branding services are not eligible for refunds once:
+              <ul className="list-disc list-inside">
+                <li>A listing is published</li>
+                <li>A profile is accessed</li>
+                <li>The service is otherwise activated</li>
+              </ul>
+              Requests related to accidental purchases must be raised within 48 hours and are subject to review.
+            </>
+          ),
+        },
+        {
+          title: "6. Duplicate Transactions & Billing Errors",
+          content: (
+            <>
+              If you have been incorrectly billed or charged more than once, contact us at <a href="mailto:billing@nujob.ai" className="text-blue-600 underline">billing@nujob.ai</a> with transaction details. Verified overcharges will be refunded in full within 7–10 business days.
+            </>
+          ),
+        },
+        {
+          title: "7. How to Request a Refund",
+          content: (
+            <>
+              Please contact us at <a href="mailto:billing@nujob.ai" className="text-blue-600 underline">billing@nujob.ai</a> with:
+              <ul className="list-disc list-inside">
+                <li>Registered email address</li>
+                <li>Order ID or transaction reference</li>
                 <li>Date of purchase</li>
-                <li>Reason for the refund request</li>
+                <li>Reason for refund request</li>
+                <li>Any relevant screenshots or proof</li>
               </ul>
-              Our team will review your request and respond within 7 business days.
+              Refund requests will be reviewed and responded to within 5 business days.
             </>
           ),
         },
         {
-          title: "5. Refund Process",
-          content:
-            "If your refund is approved, it will be processed to your original payment method within 20 business days. Please note that your bank or payment provider may have additional processing times.",
+          title: "8. Grounds for Denial",
+          content: (
+            <>
+              Refund requests may be denied if:
+              <ul className="list-disc list-inside">
+                <li>The request is made after the eligible period</li>
+                <li>The service or credit has already been used</li>
+                <li>There is evidence of abuse, fraud, or policy violations</li>
+              </ul>
+            </>
+          ),
         },
         {
-          title: "6. Changes to Refund Policy",
-          content:
-            "We reserve the right to update this Refund Policy at any time. Any changes will be posted on this page, and by continuing to use our services, you agree to be bound by the revised policy.",
+          title: "9. Changes to This Policy",
+          content: (
+            <>
+              We reserve the right to revise this Refund Policy at any time. Updates will be reflected on this page with a revised “Last Updated” date. Continued use of nuJOB.AI after updates constitutes acceptance.
+            </>
+          ),
+        },
+        {
+          title: "10. Contact Us",
+          content: (
+            <>
+              For billing, refunds, or account-related inquiries:
+              <br />
+              <strong>nuJOB.AI</strong><br />
+              Email: <a href="mailto:billing@nujob.ai" className="text-blue-600 underline">billing@nujob.ai</a><br />
+              Website: <a href="https://nujob.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">https://nujob.ai</a>
+            </>
+          ),
         },
       ];
+      
       
     return (
         
