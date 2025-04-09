@@ -146,7 +146,7 @@ export default function Navbar() {
         <div className="flex items-center">
           <img src="/images/Logo.png" alt="logo" className="h-10 w-32" />
         </div>
-        <div className="hidden lg:flex space-x-10">
+        <div className="hidden lg:flex space-x-8">
           <Link to="/" className="text-gray-900 font-medium">
             Home
           </Link>
@@ -407,7 +407,7 @@ export default function Navbar() {
             Pricing
           </Link>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-2">
           <LanguageSelector/>
           <GetStarted/>
         </div>
@@ -527,13 +527,9 @@ export default function Navbar() {
             Pricing
           </Link>
 
-          <div className="mt-4">
-            <Link
-              to="https://candidate.nujob.ai/login"
-              className="bg-black text-white px-4 py-2 rounded-full font-medium w-full block text-center"
-            >
-              Get Started
-            </Link>
+          <div className="mt-4 flex justify-center space-x-9">
+            <LanguageSelector/>
+            <GetStarted/>
           </div>
         </div>
       )}

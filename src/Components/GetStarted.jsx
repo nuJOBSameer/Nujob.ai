@@ -16,15 +16,14 @@ const GetStarted = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <select
-        className="appearance-none bg-black border rounded-full px-4 py-2 pr-8 shadow-sm text-white text-center text-sm cursor-pointer"
+        className="appearance-none bg-black border rounded-full px-4 py-2 pr-8 shadow-sm text-white text-center text-sm cursor-pointer lg:w-32"
         value={selected}
         onChange={(e) => handleSelect(e.target.value)}
       >
         <option value="" disabled hidden>
-          Get Started
-        </option>
+          Get Started</option>
         <option value="Rec">for Recruiter</option>
         <option value="Can">for the candidate</option>
       </select>
