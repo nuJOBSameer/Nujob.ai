@@ -19,7 +19,7 @@ const Home = () => {
           playsInline
           className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src="https://res.cloudinary.com/dblaulr6d/video/upload/v1744028209/nuJob/lrk90wsh7dqumk9bajzg.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dblaulr6d/video/upload/v1744293753/nuJob/lnaglybeggsyjsoxhzwy.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -30,7 +30,7 @@ const Home = () => {
           playsInline
           className="block md:hidden absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src="https://res.cloudinary.com/dblaulr6d/video/upload/v1744028906/nuJob/ctkauflsy0fx3eyuna3o.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dblaulr6d/video/upload/v1744293750/nuJob/fcradfiuwb7pps9jo7ns.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
