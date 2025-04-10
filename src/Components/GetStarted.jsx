@@ -18,7 +18,7 @@ const GetStarted = () => {
   return (
     <div className="relative ">
       <select
-        className="appearance-none bg-black border rounded-full px-4 py-2 pr-8 shadow-sm text-white text-center text-sm cursor-pointer lg:w-32"
+        className="appearance-none bg-black border rounded-full px-2 py-2 shadow-sm text-white text-center text-sm cursor-pointer"
         value={selected}
         onChange={(e) => handleSelect(e.target.value)}
       >

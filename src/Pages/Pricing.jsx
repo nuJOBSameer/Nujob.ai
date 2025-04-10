@@ -26,6 +26,24 @@ const PricingSection = () => {
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
             nuJOB.AI offers a variety of membership options and services to support your career growth.
           </p>
+          <div className="mt-5 flex justify-center">
+            <button
+              onClick={() => handleTabChange("candidate")}
+              className={`px-5 py-2 rounded-3xl ${
+                activeTab === "candidate" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
+              }`}
+            >
+              For Candidates
+            </button>
+            <button
+              onClick={() => handleTabChange("recruiter")}
+              className={`px-5 py-2 rounded-3xl ${
+                activeTab === "recruiter" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
+              }`}
+            >
+              For Recruiters
+            </button>
+          </div>
         </div>
 
         {/* Pricing Cards */}
@@ -100,7 +118,7 @@ const candidatePlans = [
   {
     name: "Enterprise",
     price: "Custom",
-    period: "357 Credits",
+    period: "",
     features: [
       "Includes everything in Pro",
       "+180 More Credits",
@@ -115,8 +133,8 @@ const candidatePlans = [
 const recruiterPlans = [
   {
     name: "Starter",
-    price: "$20",
-    period: "35 Credits",
+    price: "$99",
+    period: "173 Credits",
     features: [
       "5 Free Interviews",
     ],
@@ -125,8 +143,8 @@ const recruiterPlans = [
   },
   {
     name: "Growth",
-    price: "$49",
-    period: "87 Credits",
+    price: "$249",
+    period: "442 Credits",
     features: [
       "Includes everything in Starter",
       "+52 More Credits",
@@ -136,8 +154,8 @@ const recruiterPlans = [
   },
   {
     name: "Pro",
-    price: "$99",
-    period: "177 Credits",
+    price: "$399",
+    period: "713 Credits",
     features: [
       "Includes everything in Growth",
       "+90 More Credits",
@@ -148,7 +166,7 @@ const recruiterPlans = [
   {
     name: "Enterprise",
     price: "Custom",
-    period: "357 Credits",
+    period: "",
     features: [
       "Includes everything in Pro",
       "+180 More Credits",
