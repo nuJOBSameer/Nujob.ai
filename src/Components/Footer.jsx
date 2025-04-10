@@ -65,12 +65,12 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-2">Services</h3>
               <ul className="space-y-2 text-gray-400">
-                <Link to="#">
+                <Link to="/Candidate-Pool">
                   <li className="cursor-pointer hover:text-white">
                     Recruiters
                   </li>
                 </Link>
-                <Link to="/Candidate-Pool">
+                <Link to="/Career-path">
                   <li className="cursor-pointer hover:text-white">
                     Candidates
                   </li>
@@ -78,7 +78,9 @@ export default function Footer() {
                 <Link to="/FAQ">
                   <li className="cursor-pointer hover:text-white">FAQ</li>
                 </Link>
+                <Link to="/contact">
                 <li className="cursor-pointer hover:text-white">Support</li>
+                </Link>
               </ul>
             </div>
 

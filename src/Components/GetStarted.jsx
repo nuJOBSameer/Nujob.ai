@@ -24,8 +24,8 @@ const GetStarted = () => {
       >
         <option value="" disabled hidden>
           Get Started</option>
-        <option value="Rec">for Recruiter</option>
-        <option value="Can">for the candidate</option>
+        <option value="Rec">For Recruiter</option>
+        <option value="Can">For Candidate</option>
       </select>
     </div>
   );
