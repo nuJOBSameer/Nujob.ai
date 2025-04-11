@@ -4,6 +4,7 @@ import {
   FaYoutube,
   FaDiscord,
 } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -87,6 +88,11 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-2">Contact</h3>
               <p className="text-gray-400">Email: support@nujob.ai</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Location</h3>
+              <p className="text-gray-400">131 Continental Dr, Suite 305
+              Newark, DE 19713, United States of America</p>
             </div>
           </div>
         </div>
