@@ -16,7 +16,7 @@ const Bottom = () => {
           </div>
           {/* Heading */}
           <h1 className="text-4xl font-semibold">Take the first step toward
-          <br />building your dream team.</h1>
+          <br />building your dream job.</h1>
   
           {/* Description */}
           <p className="max-w-2xl mx-auto text-sm mt-3 leading-relaxed">
