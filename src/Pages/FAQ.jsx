@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { PlusIcon, MinusIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -61,6 +62,10 @@ const FAQ = () => {
   };
 
   return (
+    <>
+    <Helmet>
+        <title>FAQ | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <div className="max-w-3xl mx-auto px-4 py-24 text-center">
       {/* FAQ Icon */}
       <img src="/images/FAQ.png" alt="FAQ Icon" className="mx-auto w-36 h-24 mb-4" />
@@ -125,6 +130,7 @@ const FAQ = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 

@@ -2,10 +2,14 @@ import React from "react";
 import ExecutiveSearch from "../Career-Path/ExecutiveSearch";
 import TopTierCandidates from "../Career-Path/TopTierCandidates";
 import ExecutiveServices from "../Career-Path/ExecutiveServices";
+import { Helmet } from "react-helmet";
 
 const CareerPath = () => {
   return (
     <>
+    <Helmet>
+        <title>Career Path | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <section className="bg-[#f8f9fc] py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
       {/* Left Text Section */}
       <div className="md:w-1/2">

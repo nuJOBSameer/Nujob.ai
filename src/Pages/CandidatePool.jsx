@@ -6,10 +6,14 @@ import Market from "../Candidate-pool/Market";
 import KeyFeatures from "../Candidate-pool/KeyFeatures";
 import Pool from "../Candidate-pool/Pool";
 import SkillValidation from "../Candidate-pool/SkillValidation";
+import { Helmet } from "react-helmet";
 
 const CandidatePool = () => {
   return (
-    <>    
+    <> 
+    <Helmet>
+        <title>Candidate Pool | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>   
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center pt-24 px-5 md:pt-10 gap-8 ">
       {/* Left Content */}
       <div className="md:w-1/2">

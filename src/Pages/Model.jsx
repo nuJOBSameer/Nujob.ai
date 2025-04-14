@@ -2,10 +2,14 @@ import React from "react";
 import Mission from "../Model/Mission";
 import Business from "../Model/Business";
 import Bottom from "../About/Bottom";
+import { Helmet } from "react-helmet";
 
 const Method = () => {
   return (
     <>
+    <Helmet>
+        <title>Model | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <div className="flex flex-col md:flex-row items-start justify-between bg-white max-w-6xl mx-auto py-20 px-6">
       {/* Left Content */}
       <div className="w-full md:w-2/3 space-y-4 mt-9">

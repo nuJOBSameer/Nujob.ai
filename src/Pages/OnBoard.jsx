@@ -5,10 +5,14 @@ import SkillsValidationSection from "../Onboarding/SkillsValidationSection";
 import Features from "../Onboarding/Features";
 import KeyFeatures from "../Onboarding/KeyFeatures";
 import Labs from "../Onboarding/Labs";
+import { Helmet } from "react-helmet";
 
 const OnBoard = () => {
   return (
-    <>    
+    <>
+    <Helmet>
+        <title>OnBoard | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>    
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-5 py-24">
       {/* Left Content */}
       <div className="md:w-1/2">

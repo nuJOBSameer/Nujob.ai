@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FeaturesSection from "../Price/FeaturesSection";
+import { Helmet } from "react-helmet";
 
 const PricingSection = () => {
   const [activeTab, setActiveTab] = useState("candidate");
@@ -12,6 +13,9 @@ const PricingSection = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Pricing | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
       <div className="relative flex flex-col items-center pt-32 px-10">
         {/* Background Image */}
         <div

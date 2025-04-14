@@ -144,7 +144,9 @@ export default function Navbar() {
     <header className="bg-white shadow-sm fixed top-0 w-full z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <div className="flex items-center">
+          <Link to="/">
           <img src="/images/Logo.png" alt="logo" className="h-10 w-32" />
+          </Link>
         </div>
         <div className="hidden lg:flex space-x-8">
           <Link to="/" className="text-gray-900 font-medium">
@@ -427,7 +429,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 z-50">
-          <Link to="/" className="block py-2 text-gray-900 font-medium">
+          <Link to="/" className="block py-2 text-gray-900 font-medium" onClick={() => setMobileMenuOpen(false)}>
             Home
           </Link>
 
@@ -446,6 +448,7 @@ export default function Navbar() {
                     key={index}
                     to={item.link}
                     className="block text-gray-600"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -469,6 +472,7 @@ export default function Navbar() {
                     key={index}
                     to={item.link}
                     className="block text-gray-600"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -492,6 +496,7 @@ export default function Navbar() {
                     key={index}
                     to={item.link}
                     className="block text-gray-600"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -515,6 +520,7 @@ export default function Navbar() {
                     key={index}
                     to={item.link}
                     className="block text-gray-600"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -523,7 +529,7 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link to="/pricing" className="block py-2 text-gray-900 font-medium">
+          <Link to="/pricing" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
             Pricing
           </Link>
 

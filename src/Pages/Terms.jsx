@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 
 const Terms = () => {
     const sections = [
@@ -124,6 +125,10 @@ const Terms = () => {
       ];
       
     return(
+      <>
+      <Helmet>
+        <title>Terms & Conditions | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <div className="max-w-3xl mx-auto px-4 py-24 text-center">
     {/* FAQ Icon */}
     <img src="/images/terms.png" alt="FAQ Icon" className="mx-auto w-36 h-24 mb-4" />
@@ -149,6 +154,7 @@ const Terms = () => {
       ))}
     </div>
     </div>
+    </>
   )
 }
 

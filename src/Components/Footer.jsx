@@ -88,6 +88,7 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-2">Contact</h3>
               <p className="text-gray-400">Email: support@nujob.ai</p>
+              <p className="text-gray-400">Phone: +1 (302) 273-8477</p>
             </div>
             <div>
               <h3 className="font-semibold text-lg mb-2">Location</h3>

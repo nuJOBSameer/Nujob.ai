@@ -1,10 +1,14 @@
 import React from "react";
 import Competetive from "../Analysis/Competitive";
 import Comparison from "../Analysis/Comparison";
+import { Helmet } from "react-helmet";
 
 const Analysis = () => {
   return (
     <>
+    <Helmet>
+        <title>Competitive Analysis | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <div className="flex flex-col md:flex-row items-start justify-between bg-white max-w-6xl mx-auto px-6 py-24">
       {/* Left Content */}
       <div className="w-full md:w-2/3 space-y-4 mt-9">

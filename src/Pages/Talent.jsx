@@ -3,11 +3,15 @@ import JobOffersSection from "../Talent/JobOffersSection";
 import WhyChooseNuJob from "../Talent/WhyChooseNuJob";
 import Boxes from "../Talent/Boxes";
 import GuidanceSection from "../Talent/GuidanceSection";
+import { Helmet } from "react-helmet";
 
 
 const Talent = () => {
   return (
     <>
+    <Helmet>
+        <title>Talent | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <div className="flex md:flex-row flex-col items-center justify-between py-24 md:py-12 px-5 md:px-16 bg-white">
       {/** Left Text Section **/}
       <div className="max-w-2xl">

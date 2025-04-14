@@ -1,10 +1,14 @@
 import React from "react";
 import Reasons from "../Interview/Reasons";
 import InterviewSection from "../Interview/InterviewSection";
+import { Helmet } from "react-helmet";
 
 const Interview = () => {
   return (
     <>
+    <Helmet>
+        <title>Interview | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <div className="flex md:flex-row flex-col items-center justify-between pt-24 md:py-12 px-5 md:px-16 bg-white">
       {/** Left Text Section **/}
       <div className="max-w-2xl">

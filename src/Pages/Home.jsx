@@ -6,10 +6,14 @@ import Career from '../home/Career'
 import ResumeBuilder from '../home/ResumeBuilder'
 import Footer from '../Components/Footer'
 import Bottom from '../About/Bottom'
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <div className='overflow-x-hidden'>
+      <Helmet>
+        <title>Home | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
       <div className="relative min-h-screen w-full flex items-center justify-center text-white overflow-hidden">
 
         {/* Background Video */}

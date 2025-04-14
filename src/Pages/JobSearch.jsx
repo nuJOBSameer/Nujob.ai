@@ -3,10 +3,14 @@ import AlignSkills from "../JobSearch/AllignSkills";
 import KeyFeatures from "../JobSearch/KeyFeatures";
 import DashboardEfficiency from "../JobSearch/DashboardEfficiency";
 import Testimonials from "../JobSearch/Testimonials";
+import { Helmet } from "react-helmet";
 
 const JobSearch = () => {
   return (
     <>
+    <Helmet>
+        <title>Job Search | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <section className="flex flex-col md:flex-row items-center justify-between px-5 md:px-16 py-24 md:py-14 bg-white">
       <div className="md:w-1/2">
         <h2 className="text-3xl font-bold text-indigo-700 mb-4">

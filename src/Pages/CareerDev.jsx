@@ -4,10 +4,14 @@ import Monitor from "../CareerDev/Monitor.jsx";
 import Guidance from "../CareerDev/Guidance.jsx";
 import Confidence from "../CareerDev/Confidence.jsx";
 import MeritBadges from "../CareerDev/MeritBadges.jsx";
+import { Helmet } from "react-helmet";
 
 const CareerDev = () => {
   return (
     <>
+    <Helmet>
+        <title>Career Dev | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <div className="flex md:flex-row flex-col items-center justify-between py-24 md:py-28 px-5 md:px-28 bg-white">
       {/** Left Text Section **/}
       <div className="max-w-2xl">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 
 const Refund = () => {
     const sections = [
@@ -137,7 +138,10 @@ const Refund = () => {
       
       
     return (
-        
+        <>
+        <Helmet>
+        <title>Refund | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
         <div className="max-w-3xl mx-auto px-4 py-24 text-center">
             {/* FAQ Icon */}
             <img src="/images/refund.png" alt="FAQ Icon" className="mx-auto w-36 h-24 mb-4" />
@@ -163,6 +167,7 @@ const Refund = () => {
                 ))}
             </div>
         </div>
+        </>
     )
 }
 

@@ -2,10 +2,14 @@ import React from "react";
 import ResumeBuilder from "../ResumeSkills/ResumeBuilder.jsx";
 import ResumeVersion from "../ResumeSkills/ResumeVersion.jsx";
 import SkillsSection from "../ResumeSkills/SkillsSection.jsx";
+import { Helmet } from "react-helmet";
 
 const ResumeSkills = () => {
   return (
     <>
+    <Helmet>
+        <title>Resume Skills | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
     <div className="flex md:flex-row flex-col items-center justify-between px-5 py-24 md:py-14 md:px-16 bg-white">
       {/** Left Text Section **/}
       <div className="max-w-2xl">

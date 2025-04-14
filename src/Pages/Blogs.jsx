@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const Blogs = () => {
     const blogs = [
@@ -28,6 +29,10 @@ const Blogs = () => {
     const currentBlogs = blogs.slice((currentPage - 1) * blogsPerPage, currentPage * blogsPerPage);
 
     return (
+        <>
+        <Helmet>
+        <title>Blogs | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
         <div className="max-w-6xl mx-auto py-28 px-6 text-center">
             {/* Full-Page Centered Header */}
             <div className="text-center mb-8">
@@ -95,6 +100,7 @@ const Blogs = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

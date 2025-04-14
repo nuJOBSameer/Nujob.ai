@@ -1,10 +1,14 @@
 import React from "react";
 import HelpDesk from "../Contact/HelpDesk";
 import CustomerSupport from "../Contact/CustomerSupport";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <>
+    <Helmet>
+        <title>Contact | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
       <div className="flex justify-center items-center py-32">
         {/* Background Section */}
         <div

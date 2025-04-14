@@ -3,7 +3,7 @@ import AboutSection from '../About/AboutSection';
 import Benefits from '../About/Benefits';
 import ServicesSection from '../About/ServicesSection';
 import Bottom from '../About/Bottom';
-
+import { Helmet } from "react-helmet";
 const About = () => {
   const benefitsRef = useRef(null);
 
@@ -13,6 +13,9 @@ const About = () => {
 
   return (
     <>
+    <Helmet>
+        <title>About | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+      </Helmet>
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between md:px-24 py-10">
 
