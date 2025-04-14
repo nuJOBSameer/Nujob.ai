@@ -15,7 +15,9 @@ export default function Footer() {
           {/* Left Section */}
           <div className="max-w-sm">
             {/* nuJob Logo */}
+            <Link to="/">
             <img src="/images/Logos.png" alt="nuJob Logo" className="mb-4 " />
+            </Link>
             <p className="text-sm text-gray-400 leading-relaxed">
               nuJOB is your trusted partner in career advancement, leveraging
               cutting-edge AI technology to help you hunt, refine, and showcase
