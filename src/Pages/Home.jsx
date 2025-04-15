@@ -23,7 +23,7 @@ const Home = () => {
           playsInline
           className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src="https://res.cloudinary.com/dblaulr6d/video/upload/v1744293753/nuJob/lnaglybeggsyjsoxhzwy.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dblaulr6d/video/upload/v1744721491/nuJob/wimkb7jgpa0d8jhkuzeq.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
