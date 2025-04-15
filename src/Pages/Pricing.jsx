@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FeaturesSection from "../Price/FeaturesSection";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const PricingSection = () => {
   const [activeTab, setActiveTab] = useState("candidate");
@@ -74,9 +75,11 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
+              
               <button className="mt-6 bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600">
-                {plan.name === "Enterprise" ? "Talk To Us" : "Buy Now"}
+              <Link to={plan.link}>{plan.name === "Enterprise" ? "Talk To Us" : "Buy Now"}</Link>
               </button>
+              
             </div>
           ))}
         </div>
@@ -96,6 +99,7 @@ const candidatePlans = [
     ],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
+    link: "https://buy.stripe.com/eVa3cw0rX5Fh1oI7ss"
   },
   {
     name: "Growth",
@@ -107,6 +111,7 @@ const candidatePlans = [
     ],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
+    link: ""
   },
   {
     name: "Pro",
@@ -118,6 +123,7 @@ const candidatePlans = [
     ],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
+    link: ""
   },
   {
     name: "Enterprise",
@@ -130,6 +136,7 @@ const candidatePlans = [
     ],
     border: "border-purple-400 bg-white",
     text: "text-gray-800",
+    link: ""
   },
 ];
 
@@ -144,6 +151,7 @@ const recruiterPlans = [
     ],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
+    link: ""
   },
   {
     name: "Growth",
@@ -155,6 +163,7 @@ const recruiterPlans = [
     ],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
+    link: ""
   },
   {
     name: "Pro",
@@ -166,6 +175,7 @@ const recruiterPlans = [
     ],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
+    link: ""
   },
   {
     name: "Enterprise",
@@ -178,6 +188,7 @@ const recruiterPlans = [
     ],
     border: "border-purple-400 bg-white",
     text: "text-gray-800",
+    link: ""
   },
 ];
 
