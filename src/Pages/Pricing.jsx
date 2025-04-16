@@ -99,7 +99,7 @@ const candidatePlans = [
     ],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/eVa3cw0rX5Fh1oI7ss"
+    link: "https://buy.stripe.com/28o9AU8Yt5FhaZi9AG"
   },
   {
     name: "Growth",
@@ -111,7 +111,7 @@ const candidatePlans = [
     ],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: ""
+    link: "https://buy.stripe.com/00gaEYfmR1p12sMeV1"
   },
   {
     name: "Pro",
@@ -123,7 +123,7 @@ const candidatePlans = [
     ],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: ""
+    link: "https://buy.stripe.com/14kdRa1w1d7J6J2fZ6"
   },
   {
     name: "Enterprise",
@@ -151,7 +151,7 @@ const recruiterPlans = [
     ],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: ""
+    link: "https://buy.stripe.com/bIY14ocaF2t54AU28h"
   },
   {
     name: "Growth",
@@ -159,11 +159,11 @@ const recruiterPlans = [
     period: "442 Credits",
     features: [
       "Includes everything in Starter",
-      "+52 More Credits",
+      "+269 More Credits",
     ],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: ""
+    link: "https://buy.stripe.com/4gw9AU8Yt8RtgjC14e"
   },
   {
     name: "Pro",
@@ -171,11 +171,11 @@ const recruiterPlans = [
     period: "713 Credits",
     features: [
       "Includes everything in Growth",
-      "+90 More Credits",
+      "+271 More Credits",
     ],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: ""
+    link: "https://buy.stripe.com/14k3cw0rXgjVffy7sD"
   },
   {
     name: "Enterprise",
