@@ -4,7 +4,7 @@ const careerData = [
   {
     title: "Information Technology",
     description: "Find roles in software development, cyber security, data science & more. Explore AI, blockchain & big data.",
-    image: "/images/it.png",
+    image: "/IT.mp4",
     position: "top-left",
     color: "bg-[#F7F8FF]",
     textColor: "text-blue-600"
@@ -12,7 +12,7 @@ const careerData = [
   {
     title: "Accounting",
     description: "Get matched with top accounting jobs & explore AI, blockchain & financial tech innovations.",
-    image: "/images/accounting.jpg",
+    image: "/Accounting.mp4",
     position: "top-right",
     color: "bg-[#3E57DA]",
     textColor: "text-white"
@@ -20,7 +20,7 @@ const careerData = [
   {
     title: "Banking",
     description: "Connect with opportunities in investment banking, risk management & FinTech. Stay ahead in digital banking.",
-    image: "/images/banking.jpg",
+    image: "/Banking.mp4",
     position: "bottom-left",
     color: "bg-[#3E57DA]",
     textColor: "text-white"
@@ -28,7 +28,7 @@ const careerData = [
   {
     title: "Healthcare",
     description: "Discover roles in telemedicine, medical robotics & cutting-edge healthcare technologies.",
-    image: "/images/healthcare.jpg",
+    image: "/Healthcare.mp4",
     position: "bottom-right",
     color: "bg-[#F7F8FF]",
     textColor: "text-blue-600"
@@ -49,7 +49,14 @@ const Career = () => {
 
       {/* Main Image with Title */}
       <div className="relative mx-auto mt-16 w-[320px] lg:w-[370px] h-[400px] rounded-xl overflow-hidden shadow-lg">
-        <img src={active.image} alt={active.title} className="w-full h-full object-cover" />
+        <video
+          src={active.image}
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
       </div>
 
       {/* Floating Cards */}
@@ -60,7 +67,7 @@ const Career = () => {
             "top-right": "lg:absolute lg:-right-10 lg:top-40",
             "bottom-left": "lg:absolute lg:-left-0 lg:bottom-20",
             "bottom-right": "lg:absolute lg:-right-0 lg:bottom-28"
-          };          
+          };
           return (
             <div
               key={idx}
