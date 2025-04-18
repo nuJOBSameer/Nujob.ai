@@ -82,7 +82,7 @@ const Testimonials = () => {
               <div className="flex items-center gap-3">
                 <div className="bg-gray-300 h-10 w-10 rounded-full" />
                 <div>
-                  <p className="font-semibold">{t.name}</p>
+                  <p className="font-semibold text-left text-blue-600">{t.name}</p>
                   <p className="text-sm text-gray-500">{t.role}</p>
                 </div>
               </div>
