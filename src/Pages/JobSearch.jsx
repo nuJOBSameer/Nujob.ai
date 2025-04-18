@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 
 const JobSearch = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
     <Helmet>
         <title>Job Search | nuJOB.AI - Tested Skills. Smarter Hires.</title>
       </Helmet>
@@ -35,7 +35,7 @@ const JobSearch = () => {
     <KeyFeatures/>
     <DashboardEfficiency/>
     <Testimonials/>
-    </>
+    </div>
   );
 };
 

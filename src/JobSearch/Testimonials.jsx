@@ -79,7 +79,7 @@ const Testimonials = () => {
                 style={{ overflow: 'visible' }}
               >
                  <p className="text-gray-700 text-xs mb-4">“{t.quote}”</p>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center justify-center gap-3">
                 <div className="bg-gray-300 h-10 w-10 rounded-full" />
                 <div>
                   <p className="font-semibold text-left text-blue-600">{t.name}</p>
