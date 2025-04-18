@@ -73,17 +73,17 @@ const Testimonials = () => {
               {/* Quote top-left (outside box) */}
               
               <div
-                className={`relative p-6 rounded-xl  h-64 shadow-md bg-white transition-transform duration-300 ease-in-out ${
+                className={`relative p-6 rounded-xl h-64 shadow-md bg-white transition-transform duration-300 ease-in-out ${
                   isActive ? "scale-95 shadow-lg" : "scale-75 opacity-80"
                 }`}
                 style={{ overflow: 'visible' }}
               >
-                 <p className="text-gray-700 text-xs mb-4">“{t.quote}”</p>
+                 <p className="text-gray-700 text-xs mb-4 line-clamp-6 md:line-clamp-none">“{t.quote}”</p>
               <div className="flex items-center justify-center gap-3">
                 <div className="bg-gray-300 h-10 w-10 rounded-full" />
                 <div>
                   <p className="font-semibold text-left text-blue-600">{t.name}</p>
-                  <p className="text-sm text-gray-500">{t.role}</p>
+                  <p className="text-sm text-left text-gray-500">{t.role}</p>
                 </div>
               </div>
               </div>
