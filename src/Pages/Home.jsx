@@ -21,9 +21,9 @@ const Home = () => {
           autoPlay
           muted
           playsInline
-          className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
+          className="hidden md:block absolute top-0 left-0 w-full h-full object-cover z-40"
         >
-          <source src="https://res.cloudinary.com/dblaulr6d/video/upload/v1744721491/nuJob/wimkb7jgpa0d8jhkuzeq.mp4" type="video/mp4" />
+          <source src="/hero-desktop.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -32,9 +32,9 @@ const Home = () => {
           autoPlay
           muted
           playsInline
-          className="block md:hidden absolute top-0 left-0 w-full h-full object-cover"
+          className="block md:hidden absolute top-0 left-0 w-full h-full object-cover z-40"
         >
-          <source src="https://res.cloudinary.com/dblaulr6d/video/upload/v1744811196/nuJob/wyrhfypbgmuzfbiepq7e.mp4" type="video/mp4" />
+          <source src="/hero-mobile.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
