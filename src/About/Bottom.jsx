@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Bottom = () => {
     return (
-      <div className="relative bg-[#1E1ED4] py-20 px-6 text-center text-white overflow-hidden">
+      <div className="relative bg-[#2a5fbb] py-20 px-6 text-center text-white overflow-hidden">
         {/* Pattern Overlay */}
         <div 
           className="absolute inset-0 bg-center bg-cover" 

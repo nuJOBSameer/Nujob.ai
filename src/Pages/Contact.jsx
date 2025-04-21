@@ -18,7 +18,7 @@ const Contact = () => {
           {/* Form Container */}
           <div className="absolute top-60 -right-3 md:right-10 transform -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg w-[350px]">
             <form
-              action="https://formsubmit.co/inquiry@nujob.ai" // 👈 Replace this with real client email
+              action="https://formsubmit.co/fromweb@nujob.ai" // 👈 Replace this with real client email
               method="POST"
               className="space-y-4"
             >

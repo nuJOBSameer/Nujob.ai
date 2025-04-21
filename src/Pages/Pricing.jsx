@@ -38,7 +38,7 @@ const PricingSection = () => {
                 activeTab === "candidate" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
               }`}
             >
-              For Candidates
+              For Job-seekers
             </button>
             <button
               onClick={() => handleTabChange("recruiter")}

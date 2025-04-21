@@ -70,12 +70,12 @@ export default function Footer() {
               <ul className="space-y-2 text-gray-400">
                 <Link to="/Candidate-Pool">
                   <li className="cursor-pointer hover:text-white">
-                    Recruiters
+                    For Recruiters
                   </li>
                 </Link>
                 <Link to="/Career-path">
                   <li className="cursor-pointer hover:text-white">
-                    Candidates
+                  For Job-seekers
                   </li>
                 </Link>
                 <Link to="/FAQ">

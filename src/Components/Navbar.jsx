@@ -31,13 +31,13 @@ const aboutFeatures = [
     icon: BriefcaseIcon,
     link: "/about",
   },
-  {
-    name: "Competitive Analysis",
-    description:
-      "AI technology with a deep understanding of career needs, making the job search process smarter, faster, and more efficient.",
-    icon: ChartBarIcon,
-    link: "/Analysis",
-  },
+  // {
+  //   name: "Competitive Analysis",
+  //   description:
+  //     "AI technology with a deep understanding of career needs, making the job search process smarter, faster, and more efficient.",
+  //   icon: ChartBarIcon,
+  //   link: "/Analysis",
+  // },
   {
     name: "Business Model",
     description:
@@ -160,7 +160,7 @@ export default function Navbar() {
               setRecruitersOpen(false);
               setSupportOpen(false);
             }}
-            onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2000)}
+            onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/About" onClick={() => setAboutOpen(false)}>
@@ -204,8 +204,9 @@ export default function Navbar() {
                       Take a free tour of our platform features
                     </p>
                     <Link
-                      to="/demo"
+                      to="/contact"
                       className="text-indigo-600 font-medium mt-1"
+                      onClick={() => setAboutOpen(false)}
                     >
                       Book a Demo →
                     </Link>
@@ -223,12 +224,12 @@ export default function Navbar() {
               setSupportOpen(false);
             }}
             onMouseLeave={() =>
-              setTimeout(() => setCandidatesOpen(false), 2000)
+              setTimeout(() => setCandidatesOpen(false), 2500)
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/Career-path" onClick={() => setCandidatesOpen(false)}>
-                Candiates
+              For Job-seekers
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
             </div>
@@ -268,8 +269,9 @@ export default function Navbar() {
                       Take a free tour of our platform features
                     </p>
                     <Link
-                      to="/demo"
+                      to="/contact"
                       className="text-indigo-600 font-medium mt-1"
+                      onClick={() => setCandidatesOpen(false)}
                     >
                       Book a Demo →
                     </Link>
@@ -287,12 +289,12 @@ export default function Navbar() {
               setSupportOpen(false);
             }}
             onMouseLeave={() =>
-              setTimeout(() => setRecruitersOpen(false), 2000)
+              setTimeout(() => setRecruitersOpen(false), 2500)
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/Candidate-Pool">
-                Recruiters
+                For Recruiters
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
             </div>
@@ -332,8 +334,9 @@ export default function Navbar() {
                       Take a free tour of our platform features
                     </p>
                     <Link
-                      to="/demo"
+                      to="/contact"
                       className="text-indigo-600 font-medium mt-1"
+                      onClick={() => setRecruitersOpen(false)}
                     >
                       Book a Demo →
                     </Link>
@@ -350,7 +353,7 @@ export default function Navbar() {
               setCandidatesOpen(false);
               setRecruitersOpen(false);
             }}
-            onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2000)}
+            onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/Contact">
@@ -394,8 +397,9 @@ export default function Navbar() {
                       Take a free tour of our platform features
                     </p>
                     <Link
-                      to="/demo"
+                      to="/contact"
                       className="text-indigo-600 font-medium mt-1"
+                      onClick={() => setSupportOpen(false)}
                     >
                       Book a Demo →
                     </Link>

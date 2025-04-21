@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Business() {
     return (
-        <div className="flex flex-col lg:flex-row items-center justify-between px-10 py-16 bg-white min-h-screen">
+        <div className="flex flex-col lg:flex-row items-center justify-between px-10 py-10 bg-white min-h-screen">
             {/* Left Section */}
             <div className="relative w-full lg:w-1/2 flex items-center justify-center">
                 <img
@@ -16,7 +16,7 @@ export default function Business() {
             {/* Right Section */}
             <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
                 <p className="text-indigo-600 font-medium uppercase text-sm">The Future of Hiring</p>
-                <h2 className="text-4xl font-bold mt-2">
+                <h2 className="text-5xl font-bold mt-2">
                     Perfect <span className="text-indigo-600">Solutions</span> For <br />
                     <span className="text-black">Business & Recruitment</span>
                 </h2>
@@ -38,7 +38,7 @@ export default function Business() {
                                 <span className="text-indigo-600">
                                     <img src="/images/down.png" alt="arrow" className="h-5" />
                                 </span>
-                                <p className="text-gray-700">
+                                <p className="text-gray-700 text-lg">
                                     <strong className="font-semibold">{boldText}</strong> – {normalText}
                                 </p>
                             </li>

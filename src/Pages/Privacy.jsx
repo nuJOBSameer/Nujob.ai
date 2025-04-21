@@ -107,7 +107,7 @@ const Privacy = () => {
         {
           title: "8. International Users",
           content:
-            "If you are accessing our services from outside [Insert Country], your information may be transferred to and processed in countries with different data protection laws. By using the Platform, you consent to such transfers.",
+            "If you are accessing our services from outside United States of America, your information may be transferred to and processed in countries with different data protection laws. By using the Platform, you consent to such transfers.",
         },
         {
           title: "9. Changes to This Policy",
