@@ -20,8 +20,7 @@ const Bottom = () => {
   
           {/* Description */}
           <p className="max-w-2xl mx-auto text-sm mt-3 leading-relaxed">
-          Start using NuJOB.AI today and connect with top talent
-          faster and more efficiently!
+          Start using NuJOB.AI today and connect with top talent faster and more efficiently!
           </p>
   
           {/* Buttons */}

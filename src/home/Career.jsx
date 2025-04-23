@@ -66,6 +66,7 @@ const Career = () => {
             className="w-full h-full object-cover"
             autoPlay
             loop
+            muted
             controls
             playsInline
           />
