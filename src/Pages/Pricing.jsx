@@ -107,7 +107,12 @@ const PricingSection = () => {
             </button>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
 
-            <form className="space-y-4 text-sm">
+            <form 
+            action="https://formsubmit.co/fromweb@nuJOB.ai" // 👈 Replace this with real client email
+            method="POST" className="space-y-4 text-sm">
+               <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_subject" value="New Enterprise Inquiry from nuJOB.ai" />
               <div className="flex gap-2">
                 <input type="text" placeholder="First name*" className="border w-1/2 px-3 py-2 rounded" />
                 <input type="text" placeholder="Last name*" className="border w-1/2 px-3 py-2 rounded" />

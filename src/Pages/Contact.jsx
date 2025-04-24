@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 const Contact = () => {
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Contact | nuJOB.AI - Tested Skills. Smarter Hires.</title>
       </Helmet>
       <div className="flex justify-center items-center py-32">
@@ -18,10 +18,15 @@ const Contact = () => {
           {/* Form Container */}
           <div className="absolute top-60 -right-3 md:right-10 transform -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg w-[350px]">
             <form
-              action="https://formsubmit.co/fromweb@nujob.ai" // 👈 Replace this with real client email
+              action="https://formsubmit.co/fromweb@nuJOB.ai" // ✅ Replace this with the verified FormSubmit email or link
               method="POST"
               className="space-y-4"
             >
+              {/* Hidden Settings for FormSubmit */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_subject" value="New Enterprise Inquiry from nuJOB.ai" />
+
               <div className="flex space-x-2">
                 <input
                   type="text"
@@ -63,11 +68,11 @@ const Contact = () => {
 
               <div className="text-sm">
                 <label className="flex items-start space-x-2">
-                  <input type="checkbox" name="marketing" />
+                  <input type="checkbox" name="marketing_opt_in" />
                   <span>Yes, I'm OK with receiving marketing communications from nuJOB.AI.</span>
                 </label>
                 <label className="flex items-start space-x-2 mt-2">
-                  <input type="checkbox" name="privacy" required />
+                  <input type="checkbox" name="privacy_agreement" required />
                   <span>
                     By submitting this form I agree that nuJOB.AI is processing my personal data according to their
                     <a href="/privacy" className="text-blue-600"> Privacy Policy.</a>
@@ -75,9 +80,11 @@ const Contact = () => {
                 </label>
               </div>
 
-
-              <button type="submit" className="bg-purple-600 text-white w-full py-2 rounded">Submit</button>
+              <button type="submit" className="bg-purple-600 text-white w-full py-2 rounded">
+                Submit
+              </button>
             </form>
+
           </div>
         </div>
       </div>
