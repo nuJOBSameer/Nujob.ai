@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="max-w-sm">
             {/* nuJob Logo */}
             <Link to="/">
-            <img src="/images/Logos.png" alt="nuJob Logo" className="mb-4 " />
+              <img src="/images/Logos.png" alt="nuJob Logo" className="mb-4 " />
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed">
               nuJOB is your trusted partner in career advancement, leveraging
@@ -27,22 +27,33 @@ export default function Footer() {
 
             {/* Email Input Field & Yellow Icon */}
             <div className="flex items-center gap-3 mt-6">
-              <input
-                type="email"
-                placeholder="Enter email..."
-                className="w-full bg-transparent border border-gray-600 rounded-full py-2 px-4 text-white outline-none"
-              />
-              {/* Yellow Image Icon (Outside Input) */}
-              <img
-                src="/images/circle-check.png"
-                alt="Submit"
-                className="w-10 h-10 cursor-pointer"
-              />
+              <form
+                action="https://nujob.us15.list-manage.com/subscribe/post?u=01c07448752f301f4df98e73b&amp;id=c60fb3e2d4&amp;f_id=00b20ae0f0"
+                method="POST"
+                target="_blank"
+                className="flex items-center gap-3 mt-6"
+              >
+                <input
+                  type="email"
+                  name="EMAIL"
+                  placeholder="Enter email..."
+                  className="w-full bg-transparent border border-gray-600 rounded-full py-2 px-4 text-white outline-none"
+                  required
+                />
+                <button type="submit">
+                  <img
+                    src="/images/circle-check.png"
+                    alt="Submit"
+                    className="w-10 h-10 cursor-pointer"
+                  />
+                </button>
+              </form>
+
             </div>
           </div>
 
           {/* Center Links */}
-          <div className="flex flex-wrap gap-10 mr-32">
+          <div className="flex flex-row flex-wrap gap-10 ">
             <div>
               <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
               <ul className="space-y-2 text-gray-400">
@@ -50,17 +61,17 @@ export default function Footer() {
                   <li className="cursor-pointer hover:text-white">About Us</li>
                 </Link>
                 <Link to="/terms">
-                <li className="cursor-pointer hover:text-white">Terms & Conditions</li>
+                  <li className="cursor-pointer hover:text-white">Terms & Conditions</li>
                 </Link>
                 <Link to="/Privacy">
-                <li className="cursor-pointer hover:text-white">
-                  Privacy Policy
-                </li>
+                  <li className="cursor-pointer hover:text-white">
+                    Privacy Policy
+                  </li>
                 </Link>
                 <Link to="/Refund">
-                <li className="cursor-pointer hover:text-white">
-                  Refund Policy
-                </li>
+                  <li className="cursor-pointer hover:text-white">
+                    Refund Policy
+                  </li>
                 </Link>
               </ul>
             </div>
@@ -75,14 +86,14 @@ export default function Footer() {
                 </Link>
                 <Link to="/Career-path">
                   <li className="cursor-pointer hover:text-white">
-                  For Job-seekers
+                    For Job-seekers
                   </li>
                 </Link>
                 <Link to="/FAQ">
                   <li className="cursor-pointer hover:text-white">FAQ</li>
                 </Link>
                 <Link to="/contact">
-                <li className="cursor-pointer hover:text-white">Support</li>
+                  <li className="cursor-pointer hover:text-white">Support</li>
                 </Link>
               </ul>
             </div>
@@ -95,7 +106,7 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-2">Location</h3>
               <p className="text-gray-400">131 Continental Dr, Suite 305
-              Newark, DE 19713, United States of America</p>
+                Newark, DE 19713, United States of America</p>
             </div>
           </div>
         </div>
