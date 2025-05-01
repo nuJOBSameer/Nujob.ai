@@ -11,7 +11,13 @@ const PricingSection = () => {
     setActiveTab(tab);
   };
 
-  const currentPlans = activeTab === "candidate" ? candidatePlans : recruiterPlans;
+  
+  const currentPlans =
+  activeTab === "candidate"
+    ? candidatePlans
+    : activeTab === "student"
+    ? studentPlans
+    : recruiterPlans;
 
   return (
     <>
@@ -33,7 +39,7 @@ const PricingSection = () => {
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
             nuJOB.AI offers a variety of membership options and services to support your career growth.
           </p>
-          <div className="mt-5 flex justify-center">
+          <div className="mt-5 flex justify-center gap-2">
             <button
               onClick={() => handleTabChange("candidate")}
               className={`px-5 py-2 rounded-3xl ${
@@ -49,6 +55,14 @@ const PricingSection = () => {
               }`}
             >
               For Recruiters
+            </button>
+            <button
+              onClick={() => handleTabChange("student")}
+              className={`px-5 py-2 rounded-3xl ${
+                activeTab === "student" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
+              }`}
+            >
+              For Students
             </button>
           </div>
         </div>
@@ -107,10 +121,12 @@ const PricingSection = () => {
             </button>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
 
-            <form 
-            action="https://formsubmit.co/fromweb@nuJOB.ai" // 👈 Replace this with real client email
-            method="POST" className="space-y-4 text-sm">
-               <input type="hidden" name="_captcha" value="false" />
+            <form
+              action="https://formsubmit.co/fromweb@nuJOB.ai"
+              method="POST"
+              className="space-y-4 text-sm"
+            >
+              <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_subject" value="New Enterprise Inquiry from nuJOB.ai" />
               <div className="flex gap-2">
@@ -121,7 +137,10 @@ const PricingSection = () => {
                 <input type="email" placeholder="Work email*" className="border w-1/2 px-3 py-2 rounded" />
                 <input type="tel" placeholder="Phone number" className="border w-1/2 px-3 py-2 rounded" />
               </div>
-              <textarea placeholder="What can we do for you?" className="border w-full px-3 py-2 rounded h-24" />
+              <textarea
+                placeholder="What can we do for you?"
+                className="border w-full px-3 py-2 rounded h-24"
+              />
 
               <div className="text-left space-y-2">
                 <label className="flex items-center">
@@ -132,7 +151,9 @@ const PricingSection = () => {
                   <input type="checkbox" className="mr-2 mt-1" />
                   <span>
                     By submitting this form I agree that nuJOB.AI is processing my personal data according to their{" "}
-                    <Link to="/privacy-policy" className="text-blue-600 underline">Privacy Policy</Link>.
+                    <Link to="/privacy-policy" className="text-blue-600 underline">
+                      Privacy Policy
+                    </Link>.
                   </span>
                 </label>
               </div>
@@ -162,7 +183,7 @@ const candidatePlans = [
     features: ["5 Free Interviews"],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/28o9AU8Yt5FhaZi9AG",
+    link: "https://buy.stripe.com/7sI9AU2A51p1gjC00l",
   },
   {
     name: "Growth",
@@ -171,7 +192,7 @@ const candidatePlans = [
     features: ["Includes everything in Starter", "+52 More Credits"],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: "https://buy.stripe.com/00gaEYfmR1p12sMeV1",
+    link: "https://buy.stripe.com/14k5kEgqV0kX7N69AW",
   },
   {
     name: "Pro",
@@ -180,7 +201,7 @@ const candidatePlans = [
     features: ["Includes everything in Growth", "+90 More Credits"],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/14kdRa1w1d7J6J2fZ6",
+    link: "https://buy.stripe.com/14kcN61w16Jlffy28v",
   },
   {
     name: "Enterprise",
@@ -201,7 +222,7 @@ const recruiterPlans = [
     features: ["5 Free Interviews"],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/bIY14ocaF2t54AU28h",
+    link: "https://buy.stripe.com/fZe9AU5Mh9Vxc3m14s",
   },
   {
     name: "Growth",
@@ -210,7 +231,7 @@ const recruiterPlans = [
     features: ["Includes everything in Starter", "+269 More Credits"],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: "https://buy.stripe.com/4gw9AU8Yt8RtgjC14e",
+    link: "https://buy.stripe.com/fZe14o4IdgjV6J28wV",
   },
   {
     name: "Pro",
@@ -219,7 +240,7 @@ const recruiterPlans = [
     features: ["Includes everything in Growth", "+271 More Credits"],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/14k3cw0rXgjVffy7sD",
+    link: "https://buy.stripe.com/eVa7sM0rXc3F7N63cC",
   },
   {
     name: "Enterprise",
@@ -231,5 +252,17 @@ const recruiterPlans = [
     link: "",
   },
 ];
+const studentPlans = [
+  {
+    name: "Student Basic",
+    price: "$9.99",
+    period: "25 Credits",
+    features: ["3 Free Interviews", "Career Guidance"],
+    border: "border-green-400 bg-white",
+    text: "text-gray-800",
+    link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6o",
+  },
+];
+
 
 export default PricingSection;
