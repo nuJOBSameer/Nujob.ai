@@ -21,6 +21,7 @@ import Analysis from "./Pages/Analysis";
 import Terms from "./Pages/Terms";
 import Privacy from "./Pages/Privacy";
 import Refund from "./Pages/Refund";
+import Student from "./Pages/Student";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         <Route path="/Terms" element={<Terms/>} />
         <Route path="/Privacy" element={<Privacy/>} />
         <Route path="/Refund" element={<Refund/>} />
+        <Route path="/Student" element={<Student/>}/>
       </Routes>
       <Footer />
     </Router>

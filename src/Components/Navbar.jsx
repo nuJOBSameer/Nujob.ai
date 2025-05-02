@@ -148,7 +148,7 @@ export default function Navbar() {
           <img src="/images/Logo.png" alt="logo" className="h-10 w-32" />
           </Link>
         </div>
-        <div className="hidden lg:flex space-x-8">
+        <div className="hidden lg:flex space-x-5">
           <Link to="/" className="text-gray-900 font-medium">
             Home
           </Link>
@@ -345,6 +345,9 @@ export default function Navbar() {
               </div>
             )}
           </div>
+          <Link to="/Student" className="text-gray-900 font-medium">
+           For Students
+          </Link>
           <div
             className="relative z-30"
             onMouseEnter={() => {
@@ -408,7 +411,6 @@ export default function Navbar() {
               </div>
             )}
           </div>
-
           <Link to="/pricing" className="text-gray-900 font-medium">
             Pricing
           </Link>
