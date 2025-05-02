@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const PricingSection = () => {
-  const [activeTab, setActiveTab] = useState("candidate");
+  const [activeTab, setActiveTab] = useState("student");
   const [showModal, setShowModal] = useState(false);
 
   const handleTabChange = (tab) => {

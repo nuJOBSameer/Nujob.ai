@@ -16,9 +16,9 @@ const Skills = () => {
     },
     {
       imgSrc: "/images/Allign4.png",
-      title: "Feedback Engine",
+      title: "Resume Builder/Navigator",
       description:
-        "See exactly where to level up"
+        "Let nuJOB.AI build your resume"
     }
   ];
 

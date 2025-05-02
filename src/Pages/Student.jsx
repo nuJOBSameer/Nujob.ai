@@ -20,11 +20,11 @@ const Student = () => {
         {/* Buttons */}
         <div className="mt-6 flex gap-4">
           <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition">
-            Get Started for Free
+            Explore For Students
           </button>
-          <button className="border border-gray-300 px-6 py-2 rounded-md text-gray-700 hover:bg-gray-100 transition">
+          {/* <button className="border border-gray-300 px-6 py-2 rounded-md text-gray-700 hover:bg-gray-100 transition">
             Watch Demo
-          </button>
+          </button> */}
         </div>
       </div>
 

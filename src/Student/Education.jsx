@@ -26,7 +26,7 @@ const Education = () => {
               </li>
             </ul>
             <button className=" mt-3 px-4 py-1 bg-black flex text-white font-medium rounded-lg hover:bg-gray-800 transition">
-                    <Link to="#"> Map My Journey </Link>
+                    <Link to="/pricing"> Map My Journey </Link>
             </button>
           </div>
 
@@ -49,7 +49,7 @@ const Education = () => {
               </li>
             </ul>
             <button className=" mt-3 px-4 py-1 bg-black flex text-white font-medium rounded-lg hover:bg-gray-800 transition">
-                    <Link to="#"> Build My Brand </Link>
+                    <Link to="/pricing"> Build My Brand </Link>
             </button>
           </div>
         </div>
