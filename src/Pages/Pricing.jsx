@@ -11,13 +11,13 @@ const PricingSection = () => {
     setActiveTab(tab);
   };
 
-  
+
   const currentPlans =
-  activeTab === "candidate"
-    ? candidatePlans
-    : activeTab === "student"
-    ? studentPlans
-    : recruiterPlans;
+    activeTab === "candidate"
+      ? candidatePlans
+      : activeTab === "student"
+        ? studentPlans
+        : recruiterPlans;
 
   return (
     <>
@@ -28,7 +28,7 @@ const PricingSection = () => {
       <div className="relative flex flex-col items-center pt-32 px-10">
         {/* Background Image */}
         <div
-          className="absolute top-28 left-1/2 transform -translate-x-1/2 w-[90%] h-96 bg-cover bg-no-repeat rounded-xl"
+          className="absolute -z-20 top-28 left-1/2 transform -translate-x-1/2 w-[90%] h-96 bg-cover bg-no-repeat rounded-xl"
           style={{ backgroundImage: "url('/images/BG.png')" }}
         ></div>
 
@@ -42,25 +42,22 @@ const PricingSection = () => {
           <div className="mt-5 flex justify-center gap-2">
             <button
               onClick={() => handleTabChange("candidate")}
-              className={`px-5 py-2 rounded-3xl ${
-                activeTab === "candidate" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
-              }`}
+              className={`px-5 py-2 rounded-3xl ${activeTab === "candidate" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
+                }`}
             >
               For Job-seekers
             </button>
             <button
               onClick={() => handleTabChange("recruiter")}
-              className={`px-5 py-2 rounded-3xl ${
-                activeTab === "recruiter" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
-              }`}
+              className={`px-5 py-2 rounded-3xl ${activeTab === "recruiter" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
+                }`}
             >
               For Recruiters
             </button>
             <button
               onClick={() => handleTabChange("student")}
-              className={`px-5 py-2 rounded-3xl ${
-                activeTab === "student" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
-              }`}
+              className={`px-5 py-2 rounded-3xl ${activeTab === "student" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-800"
+                }`}
             >
               For Students
             </button>
@@ -68,11 +65,16 @@ const PricingSection = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl">
+        <div
+          className={`mt-10 max-w-6xl mx-auto ${currentPlans.length < 4
+              ? "flex justify-center flex-wrap gap-6"
+              : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            }`}
+        >
           {currentPlans.map((plan, index) => (
             <div
               key={index}
-              className={`p-6 border rounded-xl shadow-lg ${plan.border} relative flex flex-col items-center`}
+              className={`p-6 border rounded-xl shadow-lg ${plan.border} flex flex-col items-center w-full sm:w-[260px]`}
             >
               <h3 className="text-lg font-semibold">{plan.name}</h3>
               <div className="my-4 flex flex-col items-center">
@@ -107,6 +109,8 @@ const PricingSection = () => {
             </div>
           ))}
         </div>
+
+
       </div>
 
       {/* Contact Modal */}

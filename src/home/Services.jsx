@@ -182,8 +182,8 @@ export default function ServicesSection() {
         <button
           onClick={() => setActiveTab("jobseekers")}
           className={`px-6 py-2 rounded-full text-sm font-semibold ${activeTab === "jobseekers"
-              ? "bg-purple-600 text-white"
-              : "bg-gray-200 text-gray-700"
+            ? "bg-purple-600 text-white"
+            : "bg-gray-200 text-gray-700"
             }`}
         >
           For Job-seekers
@@ -191,8 +191,8 @@ export default function ServicesSection() {
         <button
           onClick={() => setActiveTab("recruiters")}
           className={`px-6 py-2 rounded-full text-sm font-semibold ${activeTab === "recruiters"
-              ? "bg-purple-600 text-white"
-              : "bg-gray-200 text-gray-700"
+            ? "bg-purple-600 text-white"
+            : "bg-gray-200 text-gray-700"
             }`}
         >
           For Recruiters
@@ -200,8 +200,8 @@ export default function ServicesSection() {
         <button
           onClick={() => setActiveTab("students")}
           className={`px-6 py-2 rounded-full text-sm font-semibold ${activeTab === "students"
-              ? "bg-purple-600 text-white"
-              : "bg-gray-200 text-gray-700"
+            ? "bg-purple-600 text-white"
+            : "bg-gray-200 text-gray-700"
             }`}
         >
           For Students
@@ -232,7 +232,7 @@ export default function ServicesSection() {
           onClick={() => setSelectedService(null)}
         >
           <div
-            className="bg-white rounded-xl p-6 w-full max-w-md relative"
+            className="bg-white rounded-xl p-8 w-[80%] max-w-4xl max-h-[90vh] overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -241,15 +241,25 @@ export default function ServicesSection() {
             >
               <XMarkIcon className="w-6 h-6" />
             </button>
-            <img src={selectedService.icon} alt="" className="w-12 h-12 mb-4" />
-            <h4 className="text-xl font-bold">{selectedService.title}</h4>
+            <div className="flex justify-center items-center gap-3 mb-4">
+              <img src={selectedService.icon} alt="" className="w-12 h-12" />
+              <h4 className="text-xl font-bold">{selectedService.title}</h4>
+            </div>
 
             {/* Fix: handle multi-line description */}
-            <div className="text-gray-600 text-left mt-2 space-y-2">
-              {selectedService.description.split("\n").map((line, idx) => (
-                <p key={idx}>{line}</p>
-              ))}
-            </div>
+            {selectedService.description.split("\n").map((line, idx) => {
+              const isSubheading = line.trim().endsWith(":");
+              return (
+                <p
+                  key={idx}
+                  className={`text-left ${isSubheading ? "font-semibold mt-4 text-gray-800" : "text-gray-600"}`}
+                >
+                  {line}
+                </p>
+              );
+            })}
+
+
           </div>
         </div>
       )}
