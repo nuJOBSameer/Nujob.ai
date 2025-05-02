@@ -13,8 +13,8 @@ const Student = () => {
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-snug">
           Launch Your Career <br className="hidden md:block" /> with Confidence
         </h2>
-        <p className="text-gray-600 text-base mt-4">
-          AI-powered tools to help you build your future, <br className="hidden md:block" /> even before graduation.
+        <p className="text-gray-600 text-base mt-4 pr-8">
+        Skip the waiting game. nuJOB gives you the tools to build your future, your way-before you even graduate.<br className="hidden md:block" /> Smart, AI-powered, and built for how you actually work.
         </p>
 
         {/* Buttons */}
@@ -31,7 +31,7 @@ const Student = () => {
       {/* Right Section */}
       <div className="relative md:w-2/3 w-full h-[400px] md:h-auto"> {/* Fixed height on mobile to avoid overflow */}
         <img
-          src="/images/Student.png"
+          src="/images/Student.jpeg"
           alt="Kelly Hamilton"
           className="w-full h-full object-cover"
         />

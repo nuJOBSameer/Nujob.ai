@@ -9,16 +9,19 @@ const JobMatch = () => {
     >
       {/* Right Section */}
       <div className="w-full lg:w-1/2 mt-12 lg:mt-0  p-6 rounded-lg">
-        <h2 className="text-4xl md:text-5xl font-bold mt-2">
+        <h2 className="text-4xl md:text-5xl font-bold my-5">
           Find Your Perfect <br />
           <span className="text-black">Job Match</span>
         </h2>
 
+        <h1 className='text-xl'>No more endless scrolling.</h1>
+        <h1  className='text-xl'>Get matched with roles that fit your vibe and your skills.</h1>
+
         <ul className="mt-6">
           {[
-            "AI-analyzed resume insights",
-            "Role fit scores & skill-gap suggestions",
-            "Career path recommendations",
+            "AI-driven resume insights that make you stand out",
+            "Role fit scores and skill-gap tips, personalized for you",
+            "Career path recommendations that actually make sense",
           ].map((item, index) => (
             <li
               key={index}
@@ -43,7 +46,7 @@ const JobMatch = () => {
       {/* Left Section */}
       <div className="relative w-full lg:w-1/2 flex items-center justify-center mt-10 lg:mt-0">
         <img
-          src="/images/Sarah.png"
+          src="/images/offers.jpg"
           alt="Business Recruitment"
           className="w-full max-w-md"
         />

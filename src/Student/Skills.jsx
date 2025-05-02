@@ -6,25 +6,26 @@ const Skills = () => {
       imgSrc: "/images/Allign1.png",
       title: "Real-Time Skill Analysis",
       description:
-        "Practice with real-time scoring"
+        "Practice, score, repeat"
     },
     {
       imgSrc: "/images/Allign3.png",
       title: "Hands-on Skill Exams",
       description:
-        "Real-world tasks, validated instantly"
+        "Prove it with real tasks"
     },
     {
       imgSrc: "/images/Allign4.png",
       title: "Feedback Engine",
       description:
-        "See what you need to improve"
+        "See exactly where to level up"
     }
   ];
 
   return (
     <div className="bg-gray-100 py-10 px-5 text-center">
-      <h2 className="text-2xl font-bold mb-10">Validate Your Skills</h2>
+      <h2 className="text-2xl font-bold mb-2">Validate Your Skills</h2>
+      <h1 className="text-xl mb-10">Show what you’re made of-no fluff.</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {skillsData.map((skill, index) => (
           <div
