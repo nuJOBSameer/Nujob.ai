@@ -104,7 +104,7 @@ const PricingSection = () => {
                   }
                 }}
               >
-                {plan.name === "Enterprise" ? "Talk To Us" : "Buy Now"}
+                {plan.name === "Enterprise" ? "Talk To Us" : "Try For 7 Days"}
               </button>
             </div>
           ))}
@@ -264,7 +264,7 @@ const studentPlans = [
     features: ["3 Free Interviews", "Career Guidance"],
     border: "border-green-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6o",
+    link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6oI",
   },
 ];
 
