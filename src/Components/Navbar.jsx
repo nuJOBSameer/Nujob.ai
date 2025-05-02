@@ -469,7 +469,7 @@ export default function Navbar() {
               className="flex justify-between w-full py-2 text-gray-900 font-medium"
               onClick={() => setCandidatesOpen(!candidatesOpen)}
             >
-              Candidates <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+              For Job-seekers <ChevronDownIcon className="h-5 w-5 text-gray-500" />
             </button>
             {candidatesOpen && (
               <div className="ml-4 space-y-2">
@@ -493,7 +493,7 @@ export default function Navbar() {
               className="flex justify-between w-full py-2 text-gray-900 font-medium"
               onClick={() => setRecruitersOpen(!recruitersOpen)}
             >
-              Recruiters <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+             For Recruiters <ChevronDownIcon className="h-5 w-5 text-gray-500" />
             </button>
             {recruitersOpen && (
               <div className="ml-4 space-y-2">
@@ -510,7 +510,9 @@ export default function Navbar() {
               </div>
             )}
           </div>
-
+          <Link to="/Student" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
+            For Students
+          </Link>
           {/* Support Dropdown */}
           <div>
             <button
