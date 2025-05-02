@@ -5,7 +5,7 @@ import Education from "../Student/Education";
 
 const Student = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
     <div className="flex flex-col md:flex-row min-h-screen w-full pt-16 pb-10"> {/* pt for navbar space, pb for footer */}
       
       {/* Left Section */}
@@ -40,7 +40,7 @@ const Student = () => {
     <JobMatch/>
     <Skills/>
     <Education/>
-    </>
+    </div>
   );
 };
 

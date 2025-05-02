@@ -138,21 +138,21 @@ export default function ServicesSection() {
       subtitle: "Guidance That Fits You. Growth That Moves You.",
       description:
         "Smart recommendations based on your unique strengths and goals, designed to help you move forward with clarity.\n\nWhat Makes It Powerful:\n• Tailored advice driven by your assessments and goals.\n• Career path suggestions that align with your strengths.\n• Progressive insights that adapt as you learn and grow.\n• Actionable next steps to help you move with purpose.\n\nWhy It Works:\nWhen your path aligns with your strengths, you move faster and farther. These insights keep you focused and confident.",
-      icon: "/Logo/guidance.png",
+      icon: "/images/guidanceicon.png",
     },
     {
       title: "Micro-Credentials",
       subtitle: "Earned Recognition. Real Impact.",
       description:
         "Digital badges that highlight your verified strengths and let employers see exactly what you bring to the table.\n\nWhat Makes It Powerful:\n• Credentials tied directly to your performance.\n• Clear skill categories aligned with job market demand.\n• Easy sharing across resumes, profiles, and LinkedIn.\n• Built-in trust that shows your achievements at a glance.\n\nWhy It Works:\nRecognition empowers progress. Micro-credentials make your strengths visible and valued.",
-      icon: "/Logo/credentials.png",
+      icon: "/images/credentials.png",
     },
     {
       title: "Resume and Career Coaching",
       subtitle: "Tell Your Story. Plan Your Path.",
       description:
         "Tools and expert support to build a standout resume and guide your long-term career strategy.\n\nWhat Makes It Powerful:\n• Smart resume builders that highlight your real strengths.\n• Customizable templates that reflect your personality and professionalism.\n• Step-by-step coaching aligned with your career stage.\n• Resources to help you grow from job search to career advancement.\n\nWhy It Works:\nYour story matters. With the right tools and support, your next move becomes a confident one.",
-      icon: "/Logo/resume.png",
+      icon: "/images/resumeicon.png",
     },
   ];
 
