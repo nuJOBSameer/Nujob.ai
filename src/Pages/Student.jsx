@@ -1,5 +1,5 @@
 import React from "react";
-import JobMatch from "../Student/jobMatch";
+import JobMatch from "../Student/JobMatch";
 import Skills from "../Student/Skills";
 import Education from "../Student/Education";
 
