@@ -31,7 +31,7 @@ const Student = () => {
       {/* Right Section */}
       <div className="relative md:w-2/3 w-full h-[400px] md:h-auto"> {/* Fixed height on mobile to avoid overflow */}
         <img
-          src="/images/Student.jpeg"
+          src="/images/Students.jpeg"
           alt="Kelly Hamilton"
           className="w-full h-full object-cover"
         />
