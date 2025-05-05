@@ -6,8 +6,8 @@ const Skills = () => {
   const skillsData = [
     {
       id: "resume",
-      imgSrc: "/images/Allign1.png",
-      title: "Resume Builder Navigator:",
+      imgSrc: "/images/resumeicon.png",
+      title: "Resume Builder Navigator",
       description: "Build Your Dream Resume, No Experience Required",
       details: (
         <>
@@ -28,8 +28,8 @@ const Skills = () => {
     },
     {
       id: "mock",
-      imgSrc: "/images/Allign3.png",
-      title: "Mock Interview Coach:",
+      imgSrc: "/images/Jinterview.png",
+      title: "Mock Interview Coach",
       description: "Master Interviews Like a Pro",
       details: (
         <>
@@ -47,8 +47,8 @@ const Skills = () => {
     },
     {
       id: "validation",
-      imgSrc: "/images/Allign4.png",
-      title: "Skill Validation:",
+      imgSrc: "/images/skill.png",
+      title: "Skill Validation",
       description: "Prove Your Abilities with Confidence",
       details: (
         <>
