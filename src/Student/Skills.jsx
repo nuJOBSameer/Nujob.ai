@@ -7,7 +7,7 @@ const Skills = () => {
     {
       id: "resume",
       imgSrc: "/images/resumeicon.png",
-      title: "Resume Builder Navigator",
+      title: "Resume Builder/Navigator",
       description: "Build Your Dream Resume, No Experience Required",
       details: (
         <>
