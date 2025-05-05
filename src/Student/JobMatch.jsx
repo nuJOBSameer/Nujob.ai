@@ -48,7 +48,7 @@ const JobMatch = () => {
         <img
           src="/images/offers.jpg"
           alt="Business Recruitment"
-          className="w-full max-w-md"
+          className="w-full max-w-md rounded-lg"
         />
       </div>
     </div>
