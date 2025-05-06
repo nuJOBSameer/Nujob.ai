@@ -1,7 +1,7 @@
 import React from "react";
 import Talent1 from "/images/Talent1.png"; // Make sure this path is correct
 
-const JobOffersSection = () => {
+const JobOffersSection = ({ onScrollToBoxes })  => {
   return (
     <div className="md:max-w-4xl max-w-80 mx-auto flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden mb-11">
       {/* Left Image */}
@@ -25,7 +25,7 @@ const JobOffersSection = () => {
           <br />•Strategic Insights – Compare offers with real market data.
           <br />•One Dashboard – Track and manage applications effortlessly.
         </p>
-        <button className="mt-4 px-4 py-2 bg-black text-white rounded-full flex items-center gap-2 w-fit">
+        <button  onClick={onScrollToBoxes} className="mt-4 px-4 py-2 bg-black text-white rounded-full flex items-center gap-2 w-fit">
           Explore More <span>&rarr;</span>
         </button>
       </div>

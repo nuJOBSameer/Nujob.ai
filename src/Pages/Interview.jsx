@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import Reasons from "../Interview/Reasons";
 import InterviewSection from "../Interview/InterviewSection";
 import { Helmet } from "react-helmet";
 
+
+
 const Interview = () => {
+  const interviewSectionRef = useRef(null);
+
+  const scrollToInterviewSection = () => {
+    if (interviewSectionRef.current) {
+      interviewSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
     <Helmet>
@@ -18,9 +27,12 @@ const Interview = () => {
         <p className="text-gray-600 mt-4">
         At nuJOB.AI, we revolutionize the interview and assessment process with a streamlined, AI-powered approach that saves time and delivers deeper insights. Our platform facilitates live, interactive interviews and realistic scenario-based assessments, ensuring a comprehensive evaluation of skills and potential. By empowering recruiters and candidates with advanced tools, we enable efficient, fair, and data-driven hiring decisions that benefit everyone involved.
         </p>
-        <button className="mt-6 px-6 py-3 bg-black text-white rounded-full flex items-center gap-2">
-          More Features <span>↗</span>
-        </button>
+        <button
+            className="mt-6 px-6 py-3 bg-black text-white rounded-full flex items-center gap-2"
+            onClick={scrollToInterviewSection}
+          >
+            More Features <span>↗</span>
+          </button>
       </div>
 
       {/** Right Image Section **/}
@@ -33,7 +45,9 @@ const Interview = () => {
       </div>
     </div>
     <Reasons/>
-    <InterviewSection/>
+    <div ref={interviewSectionRef}>
+        <InterviewSection />
+      </div>
     </>
   );
 };

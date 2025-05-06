@@ -89,6 +89,11 @@ export default function Footer() {
                     For Job-seekers
                   </li>
                 </Link>
+                <Link to="/Student">
+                  <li className="cursor-pointer hover:text-white">
+                    For Students
+                  </li>
+                </Link>
                 <Link to="/FAQ">
                   <li className="cursor-pointer hover:text-white">FAQ</li>
                 </Link>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Market = () => {
+const Market = ({ onExploreClick }) => {
   return (
     <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-xl p-6 mx-auto max-w-5xl mt-12 mb-12">
     {/* Left Content Section */}
@@ -11,7 +11,7 @@ const Market = () => {
         <p className="text-gray-600 text-sm">
         Your skills are your currency—make sure they’re valued. nuJOB.AI’s Market Linked Scoring evaluates your skills, experience, and certifications against real-time industry demands, giving you a competitive edge with:
         </p>
-        <button className="bg-black text-white px-5 py-2 rounded-lg flex items-center md:mx-0 mx-auto space-x-2">
+        <button onClick={onExploreClick} className="bg-black text-white px-5 py-2 rounded-lg flex items-center md:mx-0 mx-auto space-x-2">
             Explore More <span>→</span>
         </button>
     </div>
