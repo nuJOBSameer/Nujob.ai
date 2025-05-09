@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Education = () => {
   return (
@@ -56,7 +57,7 @@ const Education = () => {
         {/* Button */}
         <div className="mt-6">
           <button className="bg-[#5243C2] hover:bg-[#4132a0] text-white px-6 py-3 rounded-full shadow-md transition">
-            Start Your Journey
+           <Link to="/pricing"> Start Your Journey</Link>
           </button>
         </div>
       </div>

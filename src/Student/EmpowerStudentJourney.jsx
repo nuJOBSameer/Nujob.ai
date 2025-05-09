@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EmpowerStudentJourney = () => {
   const cards = [
@@ -71,7 +72,7 @@ const EmpowerStudentJourney = () => {
             />
 
             <button className="absolute bottom-[-20px] left-28 transform -translate-x-1/2 bg-[#5243C2] hover:bg-[#3f31a2] text-white text-sm font-semibold px-5 py-2 rounded-full shadow-md transition">
-              {card.btnText}
+              <Link to="/pricing">{card.btnText}</Link>
             </button>
           </div>
         ))}
