@@ -7,28 +7,14 @@ const Education = () => {
       {/* Video Section */}
       <div className="w-full md:w-1/2 mt-10 md:mt-0">
         <div className="relative rounded-xl overflow-hidden shadow-lg max-w-xl mx-auto">
-          <img
-            src="/images/video-placeholder.png" // Replace with your placeholder image
-            alt="Education Video"
-            className="w-full object-cover"
+        <video
+            src="/images/Students.MP4"
+            className="w-full h-full object-cover"
+            loop
+            muted
+            controls
+            playsInline
           />
-          {/* Play button */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-white text-[#5243C2] w-16 h-16 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:scale-105 transition-transform">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 ml-1"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
-          {/* Video duration */}
-          <div className="absolute bottom-2 right-2 bg-gray-800 text-white text-xs px-2 py-0.5 rounded-md opacity-90">
-            3:45
-          </div>
         </div>
       </div>
 
