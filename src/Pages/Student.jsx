@@ -15,7 +15,7 @@ const Student = () => {
     <>
       <div className="flex bg-[#EBFDFF] flex-col md:flex-row items-center justify-between px-5 md:px-16 py-24 md:py-16 overflow-hidden">
         {/* Left Content */}
-        <div className="md:w-1/2 w-full text-center mt-10 md:text-left mb-10 md:mb-0">
+        <div className="md:w-[45%] w-full text-center mt-10 md:text-left mb-10 md:mb-0">
           <h2 className="text-3xl md:text-5xl font-bold leading-snug">
             Launch Your Career{" "}
             <span className="text-blue-600">with</span>{" "}
@@ -51,12 +51,13 @@ const Student = () => {
         </div>
 
         {/* Right Image */}
-        <div className="md:w-1/2 w-full flex flex-col items-center md:items-end mt-4 md:mt-0">
+        <div className="md:w-[55%] w-full flex flex-col items-center md:items-end mt-4 md:mt-0">
           <img
             src="/images/Students.png"
             alt="Students"
-            className="w-full h-full object-cover max-w-md mt-5"
+            className="w-full h-full object-cover max-w-xl mt-5" // <- Increase max-w
           />
+
 
           {/* 👇 Avatar Section for Mobile Only */}
           <div className="mt-6 flex md:hidden items-center justify-center w-full">
