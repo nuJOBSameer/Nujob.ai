@@ -53,9 +53,9 @@ const Student = () => {
         {/* Right Image */}
         <div className="md:w-[55%] w-full flex flex-col items-center md:items-centre mt-4 md:mt-0">
           <img
-            src="/images/Students.png"
+            src="/images/Students.jpeg"
             alt="Students"
-            className="w-full h-full object-cover max-w-xl mt-5" // <- Increase max-w
+            className="w-96 h-[500px] object-cover rounded-xl max-w-xl mt-5" // <- Increase max-w
           />
 
 

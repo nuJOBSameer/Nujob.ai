@@ -19,7 +19,7 @@ const Education = () => {
       </div>
 
       {/* Content Section */}
-      <div className="w-full md:w-1/2 text-center md:text-left">
+      <div className="w-full md:w-1/2 md:ml-40 text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A]">
           Your Future <span className="text-[#5243C2]">Starts Here</span>
         </h2>
