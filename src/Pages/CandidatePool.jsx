@@ -23,8 +23,8 @@ const CandidatePool = () => {
         <title>Candidate Pool | nuJOB.AI - Tested Skills. Smarter Hires.</title>
       </Helmet>
 
-      <div className="mx-auto flex flex-col md:flex-row items-center pt-24 px-5 md:pt-10 gap-8">
-        <div className="md:w-1/2 ml-20">
+      <div className=" max-w-6xl mx-auto flex flex-col md:flex-row items-center pt-24 px-5 md:pt-10 gap-8">
+        <div className="md:w-1/2 ">
           <h2 className="text-4xl font-bold text-blue-800">
             Build a High-Impact Candidate Pool with nuJOB.AI
           </h2>
@@ -33,7 +33,7 @@ const CandidatePool = () => {
           </p>
         </div>
 
-        <div className="">
+        <div className="md:w-1/2">
           <img src={OnboardingImage} alt="Onboarding" className="w-full h-auto" />
         </div>
       </div>
