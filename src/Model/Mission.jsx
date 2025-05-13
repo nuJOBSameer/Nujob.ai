@@ -19,7 +19,7 @@ const Mission = () => {
             Mission
           </span>
         </h2>
-        <p className="text-gray-600 italic text-sm mt-2">
+        <p className="text-gray-600 italic text-base mt-2">
         “To make hiring fair, efficient, and deeply personalized. We connect the right talent with the right roles using AI.” - Dmitry Bokotey, CEO
         </p>
       </div>
