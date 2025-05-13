@@ -165,64 +165,67 @@ export default function ServicesSection() {
         : studentServices;
 
   return (
-    <div className="bg-blue-50 py-16 px-6 md:px-12 text-center">
-      <h3 className="text-sm text-gray-600 uppercase flex items-center justify-center">
-        <ClockIcon className="w-4 h-4 mr-2" />
-        Ultimate Features
-      </h3>
-      <h2 className="text-4xl font-semibold mt-2">
-        Check Out Our{" "}
-        <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">
-          Services
-        </span>
-      </h2>
+    <div className="bg-blue-50 py-16 px-6 md:px-5 text-center">
+      {/* Constrain content width */}
+      <div className="max-w-6xl mx-auto">
+        <h3 className="text-sm text-gray-600 uppercase flex items-center justify-center">
+          <ClockIcon className="w-4 h-4 mr-2" />
+          Ultimate Features
+        </h3>
+        <h2 className="text-4xl font-semibold mt-2">
+          Check Out Our{" "}
+          <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">
+            Services
+          </span>
+        </h2>
 
-      {/* Tabs */}
-      <div className="flex justify-center flex-wrap gap-3 mt-6">
-        <button
-          onClick={() => setActiveTab("jobseekers")}
-          className={`px-6 py-2 rounded-full text-sm font-semibold ${activeTab === "jobseekers"
-            ? "bg-purple-600 text-white"
-            : "bg-gray-200 text-gray-700"
-            }`}
-        >
-          For Job-seekers
-        </button>
-        <button
-          onClick={() => setActiveTab("recruiters")}
-          className={`px-6 py-2 rounded-full text-sm font-semibold ${activeTab === "recruiters"
-            ? "bg-purple-600 text-white"
-            : "bg-gray-200 text-gray-700"
-            }`}
-        >
-          For Recruiters
-        </button>
-        <button
-          onClick={() => setActiveTab("students")}
-          className={`px-6 py-2 rounded-full text-sm font-semibold ${activeTab === "students"
-            ? "bg-purple-600 text-white"
-            : "bg-gray-200 text-gray-700"
-            }`}
-        >
-          For Students
-        </button>
-      </div>
-
-      {/* Cards */}
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            onClick={() => setSelectedService(service)}
-            className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer transition"
+        {/* Tabs */}
+        <div className="flex justify-center flex-wrap gap-3 mt-6">
+          <button
+            onClick={() => setActiveTab("jobseekers")}
+            className={`px-6 py-2 rounded-full text-sm font-semibold ${activeTab === "jobseekers"
+              ? "bg-purple-600 text-white"
+              : "bg-gray-200 text-gray-700"
+              }`}
           >
-            <img src={service.icon} alt="" className="w-10 h-10 mb-2" />
-            <h4 className="text-lg font-semibold text-left">{service.title}</h4>
-            <p className="text-sm text-gray-600 text-left mt-1">
-              {service.subtitle}
-            </p>
-          </div>
-        ))}
+            For Job-seekers
+          </button>
+          <button
+            onClick={() => setActiveTab("recruiters")}
+            className={`px-6 py-2 rounded-full text-sm font-semibold ${activeTab === "recruiters"
+              ? "bg-purple-600 text-white"
+              : "bg-gray-200 text-gray-700"
+              }`}
+          >
+            For Recruiters
+          </button>
+          <button
+            onClick={() => setActiveTab("students")}
+            className={`px-6 py-2 rounded-full text-sm font-semibold ${activeTab === "students"
+              ? "bg-purple-600 text-white"
+              : "bg-gray-200 text-gray-700"
+              }`}
+          >
+            For Students
+          </button>
+        </div>
+
+        {/* Cards */}
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              onClick={() => setSelectedService(service)}
+              className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer transition"
+            >
+              <img src={service.icon} alt="" className="w-10 h-10 mb-2" />
+              <h4 className="text-lg font-semibold text-left">{service.title}</h4>
+              <p className="text-sm text-gray-600 text-left mt-1">
+                {service.subtitle}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Modal */}
@@ -246,7 +249,7 @@ export default function ServicesSection() {
               <h4 className="text-xl font-bold">{selectedService.title}</h4>
             </div>
 
-            {/* Fix: handle multi-line description */}
+            {/* Multi-line description */}
             {selectedService.description.split("\n").map((line, idx) => {
               const isSubheading = line.trim().endsWith(":");
               return (
@@ -258,12 +261,10 @@ export default function ServicesSection() {
                 </p>
               );
             })}
-
-
           </div>
         </div>
       )}
-
     </div>
   );
+
 }
