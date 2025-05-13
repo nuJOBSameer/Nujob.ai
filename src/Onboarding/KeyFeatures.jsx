@@ -4,7 +4,7 @@ import CheckIcon from "/images/Check.png"; // Ensure this image exists in your p
 
 const KeyFeatures = () => {
   return (
-    <div className="bg-gray-200 mx-auto flex flex-col md:flex-row justify-between items-center gap-10 py-12 px-14">
+    <div className="max-w-6xl bg-gray-200 mx-auto flex flex-col md:flex-row justify-between items-center gap-10 py-12 px-14">
       {/* Left Section */}
       <div className="md:w-1/2">
         <h2 className="text-2xl font-bold text-gray-900">Key Features</h2>

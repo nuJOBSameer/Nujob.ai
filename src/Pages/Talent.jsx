@@ -19,13 +19,13 @@ const Talent = () => {
       <Helmet>
         <title>Talent | nuJOB.AI - Tested Skills. Smarter Hires.</title>
       </Helmet>
-      <div className="flex md:flex-row flex-col items-center justify-between py-24 md:py-12 px-5 md:px-16 bg-white">
+      <div className="max-w-6xl mx-auto flex md:flex-row flex-col items-center justify-between py-24 md:py-12 px-5 md:px-16 bg-white">
         {/* Left Text Section */}
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold text-[#514DE0]">
             Talent Management That Works
           </h2>
-          <p className="text-gray-600 mt-4">
+          <p className="text-gray-600 mt-4 pr-8">
             Find, assess, and hire top talent with AI-driven insights and real-world evaluations. Faster decisions, better hires.
           </p>
           <button

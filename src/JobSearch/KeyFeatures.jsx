@@ -34,7 +34,7 @@ const KeyFeatures = () => {
       </div>
 
       {/** Line after the boxes **/}
-      <div className="w-[1030px] hidden md:flex border-t border-gray-300 mt-8 ml-40"></div>
+      <div className="w-[1030px] hidden md:flex border-t border-gray-300 mt-8 ml-8"></div>
     </div>
   );
 };
