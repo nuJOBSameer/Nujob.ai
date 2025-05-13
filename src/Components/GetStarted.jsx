@@ -7,8 +7,8 @@ const GetStarted = () => {
     setSelected(""); // Reset dropdown back to "Get Started"
     let url = "";
 
-    if (value === "Rec") url = "https://client.nuJOB.ai";
-    else if (value === "Can") url = "https://candidate.nuJOB.ai";
+    if (value === "Rec") url = "https://client.nujob.info/";
+    else if (value === "Can") url = "https://candidate.nujob.info/";
 
     if (url) {
       window.location.href = url; // Open in same tab

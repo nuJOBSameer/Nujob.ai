@@ -18,7 +18,7 @@ const FeatureCards = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 py-10 px-4">
+    <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 py-10 px-4">
       {features.map((feature, index) => (
         <div key={index} className="relative group rounded-lg overflow-hidden shadow-lg">
           {/* Background Image */}
