@@ -38,6 +38,25 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
 
+       <video
+          autoPlay
+          muted
+          playsInline
+          className="hidden lg:block absolute top-0 left-0 w-full h-full object-cover z-40"
+        >
+          <source src="/hero-desktop1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video
+          autoPlay
+          muted
+          playsInline
+          className="hidden xl:block absolute top-0 left-0 w-full h-full object-cover z-40"
+        >
+          <source src="/hero-desktop3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
         {/* Text Content */}
       </div>
