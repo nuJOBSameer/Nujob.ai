@@ -12,7 +12,11 @@ const Home = () => {
   return (
     <div className='overflow-x-hidden'>
       <Helmet>
-        <title>Home | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+        <title>nuJOB.AI | Elevate Your Career Journey</title>
+        <meta
+          name="description"
+          content=" Discover a smarter approach to career advancement with tools designed to refine your skills and connect you to opportunities that align with your ambitions."
+        />
       </Helmet>
       <div className="relative min-h-screen w-full flex items-center justify-center text-white overflow-hidden">
 
@@ -23,7 +27,7 @@ const Home = () => {
           playsInline
           className="hidden md:block absolute top-0 left-0 w-full h-full object-cover z-40"
         >
-          <source src="/hero-desktop.mp4" type="video/mp4" />
+          <source src="/hero-desktop2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

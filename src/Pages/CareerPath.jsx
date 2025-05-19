@@ -8,7 +8,11 @@ const CareerPath = () => {
   return (
     <>
       <Helmet>
-        <title>Career Path | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+        <title>nuJOB.AI | Executive Opportunities</title>
+        <meta
+          name="description"
+          content="Connect with top-tier executive roles through our specialized search services tailored for leadership positions."
+        />
       </Helmet>
       <section className="bg-[#f8f9fc] py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center justify-between">

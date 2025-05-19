@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Helmet } from "react-helmet";
 import JobMatch from "../Student/JobMatch";
 import Education from "../Student/Education";
 import Skills from "../Student/Skills";
@@ -13,6 +14,11 @@ const Student = () => {
 
   return (
     <>
+    <Helmet>
+  <title>nuJOB.AI | Student Career Resources</title>
+  <meta name="description" content="Equip yourself with tools and guidance to build a strong foundation for your future career, even before graduation." />
+</Helmet>
+
       {/* 👇 Full-width background container */}
       <div className="w-full bg-[#EBFDFF] py-24 md:py-16">
         {/* 👇 Centered content container */}

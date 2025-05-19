@@ -64,8 +64,10 @@ const FAQ = () => {
   return (
     <>
     <Helmet>
-        <title>FAQ | nuJOB.AI - Tested Skills. Smarter Hires.</title>
-      </Helmet>
+  <title>nuJOB.AI | Frequently Asked Questions</title>
+  <meta name="description" content="Explore common questions and detailed answers to better understand our services and how to make the most of them." />
+</Helmet>
+
     <div className="max-w-3xl mx-auto px-4 py-24 text-center">
       {/* FAQ Icon */}
       <img src="/images/FAQ.png" alt="FAQ Icon" className="mx-auto w-36 h-24 mb-4" />

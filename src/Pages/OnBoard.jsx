@@ -11,8 +11,10 @@ const OnBoard = () => {
   return (
     <>
     <Helmet>
-        <title>OnBoard | nuJOB.AI - Tested Skills. Smarter Hires.</title>
-      </Helmet>    
+  <title>nuJOB.AI | Effective Onboarding</title>
+  <meta name="description" content="Accelerate new hires' integration with tools that validate skills and provide practical training for a smooth transition." />
+</Helmet>
+   
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-5 py-24">
       {/* Left Content */}
       <div className="md:w-1/2">

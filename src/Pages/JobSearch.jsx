@@ -17,8 +17,10 @@ const JobSearch = () => {
   return (
     <div className="overflow-x-hidden">
       <Helmet>
-        <title>Job Search | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+        <title>nuJOB.AI | Tailored Job Recommendations</title>
+        <meta name="description" content="Receive job suggestions that align with your skills and preferences, streamlining your search for the ideal position." />
       </Helmet>
+
 
       {/* Hero Section */}
       <section className="bg-white py-24 md:py-14 px-5 md:px-8">

@@ -14,7 +14,11 @@ const About = () => {
   return (
     <>
     <Helmet>
-        <title>About | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+        <title>About nuJOB.AI | Our Mission and Vision</title>
+        <meta
+          name="description"
+          content="Learn about our commitment to transforming the job market by focusing on validated skills and efficient hiring processes."
+        />
       </Helmet>
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between md:px-24 py-10">

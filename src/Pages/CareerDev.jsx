@@ -18,8 +18,10 @@ const CareerDev = () => {
   return (
     <>
       <Helmet>
-        <title>Career Dev | nuJOB.AI - Tested Skills. Smarter Hires.</title>
-      </Helmet>
+  <title>nuJOB.AI | Career Growth Support</title>
+  <meta name="description" content="Benefit from personalized guidance to achieve your career goals, with insights based on your experience and industry trends." />
+</Helmet>
+
 
       {/* Hero Section */}
       <section className="bg-white py-24 md:py-28 px-5 md:px-8">

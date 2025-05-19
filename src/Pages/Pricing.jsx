@@ -22,8 +22,10 @@ const PricingSection = () => {
   return (
     <>
       <Helmet>
-        <title>Pricing | nuJOB.AI - Tested Skills. Smarter Hires.</title>
-      </Helmet>
+  <title>nuJOB.AI | Flexible Pricing Plans</title>
+  <meta name="description" content="Choose from a variety of membership options tailored to support your career growth and recruitment needs." />
+</Helmet>
+
 
       <div className="relative flex flex-col items-center pt-32 px-10">
         {/* Background Image */}

@@ -8,7 +8,11 @@ const Method = () => {
   return (
     <>
     <Helmet>
-        <title>Model | nuJOB.AI - Tested Skills. Smarter Hires.</title>
+        <title>nuJOB.AI | Our Business Approach</title>
+        <meta
+          name="description"
+          content="Understand how our platform aligns candidates with job descriptions, ensuring optimal fits based on skills and experience."
+        />
       </Helmet>
     <div className="flex flex-col md:flex-row items-start justify-between bg-white max-w-6xl mx-auto py-20 px-6">
       {/* Left Content */}

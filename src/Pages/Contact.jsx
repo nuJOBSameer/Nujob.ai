@@ -7,8 +7,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact | nuJOB.AI - Tested Skills. Smarter Hires.</title>
-      </Helmet>
+  <title>nuJOB.AI | Get in Touch</title>
+  <meta name="description" content="Reach out to us for inquiries, support, or to learn more about how we can assist with your career or hiring needs." />
+</Helmet>
+
       <div className="flex justify-center items-center py-32">
         {/* Background Section */}
         <div

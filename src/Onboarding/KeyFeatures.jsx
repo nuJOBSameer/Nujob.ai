@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import CheckIcon from "/images/Check.png"; // Ensure this image exists in your project folder
 
 const KeyFeatures = () => {
@@ -15,9 +16,11 @@ const KeyFeatures = () => {
           that enhance decision-making, reduce time-to-hire, and ensure the best 
           candidate fit for every role.
         </p>
+        <Link to="/pricing">
         <button className="mt-6 px-5 py-2 bg-black text-white rounded-full flex items-center gap-2">
           Explore More <img src="/images/Arrow.png" alt="" />
         </button>
+        </Link>
       </div>
 
       {/* Right Section - Features Grid */}

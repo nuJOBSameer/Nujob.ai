@@ -20,8 +20,10 @@ const CandidatePool = () => {
   return (
     <>
       <Helmet>
-        <title>Candidate Pool | nuJOB.AI - Tested Skills. Smarter Hires.</title>
-      </Helmet>
+  <title>nuJOB.AI | Build Your Talent Pool</title>
+  <meta name="description" content="Access a curated pool of candidates, leveraging insights to make informed hiring decisions." />
+</Helmet>
+
 
       <div className=" max-w-6xl mx-auto flex flex-col md:flex-row items-center pt-24 px-5 md:pt-10 gap-8">
         <div className="md:w-1/2 ">

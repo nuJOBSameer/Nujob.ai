@@ -15,8 +15,10 @@ const Interview = () => {
   return (
     <>
       <Helmet>
-        <title>Interview | nuJOB.AI - Tested Skills. Smarter Hires.</title>
-      </Helmet>
+  <title>nuJOB.AI | Streamlined Interviewing</title>
+  <meta name="description" content="Utilize our platform to manage interviews efficiently, gaining real-time insights and tracking progress seamlessly." />
+</Helmet>
+
 
       {/* Hero Section */}
       <section className="bg-white pt-24 md:py-12 px-5 md:px-8">

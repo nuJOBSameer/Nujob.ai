@@ -31,8 +31,10 @@ const Blogs = () => {
     return (
         <>
         <Helmet>
-        <title>Blogs | nuJOB.AI - Tested Skills. Smarter Hires.</title>
-      </Helmet>
+  <title>nuJOB.AI | Insights and Updates</title>
+  <meta name="description" content="Stay informed with the latest articles, tips, and industry news to support your career and hiring strategies." />
+</Helmet>
+
         <div className="max-w-6xl mx-auto py-28 px-6 text-center">
             {/* Full-Page Centered Header */}
             <div className="text-center mb-8">
