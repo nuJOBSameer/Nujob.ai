@@ -21,7 +21,7 @@ import {
   ClipboardDocumentIcon,
 } from "@heroicons/react/24/outline";
 import LanguageSelector from "./LanguageSelector";
-import GetStarted from "./GetStarted";
+import GetStartedUkr from "./GetStartedUkr";
 
 const aboutFeatures = [
   {
@@ -417,7 +417,7 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex items-center space-x-2">
           <LanguageSelector/>
-          <GetStarted/>
+          <GetStartedUkr/>
         </div>
         <div className="lg:hidden">
           <button
@@ -543,7 +543,7 @@ export default function Navbar() {
 
           <div className="mt-4 flex justify-center space-x-9">
             <LanguageSelector/>
-            <GetStarted/>
+            <GetStartedUkr/>
           </div>
         </div>
       )}
