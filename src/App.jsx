@@ -23,12 +23,17 @@ import Privacy from "./Pages/Privacy";
 import Refund from "./Pages/Refund";
 import Student from "./Pages/Student";
 
+
+import EnglishLayout from "./Layout/EnglishLayout";
+import UkrainianLayout from "./Layout/UkrainianLayout";
+
+import HomeUkr from "./PagesUkr/HomeUkr";
+
 function App() {
   return (
     <Router>
-      <ScrollToTop />
-      <Navbar /> {/* Keep Navbar visible on all pages */}
       <Routes>
+        <Route element={<EnglishLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/FAQ" element={<FAQ />} />
@@ -49,8 +54,16 @@ function App() {
         <Route path="/Privacy" element={<Privacy/>} />
         <Route path="/Refund" element={<Refund/>} />
         <Route path="/Student" element={<Student/>}/>
+        </Route>
+
+        {/* Ukrainian Layout & Routes */}
+        <Route path="/ua" element={<UkrainianLayout />}>
+          <Route index element={<HomeUkr />} />
+          {/* <Route path="about" element={<AboutUA />} />
+          <Route path="contact" element={<ContactUA />} />
+          Add all UA routes here */}
+        </Route>
       </Routes>
-      <Footer />
     </Router>
   );
 }
