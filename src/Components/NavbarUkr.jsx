@@ -27,9 +27,9 @@ const aboutFeatures = [
   {
     name: "The Company",
     description:
-      "Discover how we empower organizations to find top leadership talent and help candidates brand themselves",
+      "Дізнайтеся, як ми допомагаємо організаціям знаходити найкращих лідерів, а кандидатам — створювати власний бренд.",
     icon: BriefcaseIcon,
-    link: "/about",
+    link: "/aboutua",
   },
   // {
   //   name: "Competitive Analysis",
@@ -41,9 +41,9 @@ const aboutFeatures = [
   {
     name: "Business Model",
     description:
-      "At nuJOB AI, we employ a comprehensive and data-driven approach to revolutionize the executive search process.",
+      "У nuJOB.AI ми використовуємо комплексний та орієнтований на дані підхід, щоб революціонізувати процес пошуку керівників.",
     icon: LightBulbIcon,
-    link: "/Method",
+    link: "/Methodua",
   },
 ];
 
@@ -53,7 +53,7 @@ const candidateFeatures = [
     description:
       "Our AI-driven platform helps you craft a standout professional profile.",
     icon: UsersIcon,
-    link: "/Career-path",
+    link: "/Career-pathua",
   },
   {
     name: "Job Search & Recommendations",

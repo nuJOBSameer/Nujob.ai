@@ -28,7 +28,9 @@ import EnglishLayout from "./Layout/EnglishLayout";
 import UkrainianLayout from "./Layout/UkrainianLayout";
 
 import HomeUkr from "./PagesUkr/HomeUkr";
-
+import AboutUkr from "./PagesUkr/AboutUkr";
+import MethodUkr from "./PagesUkr/ModelUkr";
+import CareerPathUkr from "./PagesUkr/CareerPathUkr";
 function App() {
   return (
     <Router>
@@ -57,11 +59,12 @@ function App() {
         </Route>
 
         {/* Ukrainian Layout & Routes */}
-        <Route path="/ua" element={<UkrainianLayout />}>
-          <Route index element={<HomeUkr />} />
-          {/* <Route path="about" element={<AboutUA />} />
-          <Route path="contact" element={<ContactUA />} />
-          Add all UA routes here */}
+        <Route element={<UkrainianLayout />}>
+          <Route path="/ua"  element={<HomeUkr />} />
+          <Route path="/aboutua" element={<AboutUkr />} />
+          <Route path="/Methodua" element={<MethodUkr />} />
+          <Route path="/Career-pathua" element={<CareerPathUkr />} />
+          {/* <Route path="contact" element={<ContactUA />} /> */}
         </Route>
       </Routes>
     </Router>
