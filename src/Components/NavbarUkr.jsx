@@ -51,30 +51,30 @@ const candidateFeatures = [
   {
     name: "Executive Career Path",
     description:
-      "Our AI-driven platform helps you craft a standout professional profile.",
+      "Наша платформа на базі ШІ допомагає створити професійний профіль, який вирізняється.",
     icon: UsersIcon,
     link: "/Career-pathua",
   },
   {
     name: "Job Search & Recommendations",
     description:
-      "AI-powered tools help you build, develop, and empower your career journey.",
+      "Інструменти на базі ШІ допомагають вам будувати, розвивати та зміцнювати свій кар’єрний шлях.",
     icon: BriefcaseIcon,
-    link: "/JobSearch",
+    link: "/JobSearchua",
   },
   {
     name: "Career Development & Guidance",
     description:
-      "Simplifies career navigation with tools to support success in a competitive job market.",
+      "Спрощує кар’єрну навігацію завдяки інструментам, що підтримують успіх на конкурентному ринку праці.",
     icon: LightBulbIcon,
-    link: "/Career-Dev",
+    link: "/Career-Devua",
   },
   {
     name: "Resume & Skills Enhancement",
     description:
-      "Craft a dynamic profile that boosts your chances in today’s job market.",
+      "Створіть динамічний профіль, що підвищує ваші шанси на сучасному ринку праці.",
     icon: ClipboardDocumentIcon,
-    link: "/Resume-skills-enhancement",
+    link: "/Resume-skills-enhancementua",
   },
 ];
 const RecruitersFeatures = [
@@ -144,12 +144,12 @@ export default function Navbar() {
     <header className="bg-white shadow-sm fixed top-0 w-full z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <div className="flex items-center">
-          <Link to="/">
+          <Link to="/ua">
           <img src="/images/Logo.png" alt="logo" className="h-10 w-32" />
           </Link>
         </div>
         <div className="hidden lg:flex space-x-5">
-          <Link to="/" className="text-gray-900 font-medium">
+          <Link to="/ua" className="text-gray-900 font-medium">
             Головна
           </Link>
           <div
@@ -163,7 +163,7 @@ export default function Navbar() {
             onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/About" onClick={() => setAboutOpen(false)}>
+              <Link Link to="/Aboutua" onClick={() => setAboutOpen(false)}>
                 Про нас
               </Link >
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -228,7 +228,7 @@ export default function Navbar() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Career-path" onClick={() => setCandidatesOpen(false)}>
+              <Link Link to="/Career-pathua" onClick={() => setCandidatesOpen(false)}>
               Для пошукачів роботи
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />

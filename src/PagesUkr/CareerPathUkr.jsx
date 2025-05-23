@@ -1,17 +1,17 @@
 import React from "react";
-import ExecutiveSearch from "../Career-Path/ExecutiveSearch";
-import TopTierCandidates from "../Career-Path/TopTierCandidates";
-import ExecutiveServices from "../Career-Path/ExecutiveServices";
+import ExecutiveSearchUkr from "../Career-Path/ExecutiveSearchUkr";
+import TopTierCandidatesUkr from "../Career-Path/TopTierCandidatesUkr";
+import ExecutiveServicesUkr from "../Career-Path/ExecutiveServicesUkr";
 import { Helmet } from "react-helmet";
 
 const CareerPathUkr = () => {
   return (
     <>
       <Helmet>
-        <title>nuJOB.AI | Executive Opportunities</title>
+        <title>nuJOB.AI | Ексклюзивні можливості</title>
         <meta
           name="description"
-          content="Connect with top-tier executive roles through our specialized search services tailored for leadership positions."
+          content="Підключайтеся до топових керівних посад через наші спеціалізовані послуги пошуку, орієнтовані на лідерські позиції."
         />
       </Helmet>
       <section className="bg-[#f8f9fc] py-20 px-6 md:px-16">
@@ -24,28 +24,28 @@ const CareerPathUkr = () => {
             </h2>
             <p className="text-gray-700 mb-6">
               nuJOB.AI спеціалізується на підборі керівників вищої ланки, членів ради директорів та галузевих лідерів. Наш підхід на основі ШІ забезпечує компаніям справді цінні кадри.
-              </p>
+            </p>
             {/* Benefits List */}
             <div className="space-y-4">
               <div className="flex items-start space-x-2">
                 <img src="/images/ArrowD.png" alt="Arrow" className="w-5 h-5 mt-1" />
                 <p>
-                  <span className="font-semibold text-[#0073e6]">High-Impact Leadership</span> <br />
-                  Find executives who drive real growth.
+                  <span className="font-semibold text-[#0073e6]">Лідерство з високим впливом</span> <br />
+                  Знаходьте керівників, які забезпечують реальне зростання.
                 </p>
               </div>
               <div className="flex items-start space-x-2">
                 <img src="/images/ArrowD.png" alt="Arrow" className="w-5 h-5 mt-1" />
                 <p>
-                  <span className="font-semibold text-[#0073e6]">Data-Driven Hiring</span> <br />
-                  Make smarter choices with AI-powered insights.
+                  <span className="font-semibold text-[#0073e6]">Найм на основі даних</span> <br />
+                  Приймайте розумніші рішення завдяки аналітиці ШІ.
                 </p>
               </div>
               <div className="flex items-start space-x-2">
                 <img src="/images/ArrowD.png" alt="Arrow" className="w-5 h-5 mt-1" />
                 <p>
-                  <span className="font-semibold text-[#0073e6]">Faster, Smarter Recruitment</span> <br />
-                  Cut hiring time and secure the best.
+                  <span className="font-semibold text-[#0073e6]">Швидкий і розумний підбір персоналу</span> <br />
+                  Скоротіть час найму та залучайте найкращих.
                 </p>
               </div>
             </div>
@@ -57,9 +57,9 @@ const CareerPathUkr = () => {
           </div>
         </div>
       </section>
-      <ExecutiveSearch />
-      <TopTierCandidates />
-      <ExecutiveServices />
+      <ExecutiveSearchUkr />
+      <TopTierCandidatesUkr />
+      <ExecutiveServicesUkr />
     </>
   );
 };
