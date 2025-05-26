@@ -24,8 +24,8 @@ import LanguageSelector from "./LanguageSelector";
 import GetStartedUkr from "./GetStartedUkr";
 
 const aboutFeatures = [
-  {
-    name: "The Company",
+ {
+    name: "Про компанію",
     description:
       "Дізнайтеся, як ми допомагаємо організаціям знаходити найкращих лідерів, а кандидатам — створювати власний бренд.",
     icon: BriefcaseIcon,
@@ -39,7 +39,7 @@ const aboutFeatures = [
   //   link: "/Analysis",
   // },
   {
-    name: "Business Model",
+    name: "Бізнес-модель",
     description:
       "У nuJOB.AI ми використовуємо комплексний та орієнтований на дані підхід, щоб революціонізувати процес пошуку керівників.",
     icon: LightBulbIcon,
@@ -49,60 +49,61 @@ const aboutFeatures = [
 
 const candidateFeatures = [
   {
-    name: "Executive Career Path",
+    name: "Кар’єрний шлях керівника",
     description:
       "Наша платформа на базі ШІ допомагає створити професійний профіль, який вирізняється.",
     icon: UsersIcon,
     link: "/Career-pathua",
   },
   {
-    name: "Job Search & Recommendations",
+    name: "Пошук роботи та рекомендації",
     description:
       "Інструменти на базі ШІ допомагають вам будувати, розвивати та зміцнювати свій кар’єрний шлях.",
     icon: BriefcaseIcon,
     link: "/JobSearchua",
   },
   {
-    name: "Career Development & Guidance",
+    name: "Кар’єрний розвиток і наставництво",
     description:
       "Спрощує кар’єрну навігацію завдяки інструментам, що підтримують успіх на конкурентному ринку праці.",
     icon: LightBulbIcon,
     link: "/Career-Devua",
   },
   {
-    name: "Resume & Skills Enhancement",
+    name: "Резюме та розвиток навичок",
     description:
       "Створіть динамічний профіль, що підвищує ваші шанси на сучасному ринку праці.",
     icon: ClipboardDocumentIcon,
     link: "/Resume-skills-enhancementua",
   },
 ];
+
 const RecruitersFeatures = [
   {
-    name: "Candidate Pool",
+    name: "База кандидатів",
     description:
-      "nuJOB.Al helps hiring managers efficiently build and manage a strong candidate pool with...",
+      "nuJOB.AI допомагає рекрутерам ефективно формувати та керувати сильною базою кандидатів за допомогою ШІ.",
     icon: UsersIcon,
-    link: "/Candidate-Pool",
+    link: "/Candidate-Poolua",
   },
   {
-    name: "Interview Assessment",
+    name: "Оцінювання на співбесідах",
     description:
-      "At nuJOB.Al, we transform interviews and assessments with Al, offering live interviews and realistic simulations...",
+      "У nuJOB.AI ми трансформуємо інтерв’ю та оцінювання за допомогою ШІ, пропонуючи живі інтерв’ю та реалістичні симуляції.",
     icon: DocumentTextIcon,
-    link: "/Interview",
+    link: "/Interviewua",
   },
   {
-    name: "Onboarding Development",
+    name: "Адаптація нових працівників",
     description:
-      "nuJOB.Al accelerates success with Al-powered tools for seamless onboarding, skill validation, and...",
+      "nuJOB.AI прискорює адаптацію завдяки інструментам на базі ШІ для безперебійного входження в посаду та перевірки навичок.",
     icon: UserPlusIcon,
     link: "/Onboarding",
   },
   {
-    name: "Talent Management",
+    name: "Управління талантами",
     description:
-      "At nuJOB Al, we recruit, develop, and retain top talent through advanced competency detection...",
+      "У nuJOB.AI ми залучаємо, розвиваємо та утримуємо найкращі таланти за допомогою передових технологій виявлення компетенцій.",
     icon: MagnifyingGlassIcon,
     link: "/Talent",
   },
@@ -110,27 +111,28 @@ const RecruitersFeatures = [
 
 const supportFeatures = [
   {
-    name: "Connect with Us",
+    name: "Зв’яжіться з нами",
     description:
-      "For any issues with nuJOB.AI, we’re here to provide technical assistance, troubleshooting, and guidance.",
+      "Якщо у вас виникли проблеми з nuJOB.AI, ми надамо технічну допомогу, усунення несправностей та підтримку.",
     icon: PhoneIcon,
     link: "/Contact",
   },
   {
-    name: "Frequently Asked Questions",
+    name: "Часті запитання",
     description:
-      "Find answers to the most common questions about using nuJOB.AI, career guidance, job search tools, and more.",
+      "Знайдіть відповіді на найпоширеніші запитання щодо використання nuJOB.AI, кар’єрного консультування, пошуку роботи тощо.",
     icon: QuestionMarkCircleIcon,
     link: "/FAQ",
   },
   {
-    name: "Blog",
+    name: "Блог",
     description:
-      "Stay updated with career tips, job search strategies, and personal growth on our blog.",
+      "Будьте в курсі кар’єрних порад, стратегій пошуку роботи та особистісного зростання у нашому блозі.",
     icon: NewspaperIcon,
     link: "/Blogs",
   },
 ];
+
 
 export default function Navbar() {
   const [aboutOpen, setAboutOpen] = useState(false);
