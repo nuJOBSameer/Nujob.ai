@@ -9,6 +9,7 @@ const GetStarted = () => {
 
     if (value === "Rec") url = "https://client.nujob.info/";
     else if (value === "Can") url = "https://candidate.nujob.info/";
+    else if (value === "Stu") url = "https://candidate.nujob.info/";
 
     if (url) {
       window.location.href = url; // Open in same tab
@@ -26,6 +27,7 @@ const GetStarted = () => {
           Get Started</option>
         <option value="Rec">For Recruiter</option>
         <option value="Can">For Job-seekers</option>
+        <option value="Stu">For Students</option>
       </select>
     </div>
   );
