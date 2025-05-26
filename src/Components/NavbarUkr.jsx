@@ -413,7 +413,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link to="/pricing" className="text-gray-900 font-medium">
+          <Link to="/pricingua" className="text-gray-900 font-medium">
             Ціни
           </Link>
         </div>
