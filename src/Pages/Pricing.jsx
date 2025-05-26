@@ -262,8 +262,8 @@ const studentPlans = [
   {
     name: "Student Basic",
     price: "$9.99",
-    period: "",
-    features: ["3 Free Interviews", "Career Guidance"],
+    period: "25 Credits",
+    features: ["3 Free Interviews"],
     border: "border-green-400 bg-white",
     text: "text-gray-800",
     link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6oI",

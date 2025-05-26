@@ -36,6 +36,10 @@ import CareerDevUkr from "./PagesUkr/CareerDevUkr";
 import ResumeSkillsUkr from "./PagesUkr/ResumeSkillsUkr";
 import CandidatePoolUkr from "./PagesUkr/CandidatePoolUkr";
 import InterviewUkr from "./PagesUkr/InterviewUkr";
+import OnBoardUkr from "./PagesUkr/OnboardUkr";
+import TalentUkr from "./PagesUkr/TalentUkr";
+import StudentUkr from "./PagesUkr/StudentUkr";
+import PricingUkr from "./PagesUkr/PricingUkr";
 function App() {
   return (
     <Router>
@@ -75,6 +79,10 @@ function App() {
           <Route path="/Resume-skills-enhancementua" element={<ResumeSkillsUkr/>} />
           <Route path="/Candidate-Poolua" element={<CandidatePoolUkr/>} />
           <Route path="/Interviewua" element={<InterviewUkr/>} />
+          <Route path="/Onboardingua" element={<OnBoardUkr/>} />
+          <Route path="/Talentua" element={<TalentUkr/>} />
+          <Route path="/Studentua" element={<StudentUkr/>} />
+          <Route path="/pricingua" element={<PricingUkr/>} />
           {/* <Route path="contact" element={<ContactUA />} /> */}
         </Route>
       </Routes>
