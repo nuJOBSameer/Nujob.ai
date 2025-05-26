@@ -38,7 +38,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route element={<EnglishLayout />}>
+        <Route   element={<EnglishLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/FAQ" element={<FAQ />} />

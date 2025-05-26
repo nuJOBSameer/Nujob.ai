@@ -1,16 +1,29 @@
-import React from 'react'
-import Navbar from "../Components/Navbar"
-import Services from '../home/Services'
-import Business from '../home/Business'
-import Career from '../home/Career'
-import ResumeBuilder from '../home/ResumeBuilder'
-import Footer from '../Components/Footer'
-import Bottom from '../About/Bottom'
+import React, { useEffect } from "react";
+import Navbar from "../Components/Navbar";
+import Services from "../home/Services";
+import Business from "../home/Business";
+import Career from "../home/Career";
+import ResumeBuilder from "../home/ResumeBuilder";
+import Footer from "../Components/Footer";
+import Bottom from "../About/Bottom";
 import { Helmet } from "react-helmet";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
+const languageRouter = ["ua"];
 
 const Home = () => {
+  const router = useNavigate();
+  useEffect(() => {
+    axios.get("https://ipapi.co/json").then((response) => {
+      const userCountry = response.data.country_code.toLowerCase();
+      if (languageRouter.includes(userCountry)) {
+        router(`/${userCountry}`);
+      }
+    });
+  });
   return (
-    <div className='overflow-x-hidden'>
+    <div className="overflow-x-hidden">
       <Helmet>
         <title>nuJOB.AI | Elevate Your Career Journey</title>
         <meta
@@ -19,7 +32,6 @@ const Home = () => {
         />
       </Helmet>
       <div className="relative min-h-screen w-full flex items-center justify-center text-white overflow-hidden">
-
         {/* Background Video */}
         <video
           autoPlay
@@ -42,7 +54,7 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
 
-       <video
+        <video
           autoPlay
           muted
           playsInline
@@ -70,7 +82,7 @@ const Home = () => {
       <ResumeBuilder />
       <Bottom />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
