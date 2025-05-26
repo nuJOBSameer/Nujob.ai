@@ -306,7 +306,7 @@ const studentPlans = [
   {
     name: "Student Basic",
     price: "$9.99",
-    period: "25 Credits",
+    period: "",
     features: ["3 Free Interviews", "Career Guidance"],
     border: "border-green-400 bg-white",
     text: "text-gray-800",

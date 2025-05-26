@@ -34,6 +34,8 @@ import CareerPathUkr from "./PagesUkr/CareerPathUkr";
 import JobSearchUkr from "./PagesUkr/JobSearchUkr";
 import CareerDevUkr from "./PagesUkr/CareerDevUkr";
 import ResumeSkillsUkr from "./PagesUkr/ResumeSkillsUkr";
+import CandidatePoolUkr from "./PagesUkr/CandidatePoolUkr";
+import InterviewUkr from "./PagesUkr/InterviewUkr";
 function App() {
   return (
     <Router>
@@ -71,6 +73,8 @@ function App() {
           <Route path="/JobSearchua" element={<JobSearchUkr/>} />
           <Route path="/Career-Devua" element={<CareerDevUkr/>} />
           <Route path="/Resume-skills-enhancementua" element={<ResumeSkillsUkr/>} />
+          <Route path="/Candidate-Poolua" element={<CandidatePoolUkr/>} />
+          <Route path="/Interviewua" element={<InterviewUkr/>} />
           {/* <Route path="contact" element={<ContactUA />} /> */}
         </Route>
       </Routes>
