@@ -113,13 +113,16 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <ContactInfoForm link={plan.link} >
+              {/* <ContactInfoForm link={plan.link} > */}
                 <button
                   className="mt-6 bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600"
+                  onClick={()=>{
+                    window.location.href=plan.link
+                  }}
                 >
                   {plan.name === "Enterprise" ? "Talk To Us" : "Try For 7 Days"}
                 </button>
-              </ContactInfoForm>
+              {/* </ContactInfoForm> */}
             </div>
           ))}
         </div>
