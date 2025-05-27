@@ -361,7 +361,7 @@ export default function Navbar() {
             onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Contact">
+              <Link Link to="/Contactua">
                 Підтримка
               </Link>{" "}
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
