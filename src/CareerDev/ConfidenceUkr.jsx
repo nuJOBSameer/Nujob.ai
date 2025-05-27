@@ -3,7 +3,7 @@ import React from "react";
 const ConfidenceUkr = () => {
   return (
     <div className="text-center py-12 relative">
-      <h2 className="text-2xl font-bold">Confidence Score</h2>
+      <h2 className="text-2xl font-bold">Індекс впевненості</h2>
       <div className="flex md:flex-row flex-wrap items-center justify-center gap-6 mt-6">
         {/** Card 1 **/}
         <div className="w-56 h-44 p-3 rounded-lg border text-center border-blue-300 bg-[#F8F2FF] shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300 ease-in-out">
