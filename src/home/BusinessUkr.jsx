@@ -13,6 +13,7 @@ export default function Business() {
                         loop
                         muted
                         playsInline
+                        controls
                         className="w-full max-w-md rounded-md"
                     />
                 </div>

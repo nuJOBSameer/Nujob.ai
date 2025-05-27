@@ -40,6 +40,9 @@ import OnBoardUkr from "./PagesUkr/OnboardUkr";
 import TalentUkr from "./PagesUkr/TalentUkr";
 import StudentUkr from "./PagesUkr/StudentUkr";
 import PricingUkr from "./PagesUkr/PricingUkr";
+import FAQUkr from "./PagesUkr/FAQUkr";
+import BlogsUkr from "./PagesUkr/BlogsUkr";
+import ContactUkr from "./PagesUkr/ContactUkr";
 function App() {
   return (
     <Router>
@@ -83,7 +86,9 @@ function App() {
           <Route path="/Talentua" element={<TalentUkr/>} />
           <Route path="/Studentua" element={<StudentUkr/>} />
           <Route path="/pricingua" element={<PricingUkr/>} />
-          {/* <Route path="contact" element={<ContactUA />} /> */}
+          <Route path="/FAQua" element={<FAQUkr/>} />
+          <Route path="/Blogsua" element={<BlogsUkr/>} />
+          <Route path="/Contactua" element={<ContactUkr/>} />
         </Route>
       </Routes>
     </Router>

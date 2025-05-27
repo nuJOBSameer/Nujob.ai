@@ -122,14 +122,14 @@ const supportFeatures = [
     description:
       "Знайдіть відповіді на найпоширеніші запитання щодо використання nuJOB.AI, кар’єрного консультування, пошуку роботи тощо.",
     icon: QuestionMarkCircleIcon,
-    link: "/FAQ",
+    link: "/FAQUa",
   },
   {
     name: "Блог",
     description:
       "Будьте в курсі кар’єрних порад, стратегій пошуку роботи та особистісного зростання у нашому блозі.",
     icon: NewspaperIcon,
-    link: "/Blogs",
+    link: "/Blogsua",
   },
 ];
 
@@ -144,7 +144,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-white shadow-sm fixed top-0 w-full z-50">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between py-4">
         <div className="flex items-center">
           <Link to="/ua">
           <img src="/images/Logo.png" alt="logo" className="h-10 w-32" />
