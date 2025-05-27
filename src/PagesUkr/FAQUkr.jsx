@@ -132,7 +132,7 @@ const FAQUkr = () => {
             Перейдіть на сторінку підтримки або зв’яжіться з нами для індивідуальної допомоги.
           </p>
           <button className="mt-4 px-6 py-2 bg-black text-white font-medium rounded-lg flex items-center mx-auto hover:bg-gray-900">
-            <Link to="/contact">Запитайте нас</Link>
+            <Link to="/contactua">Запитайте нас</Link>
             <span className="ml-2">
               <img src="/images/Arrow.png" alt="Arrow" />
             </span>

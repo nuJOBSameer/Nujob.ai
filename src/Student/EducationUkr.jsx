@@ -47,7 +47,7 @@ const EducationUkr = () => {
           {/* Кнопка */}
           <div className="mt-6">
             <button className="bg-[#5243C2] hover:bg-[#4132a0] text-white px-6 py-3 rounded-full shadow-md transition">
-              <Link to="/pricing">Розпочати шлях</Link>
+              <Link to="/pricingua">Розпочати шлях</Link>
             </button>
           </div>
         </div>

@@ -48,7 +48,7 @@ const JobMatchUkr = () => {
           {/* Кнопка */}
           <div className="flex justify-start">
             <button className="mt-10 bg-[#5243C2] hover:bg-[#3732b6] text-white px-6 py-3 rounded-full shadow-md transition">
-              <Link to="/pricing">Оптимізувати моє резюме →</Link>
+              <Link to="/pricingua">Оптимізувати моє резюме →</Link>
             </button>
           </div>
         </div>

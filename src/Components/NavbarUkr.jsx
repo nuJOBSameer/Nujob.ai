@@ -115,7 +115,7 @@ const supportFeatures = [
     description:
       "Якщо у вас виникли проблеми з nuJOB.AI, ми надамо технічну допомогу, усунення несправностей та підтримку.",
     icon: PhoneIcon,
-    link: "/Contactua",
+    link: "/contactua",
   },
   {
     name: "Часті запитання",
@@ -206,7 +206,7 @@ export default function Navbar() {
                       Take a free tour of our platform features
                     </p>
                     <Link
-                      to="/contact"
+                      to="/contactua"
                       className="text-indigo-600 font-medium mt-1"
                       onClick={() => setAboutOpen(false)}
                     >
@@ -271,7 +271,7 @@ export default function Navbar() {
                       Take a free tour of our platform features
                     </p>
                     <Link
-                      to="/contact"
+                      to="/contactua"
                       className="text-indigo-600 font-medium mt-1"
                       onClick={() => setCandidatesOpen(false)}
                     >
@@ -336,7 +336,7 @@ export default function Navbar() {
                       Take a free tour of our platform features
                     </p>
                     <Link
-                      to="/contact"
+                      to="/contactua"
                       className="text-indigo-600 font-medium mt-1"
                       onClick={() => setRecruitersOpen(false)}
                     >
@@ -361,7 +361,7 @@ export default function Navbar() {
             onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Contactua">
+              <Link Link to="/contactua">
                 Підтримка
               </Link>{" "}
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -402,7 +402,7 @@ export default function Navbar() {
                       Take a free tour of our platform features
                     </p>
                     <Link
-                      to="/contact"
+                      to="/contactua"
                       className="text-indigo-600 font-medium mt-1"
                       onClick={() => setSupportOpen(false)}
                     >
