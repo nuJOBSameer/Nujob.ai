@@ -115,7 +115,7 @@ const supportFeatures = [
     description:
       "Якщо у вас виникли проблеми з nuJOB.AI, ми надамо технічну допомогу, усунення несправностей та підтримку.",
     icon: PhoneIcon,
-    link: "/Contact",
+    link: "/Contactua",
   },
   {
     name: "Часті запитання",
