@@ -19,7 +19,7 @@ const EmpowerStudentJourney = () => {
       subtitle:
         "Build your digital brand and let your work speak itself.",
       items: [
-        "Digital profile builder: your story, yourway",
+        "Digital profile builder: your story, your way",
         "Video showcase : Show recruiters who you are",
         "Certification display : Put your wins front and center",
       ],

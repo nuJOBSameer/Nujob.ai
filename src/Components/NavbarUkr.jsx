@@ -98,14 +98,14 @@ const RecruitersFeatures = [
     description:
       "nuJOB.AI прискорює адаптацію завдяки інструментам на базі ШІ для безперебійного входження в посаду та перевірки навичок.",
     icon: UserPlusIcon,
-    link: "/Onboarding",
+    link: "/Onboardingua",
   },
   {
     name: "Управління талантами",
     description:
       "У nuJOB.AI ми залучаємо, розвиваємо та утримуємо найкращі таланти за допомогою передових технологій виявлення компетенцій.",
     icon: MagnifyingGlassIcon,
-    link: "/Talent",
+    link: "/Talentua",
   },
 ];
 
@@ -295,7 +295,7 @@ export default function Navbar() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Candidate-Pool">
+              <Link Link to="/Candidate-Poolua">
                 Для рекрутерів
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -347,7 +347,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link to="/Student" className="text-gray-900 font-medium">
+          <Link to="/Studentua" className="text-gray-900 font-medium">
            Для студентів
           </Link>
           <div
@@ -413,7 +413,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link to="/pricing" className="text-gray-900 font-medium">
+          <Link to="/pricingua" className="text-gray-900 font-medium">
             Ціни
           </Link>
         </div>
@@ -437,7 +437,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 z-50">
-          <Link to="/" className="block py-2 text-gray-900 font-medium" onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/ua" className="block py-2 text-gray-900 font-medium" onClick={() => setMobileMenuOpen(false)}>
             Головна
           </Link>
 
@@ -512,7 +512,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link to="/Student" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/Studentua" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
             Для студентів
           </Link>
           {/* Support Dropdown */}
@@ -539,7 +539,7 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link to="/pricing" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/pricingua" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
             Ціни
           </Link>
 
