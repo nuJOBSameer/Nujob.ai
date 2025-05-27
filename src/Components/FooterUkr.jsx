@@ -53,7 +53,7 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-2">Швидкі посилання</h3>
               <ul className="space-y-2 text-gray-400">
-                <Link to="/about">
+                <Link to="/aboutua">
                   <li className="cursor-pointer hover:text-white">Про нас</li>
                 </Link>
                 <Link to="/terms">
@@ -75,25 +75,25 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-2">Послуги</h3>
               <ul className="space-y-2 text-gray-400">
-                <Link to="/Candidate-Pool">
+                <Link to="/Candidate-Poolua">
                   <li className="cursor-pointer hover:text-white">
                     Для рекрутерів
                   </li>
                 </Link>
-                <Link to="/Career-path">
+                <Link to="/Career-pathua">
                   <li className="cursor-pointer hover:text-white">
                     Для шукачів роботи
                   </li>
                 </Link>
-                <Link to="/Student">
+                <Link to="/Studentua">
                   <li className="cursor-pointer hover:text-white">
                     Для студентів
                   </li>
                 </Link>
-                <Link to="/FAQ">
+                <Link to="/FAQua">
                   <li className="cursor-pointer hover:text-white">Питання та відповіді</li>
                 </Link>
-                <Link to="/contact">
+                <Link to="/contactua">
                   <li className="cursor-pointer hover:text-white">Підтримка</li>
                 </Link>
               </ul>
