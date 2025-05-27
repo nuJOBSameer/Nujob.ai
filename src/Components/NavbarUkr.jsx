@@ -150,7 +150,7 @@ export default function Navbar() {
           <img src="/images/Logo.png" alt="logo" className="h-10 w-32" />
           </Link>
         </div>
-        <div className="hidden lg:flex space-x-5">
+        <div className="hidden lg:flex space-x-4 px-10">
           <Link to="/ua" className="text-gray-900 font-medium">
             Головна
           </Link>
