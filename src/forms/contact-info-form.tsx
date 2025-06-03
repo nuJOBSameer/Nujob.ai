@@ -16,10 +16,10 @@ export default function ContactInfoForm({ children ,link}) {
 
     const handleSubmit =async  (e) => {
         e.preventDefault();
-        await axios.post("https://candidate.nujob.info/api/v1/cp/verify",{
+        await axios.post("https://candidate.nujob.ai/api/v1/cp/verify",{
             email:form.email,
         });
-        await axios.post("https://candidate.nujob.info/api/v1/cp/register", {
+        await axios.post("https://candidate.nujob.ai/api/v1/cp/register", {
             name: form.name,
             email: form.email,
             password: form.password,
