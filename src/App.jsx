@@ -1,5 +1,4 @@
 import Home from "./Pages/Home";
-import ScrollToTop from "./Components/ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Navbar from "./Components/Navbar";
@@ -26,6 +25,7 @@ import Student from "./Pages/Student";
 
 import EnglishLayout from "./Layout/EnglishLayout";
 import UkrainianLayout from "./Layout/UkrainianLayout";
+import SpanishLayout from "./Layout/SpanishLayout";
 
 import HomeUkr from "./PagesUkr/HomeUkr";
 import AboutUkr from "./PagesUkr/AboutUkr";
@@ -43,6 +43,15 @@ import PricingUkr from "./PagesUkr/PricingUkr";
 import FAQUkr from "./PagesUkr/FAQUkr";
 import BlogsUkr from "./PagesUkr/BlogsUkr";
 import ContactUkr from "./PagesUkr/ContactUkr";
+
+
+
+import HomeSp from "./PagesSp/HomeSp";
+import AboutSp from "./PagesSp/AboutSp";
+import MethodSp from "./PagesSp/ModelSp";
+
+
+
 function App() {
   return (
     <Router>
@@ -90,6 +99,13 @@ function App() {
           <Route path="/Blogsua" element={<BlogsUkr/>} />
           <Route path="/Contactua" element={<ContactUkr/>} />
         </Route>
+
+        <Route element={<SpanishLayout />}>
+         <Route path="/sp"  element={<HomeSp />} />
+         <Route path="/Aboutsp"  element={<AboutSp />} />
+         <Route path="/Methodsp" element={<MethodSp />} />
+        </Route>
+
       </Routes>
     </Router>
   );
