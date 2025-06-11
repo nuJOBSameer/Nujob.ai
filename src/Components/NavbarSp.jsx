@@ -228,7 +228,7 @@ export default function NavbarSp() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Career-path" onClick={() => setCandidatesOpen(false)}>
+              <Link Link to="/Career-pathsp" onClick={() => setCandidatesOpen(false)}>
              Für Jobsuchende
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
