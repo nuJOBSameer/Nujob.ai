@@ -49,33 +49,33 @@ const aboutFeatures = [
 
 const candidateFeatures = [
   {
-    name: "Executive Career Path",
-    description:
-      "Our AI-driven platform helps you craft a standout professional profile.",
-    icon: UsersIcon,
-    link: "/Career-path",
-  },
-  {
-    name: "Job Search & Recommendations",
-    description:
-      "AI-powered tools help you build, develop, and empower your career journey.",
-    icon: BriefcaseIcon,
-    link: "/JobSearch",
-  },
-  {
-    name: "Career Development & Guidance",
-    description:
-      "Simplifies career navigation with tools to support success in a competitive job market.",
-    icon: LightBulbIcon,
-    link: "/Career-Dev",
-  },
-  {
-    name: "Resume & Skills Enhancement",
-    description:
-      "Craft a dynamic profile that boosts your chances in today’s job market.",
-    icon: ClipboardDocumentIcon,
-    link: "/Resume-skills-enhancement",
-  },
+  name: "Trayectoria Profesional Ejecutiva",
+  description:
+    "Nuestra plataforma impulsada por IA te ayuda a crear un perfil profesional destacado.",
+  icon: UsersIcon,
+  link: "/Career-pathsp",
+},
+{
+  name: "Búsqueda de Empleo y Recomendaciones",
+  description:
+    "Herramientas con IA que te ayudan a construir, desarrollar y potenciar tu carrera.",
+  icon: BriefcaseIcon,
+  link: "/JobSearchsp",
+},
+{
+  name: "Desarrollo y Orientación Profesional",
+  description:
+    "Simplifica la navegación profesional con herramientas para lograr el éxito en un mercado competitivo.",
+  icon: LightBulbIcon,
+  link: "/Career-Devsp",
+},
+{
+  name: "Mejora de Currículum y Habilidades",
+  description:
+    "Crea un perfil dinámico que aumente tus oportunidades en el mercado laboral actual.",
+  icon: ClipboardDocumentIcon,
+  link: "/Resume-skills-enhancementsp",
+}
 ];
 const RecruitersFeatures = [
   {
@@ -229,7 +229,7 @@ export default function NavbarSp() {
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/Career-path" onClick={() => setCandidatesOpen(false)}>
-              For Job-seekers
+             Für Jobsuchende
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
             </div>
@@ -469,7 +469,7 @@ export default function NavbarSp() {
               className="flex justify-between w-full py-2 text-gray-900 font-medium"
               onClick={() => setCandidatesOpen(!candidatesOpen)}
             >
-              For Job-seekers <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+             Für Jobsuchende <ChevronDownIcon className="h-5 w-5 text-gray-500" />
             </button>
             {candidatesOpen && (
               <div className="ml-4 space-y-2">

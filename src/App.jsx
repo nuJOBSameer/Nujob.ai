@@ -49,6 +49,10 @@ import ContactUkr from "./PagesUkr/ContactUkr";
 import HomeSp from "./PagesSp/HomeSp";
 import AboutSp from "./PagesSp/AboutSp";
 import MethodSp from "./PagesSp/ModelSp";
+import CareerPathSp from "./PagesSp/CareerPathSp";
+import JobSearchSp from "./PagesSp/JobSearchSp";
+import CareerDevSp from "./PagesSp/CareerDevSp";
+import ResumeSkillsSp from "./PagesSp/ResumeSkillsSp";
 
 
 
@@ -104,6 +108,10 @@ function App() {
          <Route path="/sp"  element={<HomeSp />} />
          <Route path="/Aboutsp"  element={<AboutSp />} />
          <Route path="/Methodsp" element={<MethodSp />} />
+         <Route path="/Career-pathsp" element={<CareerPathSp />} />
+          <Route path="/JobSearchsp" element={<JobSearchSp/>} />
+          <Route path="/Career-Devsp" element={<CareerDevSp/>} />
+          <Route path="/Resume-skills-enhancementsp" element={<ResumeSkillsSp/>} />
         </Route>
 
       </Routes>
