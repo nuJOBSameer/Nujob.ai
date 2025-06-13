@@ -53,6 +53,10 @@ import CareerPathSp from "./PagesSp/CareerPathSp";
 import JobSearchSp from "./PagesSp/JobSearchSp";
 import CareerDevSp from "./PagesSp/CareerDevSp";
 import ResumeSkillsSp from "./PagesSp/ResumeSkillsSp";
+import InterviewSp from "./PagesSp/InterviewSp";
+import OnBoardSp from "./PagesSp/OnboardSp";
+import TalentSp from "./PagesSp/TalentSp";
+import CandidatePoolSp from "./PagesSp/CandidatePoolSp";
 
 
 
@@ -112,6 +116,10 @@ function App() {
           <Route path="/JobSearchsp" element={<JobSearchSp/>} />
           <Route path="/Career-Devsp" element={<CareerDevSp/>} />
           <Route path="/Resume-skills-enhancementsp" element={<ResumeSkillsSp/>} />
+          <Route path="/Candidate-Poolsp" element={<CandidatePoolSp/>} />
+          <Route path="/Interviewsp" element={<InterviewSp/>} />
+          <Route path="/Onboardingsp" element={<OnBoardSp/>} />
+          <Route path="/Talentsp" element={<TalentSp/>} />
         </Route>
 
       </Routes>

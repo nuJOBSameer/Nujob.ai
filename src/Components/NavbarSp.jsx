@@ -79,33 +79,33 @@ const candidateFeatures = [
 ];
 const RecruitersFeatures = [
   {
-    name: "Candidate Pool",
+    name: "Grupo de Candidatos",
     description:
-      "nuJOB.Al helps hiring managers efficiently build and manage a strong candidate pool with...",
+      "nuJOB.AI ayuda a los responsables de contratación a construir y gestionar de manera eficiente un sólido grupo de candidatos...",
     icon: UsersIcon,
-    link: "/Candidate-Pool",
+    link: "/Candidate-Poolsp",
   },
   {
-    name: "Interview Assessment",
+    name: "Evaluación de Entrevistas",
     description:
-      "At nuJOB.Al, we transform interviews and assessments with Al, offering live interviews and realistic simulations...",
+      "En nuJOB.AI transformamos entrevistas y evaluaciones con IA, ofreciendo entrevistas en vivo y simulaciones realistas...",
     icon: DocumentTextIcon,
-    link: "/Interview",
+    link: "/Interviewsp",
   },
   {
-    name: "Onboarding Development",
+    name: "Desarrollo de Incorporación",
     description:
-      "nuJOB.Al accelerates success with Al-powered tools for seamless onboarding, skill validation, and...",
+      "nuJOB.AI acelera el éxito con herramientas impulsadas por IA para una incorporación fluida, validación de habilidades y más...",
     icon: UserPlusIcon,
-    link: "/Onboarding",
+    link: "/Onboardingsp",
   },
   {
-    name: "Talent Management",
+    name: "Gestión del Talento",
     description:
-      "At nuJOB Al, we recruit, develop, and retain top talent through advanced competency detection...",
+      "En nuJOB.AI reclutamos, desarrollamos y retenemos el mejor talento a través de una detección avanzada de competencias...",
     icon: MagnifyingGlassIcon,
-    link: "/Talent",
-  },
+    link: "/Talentsp",
+  }
 ];
 
 const supportFeatures = [
@@ -294,7 +294,7 @@ export default function NavbarSp() {
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/Candidate-Pool">
-                For Recruiters
+                Para Reclutadores
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
             </div>
@@ -493,7 +493,7 @@ export default function NavbarSp() {
               className="flex justify-between w-full py-2 text-gray-900 font-medium"
               onClick={() => setRecruitersOpen(!recruitersOpen)}
             >
-             For Recruiters <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+             Para Reclutadores <ChevronDownIcon className="h-5 w-5 text-gray-500" />
             </button>
             {recruitersOpen && (
               <div className="ml-4 space-y-2">

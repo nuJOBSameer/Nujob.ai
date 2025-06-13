@@ -57,12 +57,110 @@ export default function ServicesSectionSP() {
     },
   ];
 
+  const recruiterServices = [
+  {
+    title: "Habilidades Validadas por IA en lugar de Currículums",
+    subtitle: "Pruebas en lugar de palabrería.",
+    description:
+      "Evaluamos a los candidatos por cómo actúan, no por cómo se venden. Tareas reales. Resultados en tiempo real.\n\nLo que obtienes:\n• Talento demostrado mediante simulaciones en vivo\n• Menos tiempo perdido con currículums inflados\n• Una lista llena de personas que hacen, no que hablan\n\nPor qué importa:\nNecesitas habilidades, no discursos. Nosotros entregamos pruebas.",
+    icon: "/images/skill.png",
+  },
+  {
+    title: "Preparación de Entrevistas más Inteligente (Simulaciones)",
+    subtitle: "Candidatos que llegan listos para triunfar.",
+    description:
+      "Nuestras entrevistas simuladas forman candidatos que prosperan bajo presión—para que contrates más rápido y con mayor calidad.\n\nLo que obtienes:\n• Información en tiempo real sobre el potencial del candidato\n• Mejora en comunicación y pensamiento crítico desde el inicio\n• Menos puntos débiles, mejores primeras impresiones\n\nPor qué importa:\nCandidatos preparados rinden mejor—y permanecen más tiempo.",
+    icon: "/images/Jinterview.png",
+  },
+  {
+    title: "Contratación Automatizada, Simplificada",
+    subtitle: "Rápido, eficiente y preparado para escalar.",
+    description:
+      "Desde la preselección hasta la programación, nuestra IA automatiza las tareas tediosas para que te concentres en el mejor talento.\n\nLo que obtienes:\n• Evaluación y calificación instantánea\n• Programación de entrevistas sin complicaciones\n• Contrataciones más rápidas, menos abandonos\n\nPor qué importa:\nLa velocidad gana a los mejores candidatos. Te ayudamos a ser el primero.",
+    icon: "/images/hiring.png",
+  },
+  {
+    title: "Coincidencia Precisa con el Puesto",
+    subtitle: "El ajuste correcto. Impacto real.",
+    description:
+      "Buscamos más que calificaciones: buscamos mentalidad, valores y crecimiento.\n\nLo que obtienes:\n• Perfilado profundo para ajuste cultural y de misión\n• Talento que crece contigo\n• Menos desajustes, contrataciones más duraderas\n\nPor qué importa:\nLos grandes equipos no solo trabajan juntos—crecen juntos.",
+    icon: "/images/recruitment.png",
+  },
+  {
+    title: "Evaluaciones Adaptativas y Perspicaces",
+    subtitle: "Observa cómo responde el talento, no solo cómo reacciona.",
+    description:
+      "Las pruebas estáticas muestran lo que alguien sabe. Las nuestras revelan cómo actúan bajo presión real.\n\nLo que obtienes:\n• Evaluaciones que evolucionan según el contexto\n• Información clara sobre toma de decisiones y ejecución\n• Datos accionables, no suposiciones\n\nPor qué importa:\nContratas para hoy, pero necesitas para mañana. Nosotros mostramos ambos.",
+    icon: "/images/business-planing.png",
+  },
+  {
+    title: "Evaluación Competitiva (Puntaje Vinculado al Mercado)",
+    subtitle: "Contrata al ritmo del mercado.",
+    description:
+      "Nuestros puntajes evolucionan según las necesidades de la industria, dándote una visión actualizada del posicionamiento de los candidatos.\n\nLo que obtienes:\n• Rankings basados en datos y tendencias actuales\n• Visibilidad para filtrar el mejor talento rápidamente\n• Métricas que mantienen tus estándares preparados para el futuro\n\nPor qué importa:\nContrata para tener ventaja, no para quedarte en la media.",
+    icon: "/images/speedometer.png",
+  },
+  {
+    title: "Verificación de Integridad con IA",
+    subtitle: "La confianza no es una habilidad blanda—es una fortaleza clave.",
+    description:
+      "Medimos más que habilidades. Evaluamos responsabilidad, resiliencia y consistencia—para ayudarte a construir equipos que perduren.\n\nLo que obtienes:\n• Puntajes de confianza basados en comportamientos reales\n• Menor riesgo de contratación\n• Cultura de responsabilidad desde el inicio\n\nPor qué importa:\nLos equipos inteligentes se construyen sobre confianza, no solo talento.",
+    icon: "/images/honest.png",
+  },
+  {
+    title: "Integración de RRHH sin Esfuerzo",
+    subtitle: "Conéctalo. Actívalo.",
+    description:
+      "Nos integramos con tus sistemas actuales sin drama, retrasos ni interrupciones.\n\nLo que obtienes:\n• Integración rápida con tu stack de RRHH\n• APIs personalizadas con visibilidad completa del pipeline\n• Herramientas escalables que crecen con tus necesidades de contratación\n\nPor qué importa:\nLa contratación debe impulsar el crecimiento, no frenarlo.",
+    icon: "/images/pattern (1).png",
+  },
+];
+
+const studentServices = [
+  {
+    title: "Habilidades Comprobadas",
+    subtitle: "Lo que sabes. Probado. Claro.",
+    description:
+      "Evaluaciones diseñadas para mostrar tus habilidades reales. No solo lo que recuerdas, sino cómo aplicas tu conocimiento en situaciones reales.\n\nPor qué es poderoso:\n• Evaluaciones en vivo alineadas con la industria.\n• Pruebas adaptativas según tu nivel de habilidad.\n• Análisis detallado de rendimiento para ayudarte a crecer.\n• Informes claros que los empleadores pueden confiar y entender.\n\nPor qué funciona:\nCuando tus habilidades están verificadas, tu perfil transmite confianza. Esta es tu prueba, clara y creíble.",
+    icon: "/images/skill.png",
+  },
+  {
+    title: "Entrevistas Impulsadas por IA",
+    subtitle: "Practica mejor. Rinde más.",
+    description:
+      "Simulaciones de entrevistas impulsadas por IA para que ganes confianza, mejores tu comunicación y avances con cada sesión.\n\nPor qué es poderoso:\n• Preguntas realistas específicas para tu rol.\n• Retroalimentación de IA para mejorar tono, claridad y entrega.\n• Entorno seguro para reducir ansiedad y mejorar fluidez.\n• Repeticiones para revisar y seguir tu progreso.\n\nPor qué funciona:\nCandidatos preparados rinden con seguridad. La práctica constante convierte tu próxima entrevista en algo natural.",
+    icon: "/images/Jinterview.png",
+  },
+  {
+    title: "Información Profesional Personalizada",
+    subtitle: "Guía hecha para ti. Avance que te impulsa.",
+    description:
+      "Recomendaciones inteligentes basadas en tus fortalezas y metas, para ayudarte a avanzar con claridad.\n\nPor qué es poderoso:\n• Consejos personalizados basados en tus evaluaciones y objetivos.\n• Sugerencias de carrera alineadas con tus fortalezas.\n• Insights que evolucionan contigo.\n• Siguientes pasos accionables para avanzar con propósito.\n\nPor qué funciona:\nCuando tu camino se alinea con tus fortalezas, avanzas más rápido y más lejos.",
+    icon: "/images/guidanceicon.png",
+  },
+  {
+    title: "Micro-Credenciales",
+    subtitle: "Reconocimiento ganado. Impacto real.",
+    description:
+      "Insignias digitales que destacan tus habilidades verificadas y permiten que los empleadores vean tu valor real.\n\nPor qué es poderoso:\n• Credenciales basadas directamente en tu rendimiento.\n• Categorías claras de habilidades según el mercado.\n• Fácil de compartir en CVs, perfiles y LinkedIn.\n• Confianza incorporada que muestra tus logros al instante.\n\nPor qué funciona:\nEl reconocimiento impulsa el progreso. Las microcredenciales hacen visibles y valiosas tus fortalezas.",
+    icon: "/images/credentials.png",
+  },
+  {
+    title: "Currículum y Coaching de Carrera",
+    subtitle: "Cuenta tu historia. Planifica tu camino.",
+    description:
+      "Herramientas y soporte experto para crear un CV destacado y una estrategia profesional a largo plazo.\n\nPor qué es poderoso:\n• Generadores inteligentes de CVs que resaltan tus verdaderas fortalezas.\n• Plantillas personalizables y profesionales.\n• Coaching paso a paso según tu etapa profesional.\n• Recursos para avanzar del primer empleo al crecimiento sostenido.\n\nPor qué funciona:\nTu historia importa. Con las herramientas y apoyo correctos, tu próximo paso será con confianza.",
+    icon: "/images/resumeicon.png",
+  },
+];
+
+
   const services =
     activeTab === "jobseekers"
       ? seekerServices
       : activeTab === "recruiters"
-        ? [] // Puedes agregar los servicios traducidos para reclutadores
-        : []; // O para estudiantes
+        ? recruiterServices
+        : studentServices;
 
   return (
     <div className="bg-blue-50 py-16 px-6 md:px-5 text-center">
