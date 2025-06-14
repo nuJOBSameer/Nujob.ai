@@ -31,7 +31,7 @@ const BottomSP = () => {
         {/* Botones */}
         <div className="mt-6 flex justify-center gap-4">
           <button className="bg-white text-gray-800 px-6 py-2 rounded-full text-sm font-medium flex items-center shadow-md hover:bg-gray-200">
-            <Link to="/contact">Consulta Gratuita</Link>
+            <Link to="/contactsp">Consulta Gratuita</Link>
             <span className="ml-2">
               <img src="/images/about-svg.png" alt="" />
             </span>

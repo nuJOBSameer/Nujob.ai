@@ -5,25 +5,25 @@ const careerData = [
     title: "Tecnología de la Información",
     description:
       "Encuentra roles en desarrollo de software, ciberseguridad, ciencia de datos y más. Explora IA, blockchain y big data.",
-    video: "/IT.mp4",
+    video: "/ITSp.mp4",
   },
   {
     title: "Contabilidad",
     description:
       "Conéctate con los mejores empleos en contabilidad y explora IA, blockchain e innovaciones en tecnología financiera.",
-    video: "/Accounting.mp4",
+    video: "/AccountingSp.mp4",
   },
   {
     title: "Banca",
     description:
       "Accede a oportunidades en banca de inversión, gestión de riesgos y FinTech. Mantente al día en banca digital.",
-    video: "/Banking.mp4",
+    video: "/BankingSp.mp4",
   },
   {
     title: "Salud",
     description:
       "Descubre roles en telemedicina, robótica médica y tecnologías de salud innovadoras.",
-    video: "/Healthcare.mp4",
+    video: "/HealthcareSp.mp4",
   },
 ];
 

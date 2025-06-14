@@ -50,7 +50,7 @@ export default function BusinessSp() {
           </ul>
 
           <button className="mt-6 px-6 py-3 bg-black flex items-center text-white font-medium rounded-lg hover:bg-gray-800 transition">
-            <Link to="/Contact">Habla con Nosotros</Link>
+            <Link to="/Contactsp">Habla con Nosotros</Link>
             <img src="/images/Arrow.png" alt="" className="ml-2 h-5" />
           </button>
         </div>

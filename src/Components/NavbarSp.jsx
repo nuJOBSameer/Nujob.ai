@@ -110,26 +110,26 @@ const RecruitersFeatures = [
 
 const supportFeatures = [
   {
-    name: "Connect with Us",
-    description:
-      "For any issues with nuJOB.AI, we’re here to provide technical assistance, troubleshooting, and guidance.",
-    icon: PhoneIcon,
-    link: "/Contact",
-  },
-  {
-    name: "Frequently Asked Questions",
-    description:
-      "Find answers to the most common questions about using nuJOB.AI, career guidance, job search tools, and more.",
-    icon: QuestionMarkCircleIcon,
-    link: "/FAQ",
-  },
-  {
-    name: "Blog",
-    description:
-      "Stay updated with career tips, job search strategies, and personal growth on our blog.",
-    icon: NewspaperIcon,
-    link: "/Blogs",
-  },
+  name: "Conéctate con Nosotros",
+  description:
+    "Para cualquier problema con nuJOB.AI, estamos aquí para brindarte asistencia técnica, solución de problemas y orientación.",
+  icon: PhoneIcon,
+  link: "/Contactsp",
+},
+{
+  name: "Preguntas Frecuentes",
+  description:
+    "Encuentra respuestas a las preguntas más comunes sobre el uso de nuJOB.AI, orientación profesional, herramientas de búsqueda de empleo y más.",
+  icon: QuestionMarkCircleIcon,
+  link: "/FAQsp",
+},
+{
+  name: "Blog",
+  description:
+    "Mantente al día con consejos profesionales, estrategias de búsqueda de empleo y crecimiento personal en nuestro blog.",
+  icon: NewspaperIcon,
+  link: "/Blogssp",
+}
 ];
 
 export default function NavbarSp() {
@@ -142,13 +142,13 @@ export default function NavbarSp() {
 
   return (
     <header className="bg-white shadow-sm fixed top-0 w-full z-50">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-1 py-4">
         <div className="flex items-center">
           <Link to="/sp">
           <img src="/images/Logo.png" alt="logo" className="h-10 w-32" />
           </Link>
         </div>
-        <div className="hidden lg:flex space-x-5">
+        <div className="hidden lg:flex space-x-4">
           <Link to="/sp" className="text-gray-900 font-medium">
             Inicio
           </Link>
@@ -345,8 +345,8 @@ export default function NavbarSp() {
               </div>
             )}
           </div>
-          <Link to="/Student" className="text-gray-900 font-medium">
-           For Students
+          <Link to="/Studentsp" className="text-gray-900 font-medium">
+           Para estudiantes
           </Link>
           <div
             className="relative z-30"
@@ -359,8 +359,8 @@ export default function NavbarSp() {
             onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Contact">
-                Support
+              <Link Link to="/Contactsp">
+                Soporte
               </Link>{" "}
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
             </div>
@@ -411,7 +411,7 @@ export default function NavbarSp() {
               </div>
             )}
           </div>
-          <Link to="/pricing" className="text-gray-900 font-medium">
+          <Link to="/pricingsp" className="text-gray-900 font-medium">
             Pricing
           </Link>
         </div>
@@ -510,8 +510,8 @@ export default function NavbarSp() {
               </div>
             )}
           </div>
-          <Link to="/Student" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
-            For Students
+          <Link to="/Studentsp" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
+            Para estudiantes
           </Link>
           {/* Support Dropdown */}
           <div>
@@ -519,7 +519,7 @@ export default function NavbarSp() {
               className="flex justify-between w-full py-2 text-gray-900 font-medium"
               onClick={() => setSupportOpen(!supportOpen)}
             >
-              Support <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+              Soporte <ChevronDownIcon className="h-5 w-5 text-gray-500" />
             </button>
             {supportOpen && (
               <div className="ml-4 space-y-2">
@@ -537,7 +537,7 @@ export default function NavbarSp() {
             )}
           </div>
 
-          <Link to="/pricing" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/pricingsp" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
             Pricing
           </Link>
 

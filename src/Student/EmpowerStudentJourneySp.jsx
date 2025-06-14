@@ -72,7 +72,7 @@ const EmpowerStudentJourneySP = () => {
             />
 
             <button className="absolute bottom-[-20px] left-28 transform -translate-x-1/2 bg-[#5243C2] hover:bg-[#3f31a2] text-white text-sm font-semibold px-5 py-2 rounded-full shadow-md transition">
-              <Link to="/pricing">{card.btnText}</Link>
+              <Link to="/pricingsp">{card.btnText}</Link>
             </button>
           </div>
         ))}

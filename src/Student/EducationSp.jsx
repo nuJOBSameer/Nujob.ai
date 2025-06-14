@@ -45,7 +45,7 @@ const EducationSP = () => {
           {/* Botón */}
           <div className="mt-6">
             <button className="bg-[#5243C2] hover:bg-[#4132a0] text-white px-6 py-3 rounded-full shadow-md transition">
-              <Link to="/pricing">Comienza Tu Camino</Link>
+              <Link to="/pricingsp">Comienza Tu Camino</Link>
             </button>
           </div>
         </div>

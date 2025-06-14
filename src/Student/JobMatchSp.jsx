@@ -51,7 +51,7 @@ const JobMatchSP = () => {
           {/* Botón */}
           <div className="flex justify-start">
             <button className="mt-10 bg-[#5243C2] hover:bg-[#3732b6] text-white px-6 py-3 rounded-full shadow-md transition">
-              <Link to="/pricing">Optimizar Mi CV →</Link>
+              <Link to="/pricingsp">Optimizar Mi CV →</Link>
             </button>
           </div>
         </div>

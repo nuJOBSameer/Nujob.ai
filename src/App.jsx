@@ -57,6 +57,11 @@ import InterviewSp from "./PagesSp/InterviewSp";
 import OnBoardSp from "./PagesSp/OnboardSp";
 import TalentSp from "./PagesSp/TalentSp";
 import CandidatePoolSp from "./PagesSp/CandidatePoolSp";
+import StudentSp from "./PagesSp/StudentSp";
+import FAQSp from "./PagesSp/FAQSp";
+import BlogsSp from "./PagesSp/BlogsSp";
+import ContactSp from "./PagesSp/ContactSp";
+import PricingSectionSp from "./PagesSp/PricingSp";
 
 
 
@@ -120,6 +125,11 @@ function App() {
           <Route path="/Interviewsp" element={<InterviewSp/>} />
           <Route path="/Onboardingsp" element={<OnBoardSp/>} />
           <Route path="/Talentsp" element={<TalentSp/>} />
+          <Route path="/Studentsp" element={<StudentSp/>} />
+          <Route path="/FAQsp" element={<FAQSp/>} />
+          <Route path="/Blogssp" element={<BlogsSp/>} />
+          <Route path="/Contactsp" element={<ContactSp/>} />
+           <Route path="/pricingsp" element={<PricingSectionSp/>} />
         </Route>
 
       </Routes>
