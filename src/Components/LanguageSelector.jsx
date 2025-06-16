@@ -9,7 +9,8 @@ const LanguageSelector = () => {
 
     if (value === "NG") url = "https://nujob.ai/ng/";
     else if (value === "UAE") url = "https://nujob.ai/ae/";
-    else if (value === "UAE") url = "https://nujob.ai/ua/";
+    else if (value === "UA") url = "https://nujob.ai/ua/";
+    else if (value === "SP") url = "https://nujob.ai/sp/";
 
     if (url) {
       window.open(url, "_blank", "noopener,noreferrer");
@@ -27,6 +28,7 @@ const LanguageSelector = () => {
         <option value="NG">NG - EN</option>
         <option value="UAE">UAE - EN</option>
         <option value="UA">UA - Ukrainian</option>
+        <option value="SP">SP - Spanish</option>
       </select>
     </div>
   );

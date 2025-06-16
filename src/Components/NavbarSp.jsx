@@ -21,7 +21,7 @@ import {
   ClipboardDocumentIcon,
 } from "@heroicons/react/24/outline";
 import LanguageSelector from "./LanguageSelector";
-import GetStarted from "./GetStarted";
+import GetStartedSp from "./GetStartedSp";
 
 const aboutFeatures = [
   {
@@ -201,14 +201,14 @@ export default function NavbarSp() {
                       className="rounded-lg w-full h-auto"
                     />
                     <p className="text-gray-600 text-sm mt-2">
-                      Take a free tour of our platform features
+                      Realice un recorrido gratuito por las características de nuestra plataforma
                     </p>
                     <Link
                       to="/contact"
                       className="text-indigo-600 font-medium mt-1"
                       onClick={() => setAboutOpen(false)}
                     >
-                      Book a Demo →
+                      Reservar una Demostración 
                     </Link>
                   </div>
                 </div>
@@ -266,14 +266,14 @@ export default function NavbarSp() {
                       className="rounded-lg w-full h-auto"
                     />
                     <p className="text-gray-600 text-sm mt-2">
-                      Take a free tour of our platform features
+                      Realice un recorrido gratuito por las características de nuestra plataforma
                     </p>
                     <Link
                       to="/contact"
                       className="text-indigo-600 font-medium mt-1"
                       onClick={() => setCandidatesOpen(false)}
                     >
-                      Book a Demo →
+                      Reservar una Demostración 
                     </Link>
                   </div>
                 </div>
@@ -331,14 +331,14 @@ export default function NavbarSp() {
                       className="rounded-lg w-full h-auto"
                     />
                     <p className="text-gray-600 text-sm mt-2">
-                      Take a free tour of our platform features
+                      Realice un recorrido gratuito por las características de nuestra plataforma
                     </p>
                     <Link
                       to="/contact"
                       className="text-indigo-600 font-medium mt-1"
                       onClick={() => setRecruitersOpen(false)}
                     >
-                      Book a Demo →
+                      Reservar una Demostración 
                     </Link>
                   </div>
                 </div>
@@ -397,14 +397,14 @@ export default function NavbarSp() {
                       className="rounded-lg w-full h-auto"
                     />
                     <p className="text-gray-600 text-sm mt-2">
-                      Take a free tour of our platform features
+                      Realice un recorrido gratuito por las características de nuestra plataforma
                     </p>
                     <Link
                       to="/contact"
                       className="text-indigo-600 font-medium mt-1"
                       onClick={() => setSupportOpen(false)}
                     >
-                      Book a Demo →
+                      Reservar una Demostración 
                     </Link>
                   </div>
                 </div>
@@ -412,12 +412,12 @@ export default function NavbarSp() {
             )}
           </div>
           <Link to="/pricingsp" className="text-gray-900 font-medium">
-            Pricing
+            Precios
           </Link>
         </div>
         <div className="hidden lg:flex items-center space-x-2">
           <LanguageSelector/>
-          <GetStarted/>
+          <GetStartedSp/>
         </div>
         <div className="lg:hidden">
           <button
@@ -538,12 +538,12 @@ export default function NavbarSp() {
           </div>
 
           <Link to="/pricingsp" className="block py-2 text-gray-900 font-medium " onClick={() => setMobileMenuOpen(false)}>
-            Pricing
+            Precios
           </Link>
 
           <div className="mt-4 flex justify-center space-x-9">
             <LanguageSelector/>
-            <GetStarted/>
+            <GetStartedSp/>
           </div>
         </div>
       )}
