@@ -1,5 +1,4 @@
 import Home from "./Pages/Home";
-import ScrollToTop from "./Components/ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Navbar from "./Components/Navbar";
@@ -26,6 +25,7 @@ import Student from "./Pages/Student";
 
 import EnglishLayout from "./Layout/EnglishLayout";
 import UkrainianLayout from "./Layout/UkrainianLayout";
+import SpanishLayout from "./Layout/SpanishLayout";
 
 import HomeUkr from "./PagesUkr/HomeUkr";
 import AboutUkr from "./PagesUkr/AboutUkr";
@@ -43,6 +43,28 @@ import PricingUkr from "./PagesUkr/PricingUkr";
 import FAQUkr from "./PagesUkr/FAQUkr";
 import BlogsUkr from "./PagesUkr/BlogsUkr";
 import ContactUkr from "./PagesUkr/ContactUkr";
+
+
+
+import HomeSp from "./PagesSp/HomeSp";
+import AboutSp from "./PagesSp/AboutSp";
+import MethodSp from "./PagesSp/ModelSp";
+import CareerPathSp from "./PagesSp/CareerPathSp";
+import JobSearchSp from "./PagesSp/JobSearchSp";
+import CareerDevSp from "./PagesSp/CareerDevSp";
+import ResumeSkillsSp from "./PagesSp/ResumeSkillsSp";
+import InterviewSp from "./PagesSp/InterviewSp";
+import OnBoardSp from "./PagesSp/OnboardSp";
+import TalentSp from "./PagesSp/TalentSp";
+import CandidatePoolSp from "./PagesSp/CandidatePoolSp";
+import StudentSp from "./PagesSp/StudentSp";
+import FAQSp from "./PagesSp/FAQSp";
+import BlogsSp from "./PagesSp/BlogsSp";
+import ContactSp from "./PagesSp/ContactSp";
+import PricingSectionSp from "./PagesSp/PricingSp";
+
+
+
 function App() {
   return (
     <Router>
@@ -90,6 +112,26 @@ function App() {
           <Route path="/Blogsua" element={<BlogsUkr/>} />
           <Route path="/Contactua" element={<ContactUkr/>} />
         </Route>
+
+        <Route element={<SpanishLayout />}>
+         <Route path="/sp"  element={<HomeSp />} />
+         <Route path="/Aboutsp"  element={<AboutSp />} />
+         <Route path="/Methodsp" element={<MethodSp />} />
+         <Route path="/Career-pathsp" element={<CareerPathSp />} />
+          <Route path="/JobSearchsp" element={<JobSearchSp/>} />
+          <Route path="/Career-Devsp" element={<CareerDevSp/>} />
+          <Route path="/Resume-skills-enhancementsp" element={<ResumeSkillsSp/>} />
+          <Route path="/Candidate-Poolsp" element={<CandidatePoolSp/>} />
+          <Route path="/Interviewsp" element={<InterviewSp/>} />
+          <Route path="/Onboardingsp" element={<OnBoardSp/>} />
+          <Route path="/Talentsp" element={<TalentSp/>} />
+          <Route path="/Studentsp" element={<StudentSp/>} />
+          <Route path="/FAQsp" element={<FAQSp/>} />
+          <Route path="/Blogssp" element={<BlogsSp/>} />
+          <Route path="/Contactsp" element={<ContactSp/>} />
+           <Route path="/pricingsp" element={<PricingSectionSp/>} />
+        </Route>
+
       </Routes>
     </Router>
   );
