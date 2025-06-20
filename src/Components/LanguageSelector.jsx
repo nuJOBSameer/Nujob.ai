@@ -1,21 +1,33 @@
 import { useState } from "react";
 
 const LanguageSelector = () => {
-  const [selected, setSelected] = useState("USA");
+  const getCountryFromURL = () => {
+  const path = window.location.pathname.toLowerCase();
+  if (path.startsWith("/ng")) return "NG";
+  if (path.startsWith("/ae")) return "UAE";
+  if (path.startsWith("/ua")) return "UA";
+  if (path.startsWith("/sp")) return "SP";
+  return "USA";
+};
+
+const [selected, setSelected] = useState(getCountryFromURL());
+
 
   const handleSelect = (value) => {
-    setSelected(value);
-    let url = "";
+  let url = "";
 
-    if (value === "NG") url = "https://nujob.ai/ng/";
-    else if (value === "UAE") url = "https://nujob.ai/ae/";
-    else if (value === "UA") url = "https://nujob.ai/ua/";
-    else if (value === "SP") url = "https://nujob.ai/sp/";
+  if (value === "NG") url = "https://nujob.ai/ng/";
+  else if (value === "UAE") url = "https://nujob.ai/ae/";
+  else if (value === "UA") url = "https://nujob.ai/ua/";
+  else if (value === "SP") url = "https://nujob.ai/sp/";
+  else if (value === "USA") url = "https://nujob.ai/";
 
-    if (url) {
-      window.open(url, "_blank", "noopener,noreferrer");
-    }
-  };
+  if (url) {
+    window.open(url, "_blank", "noopener,noreferrer");
+    setSelected(value); // Update after open
+  }
+};
+
 
   return (
     <div className="relative">

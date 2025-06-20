@@ -63,7 +63,7 @@ const candidateFeatures = [
   link: "/JobSearchsp",
 },
 {
-  name: "Desarrollo y Orientación Profesional",
+  name: "Desarrollo Profesional y Orientación",
   description:
     "Simplifica la navegación profesional con herramientas para lograr el éxito en un mercado competitivo.",
   icon: LightBulbIcon,
@@ -79,7 +79,7 @@ const candidateFeatures = [
 ];
 const RecruitersFeatures = [
   {
-    name: "Grupo de Candidatos",
+    name: "Base de Candidatos",
     description:
       "nuJOB.AI ayuda a los responsables de contratación a construir y gestionar de manera eficiente un sólido grupo de candidatos...",
     icon: UsersIcon,
@@ -229,7 +229,7 @@ export default function NavbarSp() {
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
               <Link Link to="/Career-pathsp" onClick={() => setCandidatesOpen(false)}>
-             Für Jobsuchende
+             Para candidatos
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
             </div>
@@ -469,7 +469,7 @@ export default function NavbarSp() {
               className="flex justify-between w-full py-2 text-gray-900 font-medium"
               onClick={() => setCandidatesOpen(!candidatesOpen)}
             >
-             Für Jobsuchende <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+             Para candidatos <ChevronDownIcon className="h-5 w-5 text-gray-500" />
             </button>
             {candidatesOpen && (
               <div className="ml-4 space-y-2">

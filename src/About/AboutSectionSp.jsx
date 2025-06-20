@@ -15,7 +15,7 @@ export default function AboutSectionSp() {
         {/* Lado derecho - Contenido de texto */}
         <div className="max-w-2xl">
           <h2 className="text-4xl font-extrabold text-gray-900">
-            <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">Qué</span> Hacemos
+            <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">Lo que</span> Hacemos
           </h2>
           <p className="text-gray-700 mt-4 text-lg leading-relaxed">
             Con más de 35 años en TI, hemos visto cómo las industrias han evolucionado, desde las primeras computadoras hasta la contratación impulsada por IA. Sabemos que conseguir un trabajo no es el objetivo: construir una carrera lo es. NuJOB.AI no es solo una herramienta de contratación; es un cambio de paradigma. Ayudamos a los profesionales a construir su marca y a las empresas a encontrar líderes de primer nivel con precisión y rapidez.

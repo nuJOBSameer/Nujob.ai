@@ -1,8 +1,8 @@
 export default function BenefitsSectionSp() {
     const jobSeekers = [
-        { title: "Destaca tu Marca", desc: "Currículums, cartas de presentación y preparación para entrevistas impulsadas por IA que te hacen destacar al instante.", icon: "/Logo/Logo1.png" },
+        { title: "Marca usted mismo", desc: "Los currículums, cartas de presentación y preparación para entrevistas impulsadas por IA que te hacen destacar al instante.", icon: "/Logo/Logo1.png" },
         { title: "Justo e Imparcial", desc: "Nos enfocamos en tus habilidades, no en tu historial, asegurando igualdad de oportunidades para todos.", icon: "/Logo/Logo2.png" },
-        { title: "Emparejamiento Inteligente", desc: "Obtén roles que realmente se ajustan a tu experiencia y metas, no solo listados aleatorios.", icon: "/Logo/Logo3.png" },
+        { title: "Empleado de trabajo inteligente", desc: "Obtén roles que realmente se ajustan a tu experiencia y metas, no solo listados aleatorios.", icon: "/Logo/Logo3.png" },
         { title: "Crecimiento Profesional", desc: "Obtén información, tendencias y estrategias que te mantengan por delante en el mercado laboral.", icon: "/Logo/Logo4.png" },
         { title: "Validación Real de Habilidades", desc: "Sin adornos: pon a prueba tus habilidades con simulaciones prácticas y evaluaciones estándar de la industria.", icon: "/Logo/Logo5.png" },
         { title: "Menos Estrés, Más Éxitos", desc: "Deja que la IA se encargue de la búsqueda para que puedas enfocarte en lo que importa: tu futuro.", icon: "/Logo/Logo6.png" }
@@ -42,7 +42,7 @@ export default function BenefitsSectionSp() {
 
             {/* Para Buscadores de Empleo */}
             <div className=" border-t border-gray-300 md:px-10">
-                <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-6">Para Buscadores de Empleo</h3>
+                <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-6">Para los solicitantes de trabajo</h3>
 
                 <div className="grid md:grid-cols-3 gap-6 pt-6">
                     {jobSeekers.map((benefit, index) => (
