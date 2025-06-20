@@ -11,7 +11,28 @@ const LanguageSelector = () => {
 };
 
 const [selected, setSelected] = useState(getCountryFromURL());
-
+const SpanishSpeakingCountries = [
+  "AR", // Argentina
+  "BO", // Bolivia
+  "CL", // Chile
+  "CO", // Colombia
+  "CR", // Costa Rica
+  "CU", // Cuba
+  "DO", // Dominican Republic
+  "EC", // Ecuador
+  "SV", // El Salvador
+  "GQ", // Equatorial Guinea
+  "GT", // Guatemala
+  "HN", // Honduras
+  "MX", // Mexico
+  "NI", // Nicaragua
+  "PA", // Panama
+  "PY", // Paraguay
+  "PE", // Peru
+  "ES", // Spain
+  "UY", // Uruguay
+  "VE"  // Venezuela
+];
 
   const handleSelect = (value) => {
   let url = "";
@@ -19,7 +40,7 @@ const [selected, setSelected] = useState(getCountryFromURL());
   if (value === "NG") url = "https://nujob.ai/ng/";
   else if (value === "UAE") url = "https://nujob.ai/ae/";
   else if (value === "UA") url = "https://nujob.ai/ua/";
-  else if (value === "SP") url = "https://nujob.ai/sp/";
+  else if (SpanishSpeakingCountries.includes(value)) url = "https://nujob.ai/sp/";
   else if (value === "USA") url = "https://nujob.ai/";
 
   if (url) {
