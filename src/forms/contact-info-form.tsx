@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-export default function ContactInfoForm({ children ,link}) {
+export default function ContactInfoForm({ children, link }) {
     const [open, setOpen] = useState(false);
     const [form, setForm] = useState({
         name: "",
@@ -14,20 +14,20 @@ export default function ContactInfoForm({ children ,link}) {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit =async  (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post("https://candidate.nujob.ai/api/v1/cp/verify",{
-            email:form.email,
+        await axios.post("https://candidate.nujob.info/api/v1/cp/verify", {
+            email: form.email,
         });
-        await axios.post("https://candidate.nujob.ai/api/v1/cp/register", {
+        const { data } = await axios.post("https://candidate.nujob.info/api/v1/cp/register", {
             name: form.name,
             email: form.email,
             password: form.password,
             country: form.country,
-            city:"",
-            state:"",
+            city: "",
+            state: "",
         });
-        window.location.href=link;
+        window.location.href = `${link}?prefilled_email=${form.email}&client_reference_id=${data}`;
         setOpen(false);
     };
 
@@ -43,7 +43,7 @@ export default function ContactInfoForm({ children ,link}) {
                 <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
                     <div className="bg-white p-6 rounded-xl w-full max-w-md shadow-lg">
                         <h2 className="text-xl font-semibold mb-4">Registration Form</h2>
-                        <form onSubmit={handleSubmit} className="space-y-4">
+                        <form onSubmit={handleSubmit} className="space-y-4 text-black">
                             <div>
                                 <label className="block text-sm font-medium">Name</label>
                                 <input
