@@ -26,7 +26,7 @@ const GetStartedSp = () => {
         <option value="" disabled hidden>
           Get Started</option>
         <option value="Rec">Para Reclutadores</option>
-        <option value="Can">Für Jobsuchende</option>
+        <option value="Can">Para candidatos</option>
         <option value="Stu">Para estudiantes</option>
       </select>
     </div>
