@@ -43,7 +43,7 @@ const HomeSp = () => {
           playsInline
           className="hidden md:block absolute top-0 left-0 w-full h-full object-cover z-40"
         >
-          <source src="/hero-desktop2.mp4" type="video/mp4" />
+          <source src="/Spanish_hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -54,27 +54,7 @@ const HomeSp = () => {
           playsInline
           className="block md:hidden absolute top-0 left-0 w-full h-full object-cover z-40"
         >
-          <source src="/hero-mobile.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        <video
-          autoPlay
-          muted
-          playsInline
-          className="hidden lg:block absolute top-0 left-0 w-full h-full object-cover z-40"
-        >
-          <source src="/hero-desktop1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        <video
-          autoPlay
-          muted
-          playsInline
-          className="hidden xl:block absolute top-0 left-0 w-full h-full object-cover z-40"
-        >
-          <source src="/hero-desktop3.mp4" type="video/mp4" />
+          <source src="/Spanish_hero_mobile.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

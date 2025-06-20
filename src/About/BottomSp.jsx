@@ -18,7 +18,7 @@ const BottomSP = () => {
 
         {/* Encabezado */}
         <h1 className="text-4xl font-semibold">
-          Da el primer paso hacia
+          Da el primero paso PARA
           <br />
           construir el trabajo de tus sueños.
         </h1>

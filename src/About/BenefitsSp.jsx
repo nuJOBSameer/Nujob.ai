@@ -25,9 +25,9 @@ export default function BenefitsSectionSp() {
                 <div className="max-w-2xl">
                     <h2 className="text-4xl font-extrabold text-gray-900">
                         <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">
-                            nuJOB.AI
+                            ventajas de usar 
                         </span>{" "}
-                        Beneficios
+                        nujob.ai 
                     </h2>
                     <p className="text-gray-600 mt-4 text-lg leading-relaxed">
                         Nuestro viaje comenzó con el nacimiento de la era informática, pasando por el auge de las redes y el internet, hasta adoptar ahora el poder transformador de la inteligencia artificial.
