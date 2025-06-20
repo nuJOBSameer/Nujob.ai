@@ -24,7 +24,7 @@ const GetStartedSp = () => {
         onChange={(e) => handleSelect(e.target.value)}
       >
         <option value="" disabled hidden>
-          Get Started</option>
+          Comenzar</option>
         <option value="Rec">Para Reclutadores</option>
         <option value="Can">Para candidatos</option>
         <option value="Stu">Para estudiantes</option>
