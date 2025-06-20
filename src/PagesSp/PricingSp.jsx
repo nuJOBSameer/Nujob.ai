@@ -220,7 +220,7 @@ const PricingSectionSp = () => {
 const candidatePlans = [
   {
     name: "Motor de arranque",
-    price: "$ 20",
+    price: "€ 18.60",
     period: "35 créditos",
     features: ["5 entrevistas gratuitas"],
     border: "border-blue-400 bg-white",
@@ -229,7 +229,7 @@ const candidatePlans = [
   },
   {
     name: "Crecimiento",
-    price: "$ 49",
+    price: "€ 45.57",
     period: "87 créditos",
     features: ["Incluye todo en Starter", "+52 más créditos"],
     border: "border-gray-500 bg-gray-900 text-white",
@@ -238,7 +238,7 @@ const candidatePlans = [
   },
   {
     name: "Pro",
-    price: "$ 99",
+    price: "€ 92.07",
     period: "177 créditos",
     features: ["Incluye todo en crecimiento", "+90 más créditos"],
     border: "border-yellow-400 bg-white",
@@ -261,10 +261,11 @@ const candidatePlans = [
 ];
 
 
+
 const recruiterPlans = [
   {
     name: "Motor de arranque",
-    price: "$ 99",
+    price: "€ 92.07",
     period: "173 créditos",
     features: ["5 entrevistas gratuitas"],
     border: "border-blue-400 bg-white",
@@ -273,7 +274,7 @@ const recruiterPlans = [
   },
   {
     name: "Crecimiento",
-    price: "$ 249",
+    price: "€ 231.57",
     period: "442 créditos",
     features: ["Incluye todo en Starter", "+269 más créditos"],
     border: "border-gray-500 bg-gray-900 text-white",
@@ -282,7 +283,7 @@ const recruiterPlans = [
   },
   {
     name: "Pro",
-    price: "$ 399",
+    price: "€ 371.07",
     period: "713 créditos",
     features: ["Incluye todo en crecimiento", "+271 más créditos"],
     border: "border-yellow-400 bg-white",
@@ -304,10 +305,11 @@ const recruiterPlans = [
   },
 ];
 
+
 const studentPlans = [
   {
     name: "Estudiante básico",
-    price: "$ 9.99",
+    price: "€ 9.29",
     period: "25 créditos",
     features: ["3 entrevistas gratuitas"],
     border: "border-green-400 bg-white",
@@ -315,6 +317,7 @@ const studentPlans = [
     link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6oI",
   },
 ];
+
 
 
 export default PricingSectionSp;
