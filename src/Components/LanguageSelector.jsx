@@ -40,7 +40,7 @@ const SpanishSpeakingCountries = [
   if (value === "NG") url = "https://nujob.ai/ng/";
   else if (value === "UAE") url = "https://nujob.ai/ae/";
   else if (value === "UA") url = "https://nujob.ai/ua/";
-  else if (SpanishSpeakingCountries.includes(value)) url = "https://nujob.ai/sp/";
+  else if (value === "SP") url = "https://nujob.ai/sp/";
   else if (value === "USA") url = "https://nujob.ai/";
 
   if (url) {
@@ -58,10 +58,10 @@ const SpanishSpeakingCountries = [
         onChange={(e) => handleSelect(e.target.value)}
       >
         <option value="USA">USA - EN</option>
-        <option value="NG">NG - EN</option>
+        <option value="NG">Nigeria - EN</option>
         <option value="UAE">UAE - EN</option>
-        <option value="UA">UA - Ukrainian</option>
-        <option value="SP">SP - Spanish</option>
+        <option value="UA">Ukrainian - UA</option>
+        <option value="SP">Spanish - ES</option>
       </select>
     </div>
   );
