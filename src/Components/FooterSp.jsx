@@ -114,12 +114,12 @@ export default function FooterSp() {
             className="h-10 w-12 md:ml-32 md:mx-0 mx-auto"
           />
           <p>nuJOB © 2025. Todos los derechos reservados.</p>
-          <div className="flex space-x-5 md:mt-0 mt-4">
+          {/* <div className="flex space-x-5 md:mt-0 mt-4">
             <FaDiscord className="text-white w-5 h-5 cursor-pointer hover:text-gray-300" />
             <FaFacebookF className="text-white w-5 h-5 cursor-pointer hover:text-gray-300" />
             <FaLinkedinIn className="text-white w-5 h-5 cursor-pointer hover:text-gray-300" />
             <FaYoutube className="text-white w-5 h-5 cursor-pointer hover:text-gray-300" />
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
