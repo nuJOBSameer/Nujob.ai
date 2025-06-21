@@ -22,7 +22,7 @@ const [selected, setSelected] = useState(getCountryFromURL());
   else url = "https://nujob.ai/";
 
   if (url) {
-    window.open(url, "_blank", "noopener,noreferrer");
+    window.location.href = url; // Open in the same tab
     setSelected(value); // Update after open
   }
 };
