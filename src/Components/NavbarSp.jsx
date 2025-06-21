@@ -29,21 +29,21 @@ const aboutFeatures = [
     description:
       "Descubre cómo ayudamos a las organizaciones a encontrar talento de liderazgo de alto nivel y a los candidatos a construir su marca personal.",
     icon: BriefcaseIcon,
-    link: "/Aboutsp",
+    Link: "/Aboutsp",
   },
   // {
   //   name: "Competitive Analysis",
   //   description:
   //     "AI technology with a deep understanding of career needs, making the job search process smarter, faster, and more efficient.",
   //   icon: ChartBarIcon,
-  //   link: "/Analysis",
+  //   Link: "/Analysis",
   // },
   {
     name: "Modelo de Negocio",
     description:
       "En nuJOB.AI, utilizamos un enfoque integral y basado en datos para revolucionar el proceso de búsqueda ejecutiva.",
     icon: LightBulbIcon,
-    link: "/Methodsp",
+    Link: "/Methodsp",
   },
 ];
 
@@ -53,28 +53,28 @@ const candidateFeatures = [
   description:
     "Nuestra plataforma impulsada por IA te ayuda a crear un perfil profesional destacado.",
   icon: UsersIcon,
-  link: "/Career-pathsp",
+  Link: "/Career-pathsp",
 },
 {
   name: "Búsqueda de Empleo y Recomendaciones",
   description:
     "Herramientas con IA que te ayudan a construir, desarrollar y potenciar tu carrera.",
   icon: BriefcaseIcon,
-  link: "/JobSearchsp",
+  Link: "/JobSearchsp",
 },
 {
   name: "Desarrollo Profesional y Orientación",
   description:
     "Simplifica la navegación profesional con herramientas para lograr el éxito en un mercado competitivo.",
   icon: LightBulbIcon,
-  link: "/Career-Devsp",
+  Link: "/Career-Devsp",
 },
 {
   name: "Mejora de Currículum y Habilidades",
   description:
     "Crea un perfil dinámico que aumente tus oportunidades en el mercado laboral actual.",
   icon: ClipboardDocumentIcon,
-  link: "/Resume-skills-enhancementsp",
+  Link: "/Resume-skills-enhancementsp",
 }
 ];
 const RecruitersFeatures = [
@@ -83,28 +83,28 @@ const RecruitersFeatures = [
     description:
       "nuJOB.AI ayuda a los responsables de contratación a construir y gestionar de manera eficiente un sólido grupo de candidatos...",
     icon: UsersIcon,
-    link: "/Candidate-Poolsp",
+    Link: "/Candidate-Poolsp",
   },
   {
     name: "Evaluación de Entrevistas",
     description:
       "En nuJOB.AI transformamos entrevistas y evaluaciones con IA, ofreciendo entrevistas en vivo y simulaciones realistas...",
     icon: DocumentTextIcon,
-    link: "/Interviewsp",
+    Link: "/Interviewsp",
   },
   {
     name: "Desarrollo de Incorporación",
     description:
       "nuJOB.AI acelera el éxito con herramientas impulsadas por IA para una incorporación fluida, validación de habilidades y más...",
     icon: UserPlusIcon,
-    link: "/Onboardingsp",
+    Link: "/Onboardingsp",
   },
   {
     name: "Gestión del Talento",
     description:
       "En nuJOB.AI reclutamos, desarrollamos y retenemos el mejor talento a través de una detección avanzada de competencias...",
     icon: MagnifyingGlassIcon,
-    link: "/Talentsp",
+    Link: "/Talentsp",
   }
 ];
 
@@ -114,21 +114,21 @@ const supportFeatures = [
   description:
     "Para cualquier problema con nuJOB.AI, estamos aquí para brindarte asistencia técnica, solución de problemas y orientación.",
   icon: PhoneIcon,
-  link: "/Contactsp",
+  Link: "/Contactsp",
 },
 {
   name: "Preguntas Frecuentes",
   description:
     "Encuentra respuestas a las preguntas más comunes sobre el uso de nuJOB.AI, orientación profesional, herramientas de búsqueda de empleo y más.",
   icon: QuestionMarkCircleIcon,
-  link: "/FAQsp",
+  Link: "/FAQsp",
 },
 {
   name: "Blog",
   description:
     "Mantente al día con consejos profesionales, estrategias de búsqueda de empleo y crecimiento personal en nuestro blog.",
   icon: NewspaperIcon,
-  link: "/Blogssp",
+  Link: "/Blogssp",
 }
 ];
 
@@ -163,7 +163,7 @@ export default function NavbarSp() {
             onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Aboutsp" onClick={() => setAboutOpen(false)}>
+              <Link to="/Aboutsp" onClick={() => setAboutOpen(false)}>
                  Sobre Nosotros
               </Link >
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -177,7 +177,7 @@ export default function NavbarSp() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {aboutFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setAboutOpen(false)}
@@ -228,7 +228,7 @@ export default function NavbarSp() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Career-pathsp" onClick={() => setCandidatesOpen(false)}>
+              <Link to="/Career-pathsp" onClick={() => setCandidatesOpen(false)}>
              Para candidatos
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -242,7 +242,7 @@ export default function NavbarSp() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {candidateFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setCandidatesOpen(false)}
@@ -293,7 +293,7 @@ export default function NavbarSp() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Candidate-Pool">
+              <Link to="/Candidate-Pool">
                 Para Reclutadores
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -307,7 +307,7 @@ export default function NavbarSp() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {RecruitersFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setRecruitersOpen(false)}
@@ -359,7 +359,7 @@ export default function NavbarSp() {
             onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Contactsp">
+              <Link to="/Contactsp">
                 Soporte
               </Link>{" "}
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -373,7 +373,7 @@ export default function NavbarSp() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {supportFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setSupportOpen(false)}
@@ -452,7 +452,7 @@ export default function NavbarSp() {
                 {aboutFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -476,7 +476,7 @@ export default function NavbarSp() {
                 {candidateFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -500,7 +500,7 @@ export default function NavbarSp() {
                 {RecruitersFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -526,7 +526,7 @@ export default function NavbarSp() {
                 {supportFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >

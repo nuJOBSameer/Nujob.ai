@@ -22,6 +22,11 @@ const GetStarted = () => {
         className="appearance-none bg-black border rounded-full px-2 py-2 shadow-sm text-white text-center text-sm cursor-pointer"
         value={selected}
         onChange={(e) => handleSelect(e.target.value)}
+        style={{
+          textAlign: "center",            // For Firefox
+          textAlignLast: "center",        // For Chrome/Edge/Opera
+          WebkitTextAlignLast: "center",  // For Safari
+        }}
       >
         <option value="" disabled hidden>
           Get Started</option>

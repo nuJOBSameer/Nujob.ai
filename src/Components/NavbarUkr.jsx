@@ -29,21 +29,21 @@ const aboutFeatures = [
     description:
       "Дізнайтеся, як ми допомагаємо організаціям знаходити найкращих лідерів, а кандидатам — створювати власний бренд.",
     icon: BriefcaseIcon,
-    link: "/aboutua",
+    Link: "/aboutua",
   },
   // {
   //   name: "Competitive Analysis",
   //   description:
   //     "AI technology with a deep understanding of career needs, making the job search process smarter, faster, and more efficient.",
   //   icon: ChartBarIcon,
-  //   link: "/Analysis",
+  //   Link: "/Analysis",
   // },
   {
     name: "Бізнес-модель",
     description:
       "У nuJOB.AI ми використовуємо комплексний та орієнтований на дані підхід, щоб революціонізувати процес пошуку керівників.",
     icon: LightBulbIcon,
-    link: "/Methodua",
+    Link: "/Methodua",
   },
 ];
 
@@ -53,28 +53,28 @@ const candidateFeatures = [
     description:
       "Наша платформа на базі ШІ допомагає створити професійний профіль, який вирізняється.",
     icon: UsersIcon,
-    link: "/Career-pathua",
+    Link: "/Career-pathua",
   },
   {
     name: "Пошук роботи та рекомендації",
     description:
       "Інструменти на базі ШІ допомагають вам будувати, розвивати та зміцнювати свій кар’єрний шлях.",
     icon: BriefcaseIcon,
-    link: "/JobSearchua",
+    Link: "/JobSearchua",
   },
   {
     name: "Кар’єрний розвиток і наставництво",
     description:
       "Спрощує кар’єрну навігацію завдяки інструментам, що підтримують успіх на конкурентному ринку праці.",
     icon: LightBulbIcon,
-    link: "/Career-Devua",
+    Link: "/Career-Devua",
   },
   {
     name: "Резюме та розвиток навичок",
     description:
       "Створіть динамічний профіль, що підвищує ваші шанси на сучасному ринку праці.",
     icon: ClipboardDocumentIcon,
-    link: "/Resume-skills-enhancementua",
+    Link: "/Resume-skills-enhancementua",
   },
 ];
 
@@ -84,28 +84,28 @@ const RecruitersFeatures = [
     description:
       "nuJOB.AI допомагає рекрутерам ефективно формувати та керувати сильною базою кандидатів за допомогою ШІ.",
     icon: UsersIcon,
-    link: "/Candidate-Poolua",
+    Link: "/Candidate-Poolua",
   },
   {
     name: "Оцінювання на співбесідах",
     description:
       "У nuJOB.AI ми трансформуємо інтерв’ю та оцінювання за допомогою ШІ, пропонуючи живі інтерв’ю та реалістичні симуляції.",
     icon: DocumentTextIcon,
-    link: "/Interviewua",
+    Link: "/Interviewua",
   },
   {
     name: "Адаптація нових працівників",
     description:
       "nuJOB.AI прискорює адаптацію завдяки інструментам на базі ШІ для безперебійного входження в посаду та перевірки навичок.",
     icon: UserPlusIcon,
-    link: "/Onboardingua",
+    Link: "/Onboardingua",
   },
   {
     name: "Управління талантами",
     description:
       "У nuJOB.AI ми залучаємо, розвиваємо та утримуємо найкращі таланти за допомогою передових технологій виявлення компетенцій.",
     icon: MagnifyingGlassIcon,
-    link: "/Talentua",
+    Link: "/Talentua",
   },
 ];
 
@@ -115,21 +115,21 @@ const supportFeatures = [
     description:
       "Якщо у вас виникли проблеми з nuJOB.AI, ми надамо технічну допомогу, усунення несправностей та підтримку.",
     icon: PhoneIcon,
-    link: "/contactua",
+    Link: "/contactua",
   },
   {
     name: "Часті запитання",
     description:
       "Знайдіть відповіді на найпоширеніші запитання щодо використання nuJOB.AI, кар’єрного консультування, пошуку роботи тощо.",
     icon: QuestionMarkCircleIcon,
-    link: "/FAQUa",
+    Link: "/FAQUa",
   },
   {
     name: "Блог",
     description:
       "Будьте в курсі кар’єрних порад, стратегій пошуку роботи та особистісного зростання у нашому блозі.",
     icon: NewspaperIcon,
-    link: "/Blogsua",
+    Link: "/Blogsua",
   },
 ];
 
@@ -165,7 +165,7 @@ export default function Navbar() {
             onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Aboutua" onClick={() => setAboutOpen(false)}>
+              <Link to="/Aboutua" onClick={() => setAboutOpen(false)}>
                 Про нас
               </Link >
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -179,7 +179,7 @@ export default function Navbar() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {aboutFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setAboutOpen(false)}
@@ -230,7 +230,7 @@ export default function Navbar() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Career-pathua" onClick={() => setCandidatesOpen(false)}>
+              <Link to="/Career-pathua" onClick={() => setCandidatesOpen(false)}>
               Для пошукачів роботи
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -244,7 +244,7 @@ export default function Navbar() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {candidateFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setCandidatesOpen(false)}
@@ -295,7 +295,7 @@ export default function Navbar() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Candidate-Poolua">
+              <Link to="/Candidate-Poolua">
                 Для рекрутерів
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -309,7 +309,7 @@ export default function Navbar() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {RecruitersFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setRecruitersOpen(false)}
@@ -361,7 +361,7 @@ export default function Navbar() {
             onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/contactua">
+              <Link to="/contactua">
                 Підтримка
               </Link>{" "}
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -375,7 +375,7 @@ export default function Navbar() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {supportFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setSupportOpen(false)}
@@ -454,7 +454,7 @@ export default function Navbar() {
                 {aboutFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -478,7 +478,7 @@ export default function Navbar() {
                 {candidateFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -502,7 +502,7 @@ export default function Navbar() {
                 {RecruitersFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -528,7 +528,7 @@ export default function Navbar() {
                 {supportFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >

@@ -113,11 +113,11 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <ContactInfoForm link={plan.link} >
+              <ContactInfoForm Link={plan.Link} >
                 <button
                   className="mt-6 bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600"
                   // onClick={()=>{
-                  //   window.location.href=plan.link
+                  //   window.location.href=plan.Link
                   // }}
                 >
                   {plan.name === "Enterprise" ? "Talk To Us" : "Try For 7 Days"}
@@ -228,7 +228,7 @@ const candidatePlans = [
     features: ["5 Free Interviews"],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/7sI9AU2A51p1gjC00l",
+    Link: "https://buy.stripe.com/7sI9AU2A51p1gjC00l",
   },
   {
     name: "Growth",
@@ -237,7 +237,7 @@ const candidatePlans = [
     features: ["Includes everything in Starter", "+52 More Credits"],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: "https://buy.stripe.com/14k5kEgqV0kX7N69AW",
+    Link: "https://buy.stripe.com/14k5kEgqV0kX7N69AW",
   },
   {
     name: "Pro",
@@ -246,7 +246,7 @@ const candidatePlans = [
     features: ["Includes everything in Growth", "+90 More Credits"],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/14kcN61w16Jlffy28v",
+    Link: "https://buy.stripe.com/14kcN61w16Jlffy28v",
   },
   {
     name: "Enterprise",
@@ -259,7 +259,7 @@ const candidatePlans = [
     ],
     border: "border-purple-400 bg-white",
     text: "text-gray-800",
-    link: "",
+    Link: "",
   },
 ];
 
@@ -271,7 +271,7 @@ const recruiterPlans = [
     features: ["5 Free Interviews"],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/fZe9AU5Mh9Vxc3m14s",
+    Link: "https://buy.stripe.com/fZe9AU5Mh9Vxc3m14s",
   },
   {
     name: "Growth",
@@ -280,7 +280,7 @@ const recruiterPlans = [
     features: ["Includes everything in Starter", "+269 More Credits"],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: "https://buy.stripe.com/fZe14o4IdgjV6J28wV",
+    Link: "https://buy.stripe.com/fZe14o4IdgjV6J28wV",
   },
   {
     name: "Pro",
@@ -289,7 +289,7 @@ const recruiterPlans = [
     features: ["Includes everything in Growth", "+271 More Credits"],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/eVa7sM0rXc3F7N63cC",
+    Link: "https://buy.stripe.com/eVa7sM0rXc3F7N63cC",
   },
   {
     name: "Enterprise",
@@ -302,7 +302,7 @@ const recruiterPlans = [
     ],
     border: "border-purple-400 bg-white",
     text: "text-gray-800",
-    link: "",
+    Link: "",
   },
 ];
 const studentPlans = [
@@ -313,7 +313,7 @@ const studentPlans = [
     features: ["3 Free Interviews"],
     border: "border-green-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6oI",
+    Link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6oI",
   },
 ];
 

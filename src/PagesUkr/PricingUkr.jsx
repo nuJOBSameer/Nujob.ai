@@ -103,7 +103,7 @@ const PricingUkr = () => {
                   if (plan.name === "Корпоративний") {
                     setShowModal(true);
                   } else {
-                    window.location.href = plan.link;
+                    window.location.href = plan.Link;
                   }
                 }}
               >
@@ -213,7 +213,7 @@ const candidatePlans = [
     ],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/7sI9AU2A51p1gjC00l",
+    Link: "https://buy.stripe.com/7sI9AU2A51p1gjC00l",
   },
   {
     name: "Розвиток",
@@ -226,7 +226,7 @@ const candidatePlans = [
     ],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: "https://buy.stripe.com/14k5kEgqV0kX7N69AW",
+    Link: "https://buy.stripe.com/14k5kEgqV0kX7N69AW",
   },
   {
     name: "Профі",
@@ -239,7 +239,7 @@ const candidatePlans = [
     ],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/14kcN61w16Jlffy28v",
+    Link: "https://buy.stripe.com/14kcN61w16Jlffy28v",
   },
   {
     name: "Корпоративний",
@@ -253,7 +253,7 @@ const candidatePlans = [
     ],
     border: "border-purple-400 bg-white",
     text: "text-gray-800",
-    link: "",
+    Link: "",
   },
 ];
 
@@ -266,7 +266,7 @@ const recruiterPlans = [
     features: ["5 безкоштовних інтерв’ю", "Спробуйте 7 днів"],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/fZe9AU5Mh9Vxc3m14s",
+    Link: "https://buy.stripe.com/fZe9AU5Mh9Vxc3m14s",
   },
   {
     name: "Розвиток",
@@ -279,7 +279,7 @@ const recruiterPlans = [
     ],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: "https://buy.stripe.com/fZe14o4IdgjV6J28wV",
+    Link: "https://buy.stripe.com/fZe14o4IdgjV6J28wV",
   },
   {
     name: "Профі",
@@ -292,7 +292,7 @@ const recruiterPlans = [
     ],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/eVa7sM0rXc3F7N63cC",
+    Link: "https://buy.stripe.com/eVa7sM0rXc3F7N63cC",
   },
   {
     name: "Корпоративний",
@@ -306,7 +306,7 @@ const recruiterPlans = [
     ],
     border: "border-purple-400 bg-white",
     text: "text-gray-800",
-    link: "",
+    Link: "",
   },
 ];
 
@@ -318,7 +318,7 @@ const studentPlans = [
     features: ["3 безкоштовних інтерв’ю"],
     border: "border-green-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6oI",
+    Link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6oI",
   },
 ];
 

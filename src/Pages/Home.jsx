@@ -10,15 +10,52 @@ import { Helmet } from "react-helmet";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const languageRouter = ["ua"];
+const SpanishSpeakingCountries = [
+  "ar", // Argentina
+  "bo", // Bolivia
+  "cl", // Chile
+  "co", // Colombia
+  "cr", // Costa Rica
+  "cu", // Cuba
+  "do", // Dominican Republic
+  "ec", // Ecuador
+  "sv", // El Salvador
+  "gq", // Equatorial Guinea
+  "gt", // Guatemala
+  "hn", // Honduras
+  "mx", // Mexico
+  "ni", // Nicaragua
+  "pa", // Panama
+  "py", // Paraguay
+  "pe", // Peru
+  "es", // Spain
+  "uy", // Uruguay
+  "ve"  // Venezuela
+];
 
 const Home = () => {
   const router = useNavigate();
   useEffect(() => {
     axios.get("https://ipapi.co/json").then((response) => {
       const userCountry = response.data.country_code.toLowerCase();
-      if (languageRouter.includes(userCountry)) {
-        router(`/${userCountry}`);
+      if (SpanishSpeakingCountries.includes(userCountry)) {
+        router("/sp");
+      } else {
+        //switch statement
+        switch (userCountry) {
+          case "ng":
+            router("/ng");
+            break;
+          case "ae":
+            router("/ae");
+            break;
+          case "ua":
+            router("/ua");
+            break;
+          // default case for English-speaking countries
+          default:
+            router("/");
+        }
       }
     });
   });

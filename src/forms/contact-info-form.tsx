@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-export default function ContactInfoForm({ children, link }) {
+export default function ContactInfoForm({ children, Link }) {
     const [open, setOpen] = useState(false);
     const [form, setForm] = useState({
         name: "",
@@ -27,7 +27,7 @@ export default function ContactInfoForm({ children, link }) {
             city: "",
             state: "",
         });
-        window.location.href = `${link}?prefilled_email=${form.email}&client_reference_id=${data}`;
+        window.location.href = `${Link}?prefilled_email=${form.email}&client_reference_id=${data}`;
         setOpen(false);
     };
 

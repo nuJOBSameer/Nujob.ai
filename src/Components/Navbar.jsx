@@ -29,21 +29,21 @@ const aboutFeatures = [
     description:
       "Discover how we empower organizations to find top leadership talent and help candidates brand themselves",
     icon: BriefcaseIcon,
-    link: "/about",
+    Link: "/about",
   },
   // {
   //   name: "Competitive Analysis",
   //   description:
   //     "AI technology with a deep understanding of career needs, making the job search process smarter, faster, and more efficient.",
   //   icon: ChartBarIcon,
-  //   link: "/Analysis",
+  //   Link: "/Analysis",
   // },
   {
     name: "Business Model",
     description:
       "At nuJOB AI, we employ a comprehensive and data-driven approach to revolutionize the executive search process.",
     icon: LightBulbIcon,
-    link: "/Method",
+    Link: "/Method",
   },
 ];
 
@@ -53,28 +53,28 @@ const candidateFeatures = [
     description:
       "Our AI-driven platform helps you craft a standout professional profile.",
     icon: UsersIcon,
-    link: "/Career-path",
+    Link: "/Career-path",
   },
   {
     name: "Job Search & Recommendations",
     description:
       "AI-powered tools help you build, develop, and empower your career journey.",
     icon: BriefcaseIcon,
-    link: "/JobSearch",
+    Link: "/JobSearch",
   },
   {
     name: "Career Development & Guidance",
     description:
       "Simplifies career navigation with tools to support success in a competitive job market.",
     icon: LightBulbIcon,
-    link: "/Career-Dev",
+    Link: "/Career-Dev",
   },
   {
     name: "Resume & Skills Enhancement",
     description:
       "Craft a dynamic profile that boosts your chances in today’s job market.",
     icon: ClipboardDocumentIcon,
-    link: "/Resume-skills-enhancement",
+    Link: "/Resume-skills-enhancement",
   },
 ];
 const RecruitersFeatures = [
@@ -83,28 +83,28 @@ const RecruitersFeatures = [
     description:
       "nuJOB.Al helps hiring managers efficiently build and manage a strong candidate pool with...",
     icon: UsersIcon,
-    link: "/Candidate-Pool",
+    Link: "/Candidate-Pool",
   },
   {
     name: "Interview Assessment",
     description:
       "At nuJOB.Al, we transform interviews and assessments with Al, offering live interviews and realistic simulations...",
     icon: DocumentTextIcon,
-    link: "/Interview",
+    Link: "/Interview",
   },
   {
     name: "Onboarding Development",
     description:
       "nuJOB.Al accelerates success with Al-powered tools for seamless onboarding, skill validation, and...",
     icon: UserPlusIcon,
-    link: "/Onboarding",
+    Link: "/Onboarding",
   },
   {
     name: "Talent Management",
     description:
       "At nuJOB Al, we recruit, develop, and retain top talent through advanced competency detection...",
     icon: MagnifyingGlassIcon,
-    link: "/Talent",
+    Link: "/Talent",
   },
 ];
 
@@ -114,21 +114,21 @@ const supportFeatures = [
     description:
       "For any issues with nuJOB.AI, we’re here to provide technical assistance, troubleshooting, and guidance.",
     icon: PhoneIcon,
-    link: "/Contact",
+    Link: "/Contact",
   },
   {
     name: "Frequently Asked Questions",
     description:
       "Find answers to the most common questions about using nuJOB.AI, career guidance, job search tools, and more.",
     icon: QuestionMarkCircleIcon,
-    link: "/FAQ",
+    Link: "/FAQ",
   },
   {
     name: "Blog",
     description:
       "Stay updated with career tips, job search strategies, and personal growth on our blog.",
     icon: NewspaperIcon,
-    link: "/Blogs",
+    Link: "/Blogs",
   },
 ];
 
@@ -163,7 +163,7 @@ export default function Navbar() {
             onMouseLeave={() => setTimeout(() => setAboutOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/About" onClick={() => setAboutOpen(false)}>
+              <Link to="/About" onClick={() => setAboutOpen(false)}>
                 About Us
               </Link >
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -177,7 +177,7 @@ export default function Navbar() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {aboutFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setAboutOpen(false)}
@@ -228,7 +228,7 @@ export default function Navbar() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Career-path" onClick={() => setCandidatesOpen(false)}>
+              <Link to="/Career-path" onClick={() => setCandidatesOpen(false)}>
               For Job-seekers
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -242,7 +242,7 @@ export default function Navbar() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {candidateFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setCandidatesOpen(false)}
@@ -293,7 +293,7 @@ export default function Navbar() {
             }
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Candidate-Pool">
+              <Link to="/Candidate-Pool">
                 For Recruiters
               </Link>
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -307,7 +307,7 @@ export default function Navbar() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {RecruitersFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setRecruitersOpen(false)}
@@ -359,7 +359,7 @@ export default function Navbar() {
             onMouseLeave={() => setTimeout(() => setSupportOpen(false), 2500)}
           >
             <div className="flex items-center text-gray-900 font-medium cursor-pointer">
-              <Link Link to="/Contact">
+              <Link to="/Contact">
                 Support
               </Link>{" "}
               <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" />
@@ -373,7 +373,7 @@ export default function Navbar() {
                   <div className="grid grid-cols-2 gap-6 col-span-2">
                     {supportFeatures.map((item, index) => (
                       <Link
-                        to={item.link}
+                        to={item.Link}
                         key={index}
                         className="flex items-start space-x-3 hover:bg-gray-100 p-2 rounded-md"
                         onClick={() => setSupportOpen(false)}
@@ -452,7 +452,7 @@ export default function Navbar() {
                 {aboutFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -476,7 +476,7 @@ export default function Navbar() {
                 {candidateFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -500,7 +500,7 @@ export default function Navbar() {
                 {RecruitersFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -526,7 +526,7 @@ export default function Navbar() {
                 {supportFeatures.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.link}
+                    to={item.Link}
                     className="block text-gray-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >

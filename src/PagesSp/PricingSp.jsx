@@ -113,11 +113,11 @@ const PricingSectionSp = () => {
                 ))}
               </ul>
 
-              {/* <ContactInfoForm link={plan.link} > */}
+              {/* <ContactInfoForm Link={plan.Link} > */}
                 <button
                   className="mt-6 bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600"
                   onClick={()=>{
-                    window.location.href=plan.link
+                    window.location.href=plan.Link
                   }}
                 >
                   {plan.name === "Empresa" ? "Habla con nosotros" : "Prueba durante 7 días"}
@@ -225,7 +225,7 @@ const candidatePlans = [
     features: ["5 entrevistas gratuitas"],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/7sI9AU2A51p1gjC00l",
+    Link: "https://buy.stripe.com/7sI9AU2A51p1gjC00l",
   },
   {
     name: "Crecimiento",
@@ -234,7 +234,7 @@ const candidatePlans = [
     features: ["Incluye todo en Starter", "+52 más créditos"],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: "https://buy.stripe.com/14k5kEgqV0kX7N69AW",
+    Link: "https://buy.stripe.com/14k5kEgqV0kX7N69AW",
   },
   {
     name: "Pro",
@@ -243,7 +243,7 @@ const candidatePlans = [
     features: ["Incluye todo en crecimiento", "+90 más créditos"],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/14kcN61w16Jlffy28v",
+    Link: "https://buy.stripe.com/14kcN61w16Jlffy28v",
   },
   {
     name: "Empresa",
@@ -256,7 +256,7 @@ const candidatePlans = [
     ],
     border: "border-purple-400 bg-white",
     text: "text-gray-800",
-    link: "",
+    Link: "",
   },
 ];
 
@@ -270,7 +270,7 @@ const recruiterPlans = [
     features: ["5 entrevistas gratuitas"],
     border: "border-blue-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/fZe9AU5Mh9Vxc3m14s",
+    Link: "https://buy.stripe.com/fZe9AU5Mh9Vxc3m14s",
   },
   {
     name: "Crecimiento",
@@ -279,7 +279,7 @@ const recruiterPlans = [
     features: ["Incluye todo en Starter", "+269 más créditos"],
     border: "border-gray-500 bg-gray-900 text-white",
     text: "text-white",
-    link: "https://buy.stripe.com/fZe14o4IdgjV6J28wV",
+    Link: "https://buy.stripe.com/fZe14o4IdgjV6J28wV",
   },
   {
     name: "Pro",
@@ -288,7 +288,7 @@ const recruiterPlans = [
     features: ["Incluye todo en crecimiento", "+271 más créditos"],
     border: "border-yellow-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/eVa7sM0rXc3F7N63cC",
+    Link: "https://buy.stripe.com/eVa7sM0rXc3F7N63cC",
   },
   {
     name: "Empresa",
@@ -301,7 +301,7 @@ const recruiterPlans = [
     ],
     border: "border-purple-400 bg-white",
     text: "text-gray-800",
-    link: "",
+    Link: "",
   },
 ];
 
@@ -314,7 +314,7 @@ const studentPlans = [
     features: ["3 entrevistas gratuitas"],
     border: "border-green-400 bg-white",
     text: "text-gray-800",
-    link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6oI",
+    Link: "https://buy.stripe.com/eVafZi6Ql4Bd8Ra6oI",
   },
 ];
 

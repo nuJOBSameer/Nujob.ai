@@ -69,7 +69,7 @@ const Terms = () => {
           title: "7. Third-Party Links",
           content: (
             <>
-              We may link to third-party sites or services. We are not responsible for their content, policies, or practices.
+              We may Link to third-party sites or services. We are not responsible for their content, policies, or practices.
             </>
           ),
         },
